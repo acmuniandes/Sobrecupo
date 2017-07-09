@@ -11,6 +11,7 @@ var app = new Vue
     {
         getTest: function (url) 
         {
+            console.log("submitting: " + url)
             axios.get(url).then(function (response) {
                 console.log(response);
             }).catch(function (error) {

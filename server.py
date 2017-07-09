@@ -25,5 +25,5 @@ def saveInDB(strng):
 
 #Recalls the stored info of the DB
 @app.route('/db/recall')
-def recall():
+def recallDB():
     return r.lrange('db', 0, -1)
