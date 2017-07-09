@@ -26,4 +26,11 @@ def saveInDB(strng):
 #Recalls the stored info of the DB
 @app.route('/db/recall')
 def recallDB():
-    return r.lrange('db', 0, -1)
+    try:
+        return r.lrange('db', 0, -1)
+    except Exception as error:
+        msg = ''
+        msg += 'Type : ' + type(error) + '\n'
+        msg += 'Exception: ' + error
+        return msg
+    
