@@ -15,7 +15,7 @@ def webprint():
 #Returns .js file (Vue)
 @app.route('/app.js')
 def Vue():
-    return send_from_directory(filename = 'app.js', directory = 'public')
+    return send_from_directory(filename = 'app.js', directory = 'scripts')
 
 #Saves the string <strng> in the DB
 @app.route('/db/<strng>')
