@@ -5,7 +5,7 @@ var app = new Vue
     {
         lista: [],
         input: '',
-        dbInfo: ''
+        dbInfo: 'NotClickedYet'
     },
     methods:
     {
