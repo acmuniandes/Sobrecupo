@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Axios for requests -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <!-- Vue-resource -->
+        <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+        
+        <!-- Vue.js -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="app">
+            
+            <h1>
+                Requests
+            </h1>
+
+            <input v-model = 'input'>
+            </input>
+
+            <br>
+
+            <button v-on:click="getTest('/db/' + input)">
+                Submit to de DB
+            </button>
+
+            <button v-on:click="recallDB()">
+                Recall Info
+            </button>
+
+            <p v-if='dbInfo != ""'>
+                {{dbInfo}}
+            </p>
+
+        </div>
+
+        <script src = '/app.js'></script>
+
+    </body>
+</html>
