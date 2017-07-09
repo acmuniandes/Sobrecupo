@@ -24,8 +24,8 @@ var app = new Vue
         {
             axios.get('/db/recall').then(function (response) 
             {
-                console.log("success!" + response.data)
-                this.dbInfo = response
+                //console.log("success!" + response.data)
+                this.dbInfo = response.data
             }).catch (function (error) 
             {
                 console.log(error)
