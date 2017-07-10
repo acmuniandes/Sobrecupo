@@ -19,8 +19,6 @@
 
             <input type = 'password' v-model = 'input'>
 
-            <br>
-
             <button v-if='!logOn' v-on:click="login(input)">
                 Login
             </button>
@@ -35,8 +33,6 @@
                 <p>
                     %{dbInfo}%
                 </p>
-
-                %{dbInfo}%
 
             </template>
 
@@ -73,6 +69,7 @@
                         }
                         else
                         {
+                            localThis.logOn = false
                             localThis.passText = '- Try again'
                         }
                     }).catch(function (error) {
@@ -81,7 +78,7 @@
                     });
 
                 },
-
+                
                 recallDB: function()
                 {
                     var localThis = this
