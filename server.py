@@ -1,7 +1,9 @@
 import os
 import redis
 import logging
-from flask import Flask , send_from_directory, render_template, url_for
+import datetime
+
+from flask import Flask , send_from_directory, render_template, url_for, request
 
 r = redis.from_url(os.environ.get("REDIS_URL"))
 
@@ -13,9 +15,19 @@ def webprint():
     return render_template('index.html')
 
 #Returns .js file (Vue)
-@app.route('/app.js')
-def Vue():
-    return send_from_directory(filename = 'app.js', directory = 'scripts')
+@app.route('/devMode', methods = ['POST', 'GET'])
+def devMode():
+
+    if request.method == 'GET':
+        r.incr('devModeGet')
+        return render_template('devMode.html')
+    elif request.method == 'POST':
+        if checkPassword(request.form['password'], request.environ['REMOTE_ADDR']):
+            return os.environ.get('PASSWORD_MESSAGE')
+        else:
+            return 'quePasoAmiguitoxdxd'
+    else:
+        return '¿?'
 
 #Saves the string <strng> in the DB
 @app.route('/db/<strng>')
@@ -33,4 +45,12 @@ def recallDB():
         msg += 'Type : ' + type(error) + '\n'
         msg += 'Exception: ' + error
         return msg
-    
+
+#Checks for password and logs failed attempts    
+def checkPassword(password, ip):
+    date = str(datetime.datetime.utcnow())
+    attempt = password == os.environ.get('REDIS_URL')
+    if attempt:
+        r.lpush('devModeGetList', "*IP: " + ip + " // " + "Timestamp: " + date + " // Attempt: " + password + "\n")
+    return attempt
+        

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Vue.js -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <!-- Axios for requests -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>        
+
+    </head>
+
+    <body>
+
+        <div id="app">
+            
+            <h1>
+                DevMode - tuSalon %{passText}%
+            </h1>
+
+            <input type = 'password' v-model = 'input'>
+
+            <br>
+
+            <button v-if='!logOn' v-on:click="login(input)">
+                Login
+            </button>
+
+            
+            <template v-if='logOn'>
+
+                <button  v-on:click="recallDB()">
+                    Recall Info
+                </button>
+
+                <p>
+                    %{dbInfo}%
+                </p>
+
+                %{dbInfo}%
+
+            </template>
+
+        </div>
+
+        <script>
+        
+        var app = new Vue
+        ({
+            el: '#app',
+            delimiters: ['%{', '}%'],
+            data:
+            {
+                input: '',
+                dbInfo: '---',
+                passText: '- Insert password',
+                logOn: false
+            },
+            methods:
+            {
+                login: function () 
+                {
+                    var localThis = this
+                    axios.post('/devMode', 
+                    {
+                        password: localThis.input
+                    }
+                    ).then(function (response) {
+                        console.log(response);
+                        if (response.data === 'HiM8 wnt sum fuk?')
+                        {
+                            localThis.logOn = true
+                            localThis.passText = ''
+                        }
+                        else
+                        {
+                            localThis.passText = '- Try again'
+                        }
+                    }).catch(function (error) {
+                        localThis.passText = '- Error while checking password'
+                        console.log(error);
+                    });
+
+                },
+
+                recallDB: function()
+                {
+                    var rsp = this
+                    axios.get('/db/recall').then(function (response) 
+                    {
+                        rsp.dbInfo = response.data + ''
+                        console.log("success! " + response.data + "\n type: " + typeof(response.data))                        
+                    }).catch (function (error) 
+                    {
+                        console.log(error)
+                    })
+                }
+            }
+        })
+
+        </script>
+
+    </body>
+</html>
