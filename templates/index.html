@@ -37,6 +37,8 @@
                 {{dbInfo}}
             </p>
 
+            {{dbInfo}}
+
         </div>
 
         <script src = '/app.js'>
@@ -69,6 +71,7 @@
                     {
                         console.log("success! " + response.data + "\n type: " + typeof(response.data))
                         this.dbInfo = response.data
+                        dbInfo = response.data
                     }).catch (function (error) 
                     {
                         console.log(error)
