@@ -51,7 +51,7 @@ def recallDB():
 def checkPassword(password, ip):
     date = str(datetime.datetime.utcnow())
     attempt = password == os.environ.get('REDIS_URL')
-    if !attempt:
+    if not attempt:
         r.lpush('devModeGetList', "*IP: " + ip + " // " + "Timestamp: " + date + " // Attempt: " + password + "\n")
     return attempt
         
