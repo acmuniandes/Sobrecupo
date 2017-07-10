@@ -84,10 +84,14 @@
 
                 recallDB: function()
                 {
-                    var rsp = this
-                    axios.get('/db/recall').then(function (response) 
+                    var localThis = this
+                    axios.post('/db/recall', 
                     {
-                        rsp.dbInfo = response.data + ''
+                        password: String(localThis.input)
+                    }
+                    ).then(function (response) 
+                    {
+                        localThis.dbInfo = response.data + ''
                         console.log("success! " + response.data + "\n type: " + typeof(response.data))                        
                     }).catch (function (error) 
                     {

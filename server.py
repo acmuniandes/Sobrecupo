@@ -14,6 +14,14 @@ app = Flask(__name__)
 def webprint():
     return render_template('index.html')
 
+#Saves the string <strng> in the DB
+@app.route('/db/<strng>')
+def saveInDB(strng):
+    r.lpush('db', '%s' % strng)
+    return 'OK'
+
+#DevMode Handling------------------------------------
+
 #Returns .js file (Vue)
 @app.route('/devMode', methods = ['POST', 'GET'])
 def devMode():
@@ -30,22 +38,20 @@ def devMode():
     else:
         return '¿?'
 
-#Saves the string <strng> in the DB
-@app.route('/db/<strng>')
-def saveInDB(strng):
-    r.lpush('db', '%s' % strng)
-    return 'OK'
-
 #Recalls the stored info of the DB
-@app.route('/db/recall')
+@app.route('/db/recall', methods = ['POST'])
 def recallDB():
-    try:
-        return str(r.lrange('db', 0, -1))
-    except Exception as error:
-        msg = ''
-        msg += 'Type : ' + type(error) + '\n'
-        msg += 'Exception: ' + error
-        return msg
+    pss = request.get_json() or request.form
+    if checkPassword(pss['password'], request.environ['REMOTE_ADDR']):
+        try:
+            return str(r.lrange('db', 0, -1))
+        except Exception as error:
+            msg = ''
+            msg += 'Type : ' + type(error) + '\n'
+            msg += 'Exception: ' + error
+            return msg
+    else:
+        return 'la pulenta oe'
 
 #Checks for password and logs failed attempts 
 def checkPassword(password, ip):
