@@ -65,17 +65,15 @@
 
                 recallDB: function()
                 {
-                    var rsp = ''
+                    var rsp = this
                     axios.get('/db/recall').then(function (response) 
                     {
-                        rsp = response.data + ''
+                        rsp.dbInfo = response.data + ''
                         console.log("success! " + response.data + "\n type: " + typeof(response.data))                        
                     }).catch (function (error) 
                     {
                         console.log(error)
                     })
-                    
-                    this.dbInfo = rsp
                 }
             }
         })
