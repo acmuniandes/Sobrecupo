@@ -68,8 +68,8 @@
                     var rsp = ''
                     axios.get('/db/recall').then(function (response) 
                     {
-                        console.log("success! " + response.data + "\n type: " + typeof(response.data))
                         rsp = response.data
+                        console.log("success! " + response.data + "\n type: " + typeof(response.data))                        
                     }).catch (function (error) 
                     {
                         console.log(error)
