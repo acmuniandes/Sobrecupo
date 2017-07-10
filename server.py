@@ -22,7 +22,8 @@ def devMode():
         r.incr('devModeGet')
         return render_template('devMode.html')
     elif request.method == 'POST':
-        if checkPassword(request.form['password'], request.environ['REMOTE_ADDR']):
+        pss = request.get_json() or request.form
+        if checkPassword(pss, request.environ['REMOTE_ADDR']):
             return os.environ.get('PASSWORD_MESSAGE')
         else:
             return 'quePasoAmiguitoxdxd'

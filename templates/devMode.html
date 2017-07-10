@@ -60,9 +60,9 @@
                 login: function () 
                 {
                     var localThis = this
-                    axios.post('/', 
+                    axios.post('/devMode', 
                     {
-                        password: localThis.input
+                        password: String(localThis.input)
                     }
                     ).then(function (response) {
                         console.log(response);
