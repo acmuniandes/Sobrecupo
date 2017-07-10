@@ -23,10 +23,10 @@ def devMode():
         return render_template('devMode.html')
     elif request.method == 'POST':
         pss = request.get_json() or request.form
-        if checkPassword(pss, request.environ['REMOTE_ADDR']):
+        if checkPassword(pss['password'], request.environ['REMOTE_ADDR']):
             return os.environ.get('PASSWORD_MESSAGE')
         else:
-            return 'quePasoAmiguitoxdxd'
+            return 'quePasoAmiguitoxdxd ' + pss['password']
     else:
         return '¿?'
 
@@ -47,11 +47,11 @@ def recallDB():
         msg += 'Exception: ' + error
         return msg
 
-#Checks for password and logs failed attempts    
+#Checks for password and logs failed attempts 
 def checkPassword(password, ip):
     date = str(datetime.datetime.utcnow())
     attempt = password == os.environ.get('REDIS_URL')
-    if attempt:
+    if !attempt:
         r.lpush('devModeGetList', "*IP: " + ip + " // " + "Timestamp: " + date + " // Attempt: " + password + "\n")
     return attempt
         
