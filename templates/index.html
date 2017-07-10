@@ -15,7 +15,7 @@
         <div id="app">
             
             <h1>
-                Requests
+                Requests {{lista}} + {{input}}
             </h1>
 
             <input v-model = 'input'>
@@ -47,7 +47,8 @@
             {
                 lista: [],
                 input: '',
-                dbInfo: 'NotClickedYet'
+                dbInfo: 'NotClickedYet',
+                ovh: ''
             },
             methods:
             {
