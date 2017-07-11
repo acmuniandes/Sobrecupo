@@ -109,7 +109,7 @@
                     }
                     ).then(function (response) 
                     {
-                        localThis.dbInfo = response.data.replace('\n', '<br>')
+                        localThis.dbInfo = response.data.replace(/\n/g, '<br>')
                     }).catch (function (error) 
                     {
                         console.log(error)
