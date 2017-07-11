@@ -26,8 +26,12 @@
             
             <template v-if='logOn'>
 
-                <button  v-on:click="recallDB()">
+                <button  v-on:click="recallInfo()">
                     Recall Info
+                </button>
+
+                <button  v-on:click="recallLogs()">
+                    Recall Logs
                 </button>
 
                 <p>
@@ -79,10 +83,27 @@
 
                 },
                 
-                recallDB: function()
+                recallInfo: function()
                 {
                     var localThis = this
-                    axios.post('/db/recall', 
+                    axios.post('/db/recall/test', 
+                    {
+                        password: String(localThis.input)
+                    }
+                    ).then(function (response) 
+                    {
+                        localThis.dbInfo = response.data + ''
+                        console.log("success! " + response.data + "\n type: " + typeof(response.data))                        
+                    }).catch (function (error) 
+                    {
+                        console.log(error)
+                    })
+                },
+
+                recallLogs: function()
+                {
+                    var localThis = this
+                    axios.post('/db/recall/logAttempts', 
                     {
                         password: String(localThis.input)
                     }

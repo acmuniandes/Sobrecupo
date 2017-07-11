@@ -62,7 +62,7 @@
                 recallDB: function()
                 {
                     var localThis = this
-                    axios.get('/db/recall').then(function (response) 
+                    axios.get('/db/recall/test').then(function (response) 
                     {
                         localThis.dbInfo = response.data
                     }).catch (function (error) 
