@@ -39,7 +39,7 @@ def devMode():
         return render_template('devMode.html')
     elif request.method == 'POST':
         pss = request.get_json() or request.form
-        if checkPassword(pss['password'], request.environ['REMOTE_ADDR']):
+        if checkPassword(pss['password'], request.remote_addr):
             return os.environ.get('PASSWORD_MESSAGE')
         else:
             return 'quePasoAmiguitoxdxd'
@@ -50,7 +50,7 @@ def devMode():
 @app.route('/devMode/recall/logAttempts', methods = ['POST'])
 def recallLogAttempts():
     pss = request.get_json() or request.form
-    if checkPassword(pss['password'], request.environ['REMOTE_ADDR']):
+    if checkPassword(pss['password'], request.remote_addr):
         try:
             return str(r.lrange('devModeGetList', 0, -1))
         except Exception as error:

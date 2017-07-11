@@ -109,8 +109,7 @@
                     }
                     ).then(function (response) 
                     {
-                        localThis.dbInfo = response.data + ''
-                        console.log("success! " + response.data + "\n type: " + typeof(response.data))                        
+                        localThis.dbInfo = response.data.replace('\n', '<br>')
                     }).catch (function (error) 
                     {
                         console.log(error)
