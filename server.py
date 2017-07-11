@@ -48,7 +48,7 @@ def devMode():
 
 #Recalls the failed log attemps of devMode
 @app.route('/devMode/recall/logAttempts', methods = ['POST'])
-def recallDB():
+def recallLogAttempts():
     pss = request.get_json() or request.form
     if checkPassword(pss['password'], request.environ['REMOTE_ADDR']):
         try:
