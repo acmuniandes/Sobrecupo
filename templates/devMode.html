@@ -86,7 +86,7 @@
                 recallInfo: function()
                 {
                     var localThis = this
-                    axios.post('/db/recall/test', 
+                    axios.get('/db/recall/test', 
                     {
                         password: String(localThis.input)
                     }
