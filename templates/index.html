@@ -14,7 +14,7 @@
         <div id="app">
             
             <h1>
-                Requests %{lista}% + %{input}%
+                Requests
             </h1>
 
             <input v-model = 'input'>
@@ -33,7 +33,6 @@
                 %{dbInfo}%
             </p>
 
-            %{dbInfo}%
 
         </div>
 
@@ -45,10 +44,8 @@
             delimiters: ['%{', '}%'],
             data:
             {
-                lista: [],
                 input: '',
-                dbInfo: 'NotClickedYet',
-                ovh: ''
+                dbInfo: ''
             },
             methods:
             {
@@ -60,16 +57,14 @@
                     }).catch(function (error) {
                         console.log(error.message);
                     });
-
                 },
 
                 recallDB: function()
                 {
-                    var rsp = this
+                    var localThis = this
                     axios.get('/db/recall').then(function (response) 
                     {
-                        rsp.dbInfo = response.data + ''
-                        console.log("success! " + response.data + "\n type: " + typeof(response.data))                        
+                        localThis.dbInfo = response.data
                     }).catch (function (error) 
                     {
                         console.log(error)
