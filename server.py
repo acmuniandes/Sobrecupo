@@ -5,7 +5,7 @@ import datetime
 
 from flask import Flask , send_from_directory, render_template, url_for, request
 
-r = redis.from_url(os.environ.get("REDIS_URL"))
+r = redis.from_url(os.environ.get("REDIS_URL"), db =None, decode_responses = True)
 
 app = Flask(__name__)
 
@@ -24,7 +24,7 @@ def saveInDB(strng):
 @app.route('/db/recall/test', methods = ['GET'])
 def recallDB():
     try:
-        return __str__(r.lrange('db', 0, -1)).decode('utf-8')
+        return str(r.lrange('db', 0, -1)).decode('utf-8')
     except Exception as error:
         return formatError(error)
 
@@ -52,7 +52,7 @@ def recallLogAttempts():
     pss = request.get_json() or request.form
     if checkPassword(pss['password'], request.environ['REMOTE_ADDR']):
         try:
-            return __str__(r.lrange('devModeGetList', 0, -1)).decode('utf-8')
+            return str(r.lrange('devModeGetList', 0, -1)).decode('utf-8')
         except Exception as error:
             return formatError(error)
     else:
