@@ -24,7 +24,7 @@ def saveInDB(strng):
 @app.route('/db/recall/test', methods = ['GET'])
 def recallDB():
     try:
-        return str(r.lrange('db', 0, -1)).decode('utf-8')
+        return str(r.lrange('db', 0, -1))
     except Exception as error:
         return formatError(error)
 
@@ -52,7 +52,7 @@ def recallLogAttempts():
     pss = request.get_json() or request.form
     if checkPassword(pss['password'], request.environ['REMOTE_ADDR']):
         try:
-            return str(r.lrange('devModeGetList', 0, -1)).decode('utf-8')
+            return str(r.lrange('devModeGetList', 0, -1))
         except Exception as error:
             return formatError(error)
     else:
