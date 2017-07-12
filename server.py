@@ -9,6 +9,8 @@ r = redis.from_url(os.environ.get("REDIS_URL"), db =None, decode_responses = Tru
 
 app = Flask(__name__)
 
+FAIL_MESSAGE = 'la pulenta oe'
+
 #"Landing page"
 @app.route('/')
 def webprint():
@@ -42,7 +44,7 @@ def devMode():
         if checkPassword(pss['password'], pss['info']):
             return os.environ.get('PASSWORD_MESSAGE')
         else:
-            return 'quePasoAmiguitoxdxd'
+            return FAIL_MESSAGE
     else:
         return '¿?'
 
@@ -56,7 +58,19 @@ def recallLogAttempts():
         except Exception as error:
             return formatError(error)
     else:
-        return 'la pulenta oe'
+        return FAIL_MESSAGE
+
+#Recalls the failed log attemps of devMode
+@app.route('/devMode/recall/getTimes', methods = ['POST'])
+def recallLogAttempts():
+    pss = request.get_json() or request.form
+    if checkPassword(pss['password'], pss['info']):
+        try:
+            return str(r.lrange('devModeGetList', 0, -1))[1:-2]
+        except Exception as error:
+            return formatError(error)
+    else:
+        return FAIL_MESSAGE
 
 #Checks for password and logs failed attempts 
 def checkPassword(password, info):
