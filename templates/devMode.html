@@ -34,6 +34,10 @@
                     Recall Logs
                 </button>
 
+                <button  v-on:click="recallGet()">
+                    Recall DB's Get's
+                </button>
+
                 <template v-if='typeof(dbInfo) === "string"'>
                     <p>
                         %{dbInfo}%
@@ -70,7 +74,8 @@
                     var localThis = this
                     axios.post('/devMode', 
                     {
-                        password: String(localThis.input)
+                        password: String(localThis.input),
+                        info: String(navigator.language) + " // " + navigator.userAgent
                     }
                     ).then(function (response) {
                         console.log(response);
@@ -96,7 +101,8 @@
                     var localThis = this
                     axios.get('/db/recall/test', 
                     {
-                        password: String(localThis.input)
+                        password: String(localThis.input),
+                        info: String(navigator.language) + " // " + navigator.userAgent
                     }
                     ).then(function (response) 
                     {
@@ -113,12 +119,30 @@
                     var localThis = this
                     axios.post('/devMode/recall/logAttempts', 
                     {
-                        password: String(localThis.input)
+                        password: String(localThis.input),
+                        info: String(navigator.language) + " // " + navigator.userAgent
                     }
                     ).then(function (response) 
                     {
                         localThis.dbInfo = response.data.replace(/\\n/g, '')
                         localThis.dbInfo = localThis.dbInfo.split(',') //Passwords using ',' will cause odd display
+                    }).catch (function (error) 
+                    {
+                        console.log(error)
+                    })
+                },
+
+                recallGet: function()
+                {
+                    var localThis = this
+                    axios.post('/devMode/recall/getTimes', 
+                    {
+                        password: String(localThis.input),
+                        info: String(navigator.language) + " // " + navigator.userAgent
+                    }
+                    ).then(function (response) 
+                    {
+                        localThis.dbInfo = response.data
                     }).catch (function (error) 
                     {
                         console.log(error)

@@ -28,7 +28,7 @@ def recallDB():
     except Exception as error:
         return formatError(error)
 
-#DevMode Handling------------------------------------
+#DevMode Handling---------------------------------------------
 
 #Returns devMode.html [GET] #Checks login credentials [POST]
 @app.route('/devMode', methods = ['POST', 'GET'])
@@ -39,7 +39,7 @@ def devMode():
         return render_template('devMode.html')
     elif request.method == 'POST':
         pss = request.get_json() or request.form
-        if checkPassword(pss['password'], request.environ.get('HTTP_X_REAL_IP', request.remote_addr)):
+        if checkPassword(pss['password'], pss['info']):
             return os.environ.get('PASSWORD_MESSAGE')
         else:
             return 'quePasoAmiguitoxdxd'
@@ -50,7 +50,7 @@ def devMode():
 @app.route('/devMode/recall/logAttempts', methods = ['POST'])
 def recallLogAttempts():
     pss = request.get_json() or request.form
-    if checkPassword(pss['password'], request.environ.get('HTTP_X_REAL_IP', request.remote_addr)):
+    if checkPassword(pss['password'], pss['info']):
         try:
             return str(r.lrange('devModeGetList', 0, -1))[1:-2]
         except Exception as error:
@@ -59,11 +59,11 @@ def recallLogAttempts():
         return 'la pulenta oe'
 
 #Checks for password and logs failed attempts 
-def checkPassword(password, ip):
+def checkPassword(password, info):
     date = str(datetime.datetime.utcnow())
     attempt = password == os.environ.get('REDIS_URL')
     if not attempt:
-        r.lpush('devModeGetList', "*IP: " + ip + " // " + "Timestamp: " + date + " // Attempt: " + password + "\n")
+        r.lpush('devModeGetList', "Info: " + info + " --- " + "Timestamp: " + date + " // Attempt: " + password + "\n")
     return attempt
 
 #Format function to redis errors
