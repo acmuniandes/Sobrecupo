@@ -5,6 +5,7 @@ import datetime
 
 from flask import Flask , send_from_directory, render_template, url_for, request
 
+#Redis instance from heroku
 r = redis.from_url(os.environ.get("REDIS_URL"), db =None, decode_responses = True)
 
 app = Flask(__name__)
@@ -40,12 +41,12 @@ def devMode():
         r.incr('devModeGet')
         return render_template('devMode.html')
     elif request.method == 'POST':
-        pss = request.get_json() or request.form
+        pss = request.get_json() or request.form #Matching Axios request type
         if checkPassword(pss['password'], pss['info']):
             return os.environ.get('PASSWORD_MESSAGE')
         else:
             return FAIL_MESSAGE
-    else:
+    else: #Message for other methods (DELETE, PUT, CONNECT, ...)
         return '¿?'
 
 #Recalls the failed log attemps of devMode
@@ -66,7 +67,7 @@ def recallGetTimes():
     pss = request.get_json() or request.form
     if checkPassword(pss['password'], pss['info']):
         try:
-            return str(r.lrange('devModeGetList', 0, -1))[1:-2]
+            return str(r.lrange('devModeGet', 0, -1))[1:-2]
         except Exception as error:
             return formatError(error)
     else:
