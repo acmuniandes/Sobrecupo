@@ -62,7 +62,7 @@ def recallLogAttempts():
 
 #Recalls the failed log attemps of devMode
 @app.route('/devMode/recall/getTimes', methods = ['POST'])
-def recallLogAttempts():
+def recallGetTimes():
     pss = request.get_json() or request.form
     if checkPassword(pss['password'], pss['info']):
         try:
