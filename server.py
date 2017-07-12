@@ -52,7 +52,7 @@ def recallLogAttempts():
     pss = request.get_json() or request.form
     if checkPassword(pss['password'], request.remote_addr):
         try:
-            return str(r.lrange('devModeGetList', 0, -1))
+            return str(r.lrange('devModeGetList', 0, -1))[1:-2]
         except Exception as error:
             return formatError(error)
     else:

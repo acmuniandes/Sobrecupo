@@ -118,7 +118,7 @@
                     ).then(function (response) 
                     {
                         localThis.dbInfo = response.data.replace(/\\n/g, '')
-                        localThis.dbInfo = JSON.parse(localThis.dbInfo)
+                        localThis.dbInfo = localThis.dbInfo.split(',') //Passwords using ',' will cause odd display
                     }).catch (function (error) 
                     {
                         console.log(error)
