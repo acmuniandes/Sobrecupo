@@ -34,9 +34,17 @@
                     Recall Logs
                 </button>
 
-                <p>
-                    %{dbInfo}%
-                </p>
+                <template v-if='typeof(dbInfo) === "string"'>
+                    <p>
+                        %{dbInfo}%
+                    <p>
+                </template>
+                <template v-else>
+                    <li v-for='data in dbInfo'>
+                        %{dbInfo}%
+                    </li>
+                </template>
+
 
             </template>
 
@@ -109,7 +117,8 @@
                     }
                     ).then(function (response) 
                     {
-                        localThis.dbInfo = response.data.replace(/\n/g, '<br>')
+                        localThis.dbInfo = response.data.replace(/\\n/g, '')
+                        localThis.dbInfo = JSON.parse(localThis.dbInfo)
                     }).catch (function (error) 
                     {
                         console.log(error)
