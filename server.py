@@ -61,13 +61,13 @@ def recallLogAttempts():
     else:
         return FAIL_MESSAGE
 
-#Recalls the failed log attemps of devMode
+#Recalls the times devMode's URL was accessed
 @app.route('/devMode/recall/getTimes', methods = ['POST'])
 def recallGetTimes():
     pss = request.get_json() or request.form
     if checkPassword(pss['password'], pss['info']):
         try:
-            return str(r.lrange('devModeGet', 0, -1))[1:-2]
+            return str(r.get('devModeGet'))
         except Exception as error:
             return formatError(error)
     else:
