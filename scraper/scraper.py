@@ -23,6 +23,8 @@ class Schedule:
         self.dateStart = dateStart
         self.dateEnd = dateEnd
 
+        print (debugSchedule(weekdays, classTime, classroom, dateStart, dateEnd))
+
 #
 class _Class:
     #Attributes set in 'constructor' method
@@ -72,12 +74,11 @@ def extractTables(tableTag, classPointer):
     schedules = matchSchedule(descendants)
     if schedules:
         #TODO Test current schedule scraping
-        try:
-            #Primitive class: contains schedules and teacher's name
-            classPointer = iterateSchedules(tableTag, schedules)
-            #print (tableTag.find('font', class_ ='texto4').string.strip() + ' desc = ' + str(descendants))
-        except Exception as error:
-            print (error)
+        
+        #Primitive class: contains schedules and teacher's name
+        classPointer = iterateSchedules(tableTag, schedules)
+        #print (tableTag.find('font', class_ ='texto4').string.strip() + ' desc = ' + str(descendants))
+        
     elif descendants >= 77 and descendants < 370:
         #TODO Finish _Class scraping and serializing
         try:
@@ -105,14 +106,14 @@ def matchSchedule(numOfDescendants):
     return schedules
 
 #Function to extract schedule information from <table> tag for the current class
-# <table> tag may contain multiple schedules thus, the function returns a List
+# <table> tag may contain multiple schedules. The function returns a _Class object with initialized schedules
 def iterateSchedules(parentTag, schedules):
     #Mark first <tr>
     actualTag = parentTag.find('tr')[MARKER] = MARKED
 
     #Find <tr> tags with schedule info, the last one contains teacher's name
     scheduleTRs = parentTag.find_all(detectScheduleTR)
-
+    print("TR list len = " + str(len(scheduleTRs)) + "// Schedules var = " + str(schedules))
     #Initializate object's return list
     scheduleList = []
 
@@ -131,13 +132,13 @@ def iterateSchedules(parentTag, schedules):
 
 #Returns a Schedule object based on a <tr> tag
 def extractSchedule(tag):
-    info = tag.find_all('td', height='17')
+    info = tag.find_all('td', width='171')
     #Explicit info values
-    weekdays = info[0].string.strip()
-    classTime = info[1].string.strip()
-    classroom = info[2].string.strip()
-    dateStart = info[3].string.strip()
-    dateEnd = info[4].string.strip()
+    weekdays = tag.find('td', width='172').string.strip()
+    classTime = info[0].string.strip()
+    classroom = info[1].string.strip()
+    dateStart = info[2].string.strip()
+    dateEnd = info[3].string.strip()
 
     #Instantiates Schedule object with the given info
     return Schedule(weekdays, classTime, classroom, dateStart, dateEnd)
@@ -156,14 +157,20 @@ def request(url):
     response.encoding = "utf-8"
     return response.text
 
+def debugSchedule(weekdays, classTime, classroom, dateStart, dateEnd):
+    debugStr = classroom + " @" + classTime + "[" + weekdays + "]" + "(" + dateStart + " to " + dateEnd + ")"
+    return debugStr
+
 #Tag recognition Methods(bs4)--
 
 #Accepts tags that aren't marked
 def detectScheduleTR(tag):
-    return tag.get(MARKER) == None
+    #print("From " + str(tag.name) + "// A = " + str(tag.attrs) + " //Tag get = " + str(tag.get(MARKER)))
+    return tag.name == "tr" and tag.get(MARKER) is None
 
 
 def encontrarTitulo(tag):
     return tag.has_attr('width') and tag['width'] == "201" and " " in tag.string
 
+#Excecution
 scrape()
