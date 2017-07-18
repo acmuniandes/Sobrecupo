@@ -5,7 +5,8 @@ from bs4 import BeautifulSoup
 #Constants---------------------
 
 BASE_URL = "https://registroapps.uniandes.edu.co/"
-USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+ACCEPT_LANGUAGE = "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3"
 EXTRA_SCHEDULE = 26
 MARKER = 'marked'
 MARKED = 'True'
@@ -50,12 +51,16 @@ class _Class:
 
 def scrape():
 
-    mainPage = request("https://registroapps.uniandes.edu.co/scripts/adm_con_horario_19_joomla.php")
+    mainPage = request("https://registroapps.uniandes.edu.co/scripts/adm_con_horario_joomla.php")
+    mainPage = request("https://registroapps.uniandes.edu.co/scripts/semestre/adm_con_horario1_joomla.php?depto=ANTR&nombreDepto=Antropolog%EDa")
+
+    print(mainPage)
 
     depSoup = BeautifulSoup(mainPage, 'html5lib')
 
-    for link in depSoup.find_all('a', href = True):
-        scrapeDep(link)
+    for link in depSoup.find_all('a', href=True):
+        #scrapeDep(link)
+        print(link.string)
 
 def scrapeDep(depTag):
 
@@ -171,12 +176,26 @@ def isRelative(url):
     return url.startswith('..')
 
 def request(url):
+
+    s = requests.Session()
+
     custom_headers = {
         'user-agent' : USER_AGENT,
-        'accept': "text/html;charset=UTF-8"
+        'accept': "text/html;charset=UTF-8",
+        'accept_language': ACCEPT_LANGUAGE
     }
-    response = requests.get(url, headers=custom_headers)
+    #response = requests.get(url, headers=custom_headers)
+
+    jar = requests.cookies.RequestsCookieJar()
+    jar.set('_utma', '154978747.1072089661.1499469016.1500386404.1500390322.6')
+    jar.set('__utmz', "154978747.1499469016.1.1.utmctmccn=(direct)|utmcmd=(none)")
+    jar.set('_ga', "GA1.3.1072089661.1499469016")
+    jar.set('_gid', "GA1.3.1963782703.1500382504")
+    jar.set('__utmc', "154978747")
+
+    response = s.get(url, cookies=jar, headers=custom_headers, stream=True, verify=True)
     response.encoding = "utf-8"
+    print(str(response.headers))
     return response.text
 
 def debugSchedule(sch):
