@@ -2,13 +2,19 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-#Constants------------------
+#Constants---------------------
 
 BASE_URL = "https://registroapps.uniandes.edu.co/"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
 EXTRA_SCHEDULE = 26
 MARKER = 'marked'
 MARKED = 'True'
+
+#Global variables--------------
+
+classList = []
+#Pointer used inside the loop to recall information between <table> tags
+classPointer = None   
 
 #Classes-----------------------
 
@@ -23,15 +29,22 @@ class Schedule:
         self.dateStart = dateStart
         self.dateEnd = dateEnd
 
-        print (debugSchedule(weekdays, classTime, classroom, dateStart, dateEnd))
-
-#
+#Models a university course-class. Contains it's name, schedules and teacher's name.
 class _Class:
     #Attributes set in 'constructor' method
-    def __init__(self, schedules, teacher):
+    def __init__(self, name):
+        self.name = name
+        self.teacher = None
+        self.schedules = None
+        #Debugging
+        print(name)
+    
+    def completeInfo(self, schedules, teacher):
         self.teacher = teacher
-        self.name = None
         self.schedules = schedules
+        #Debugging
+        for schedule in schedules:
+            print("  " + debugSchedule(schedule))
 
 #Methods-----------------------
 
@@ -56,17 +69,17 @@ def scrapeDep(depTag):
 
     depPage = request(depHTML)
 
-    depSoup = BeautifulSoup(depPage, 'html5lib')
-
-    #Pointer used inside the loop to recall information between <table> tags
-    actualClass = None    
+    depSoup = BeautifulSoup(depPage, 'html5lib') 
 
     for tableTag in depSoup.find_all('table', cellspacing="1"):
-        extractTables(tableTag, actualClass)
+        extractTables(tableTag)
 
 
 
-def extractTables(tableTag, classPointer):
+def extractTables(tableTag):
+
+    global classPointer
+
     #Determine how many descendants the actual <table> tag has
     descendants = len(list(tableTag.descendants))
 
@@ -75,14 +88,22 @@ def extractTables(tableTag, classPointer):
     if schedules:
         #TODO Test current schedule scraping
         
-        #Primitive class: contains schedules and teacher's name
-        classPointer = iterateSchedules(tableTag, schedules)
+        #Adds schedules and teacher's name to currentClass pointer
+        iterateSchedules(tableTag, schedules)
         #print (tableTag.find('font', class_ ='texto4').string.strip() + ' desc = ' + str(descendants))
+
+        if validateClass(classPointer):
+            classList.append(classPointer)
+            print("----" + classPointer.name + " added----")
+        else:
+            print("----" + classPointer.name + " dismissed----")
+        #Reset classPointer
+        classPointer = None        
         
     elif descendants >= 77 and descendants < 370:
         #TODO Finish _Class scraping and serializing
         try:
-            print(tableTag.find_all(encontrarTitulo)[0].string.lstrip().rstrip())
+            classPointer = _Class(tableTag.find_all(encontrarTitulo)[0].string.strip())
         except Exception as error:
             print(str(error) + " desc = " + str(descendants) + " - 47 = " + str(descendants-47))
     else:
@@ -106,14 +127,14 @@ def matchSchedule(numOfDescendants):
     return schedules
 
 #Function to extract schedule information from <table> tag for the current class
-# <table> tag may contain multiple schedules. The function returns a _Class object with initialized schedules
+# <table> tag may contain multiple schedules. The function returns a list with initialized schedules
 def iterateSchedules(parentTag, schedules):
     #Mark first <tr>
     actualTag = parentTag.find('tr')[MARKER] = MARKED
 
     #Find <tr> tags with schedule info, the last one contains teacher's name
     scheduleTRs = parentTag.find_all(detectScheduleTR)
-    print("TR list len = " + str(len(scheduleTRs)) + "// Schedules var = " + str(schedules))
+    #print("TR list len = " + str(len(scheduleTRs)) + "// Schedules var = " + str(schedules))
     #Initializate object's return list
     scheduleList = []
 
@@ -124,11 +145,12 @@ def iterateSchedules(parentTag, schedules):
         #Extracts it's info into an Schedule object and adds it to the list
         scheduleList.append(extractSchedule(actualTag))
 
-    #Finally, extract current class' teacher name
+    #Extracts current class' teacher name
     actualTag = scheduleTRs[schedules]
     teacher = actualTag.find('td', width='172').string.strip()
 
-    return _Class(scheduleList, teacher)
+    #Finally, add info to current class pointer
+    classPointer.completeInfo(scheduleList, teacher)
 
 #Returns a Schedule object based on a <tr> tag
 def extractSchedule(tag):
@@ -157,9 +179,17 @@ def request(url):
     response.encoding = "utf-8"
     return response.text
 
-def debugSchedule(weekdays, classTime, classroom, dateStart, dateEnd):
-    debugStr = classroom + " @" + classTime + "[" + weekdays + "]" + "(" + dateStart + " to " + dateEnd + ")"
+def debugSchedule(sch):
+    debugStr = sch.classroom + " @" + sch.classTime + "[" + sch.weekdays + "]" + "(" + sch.dateStart + " to " + sch.dateEnd + ")"
     return debugStr
+
+def validateClass(clss):
+    valid = clss.name is not None and len(clss.name) > 3 and clss.schedules is not None and len(clss.schedules) >= 1
+    if valid:
+        valid = clss.schedules[0].classroom != "." or clss.schedules[0].classroom != ".NOREQ"
+        valid = valid and len(clss.schedules[0].weekdays) >0
+    return valid
+
 
 #Tag recognition Methods(bs4)--
 
