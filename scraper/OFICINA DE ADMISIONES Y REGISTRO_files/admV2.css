@@ -1,0 +1,82 @@
+a:link {  text-decoration: none}
+a:active {  text-decoration: none}
+a:visited {  text-decoration: none}
+.titulo1 {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: 10pt; font-weight: bold; font-variant: normal; text-transform: none; color: #000000; letter-spacing: -0.3pt; text-decoration: none}
+.titulo3 {  font-family: Arial, Helvetica, sans-serif; font-size: 10.5pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #006699}
+.texto1 {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: 9pt; font-weight: normal; font-variant: normal; text-transform: none; color: #666666; text-decoration: none}
+.texto2 {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 12pt; color: #666666; letter-spacing: normal; word-spacing: 0.5pt}
+.texto2-cursiva {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 12pt; color: #666666; letter-spacing: normal; word-spacing: 0.5pt; font-style: italic}
+.texto3 {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: 14pt; color: #666666; text-decoration: none}
+.titulo4 {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; line-height: normal; color: #006699}
+.texto4 {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 10pt; color: #666666; text-decoration: none}
+.texto4Negrita {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 10pt; color: #666666; text-decoration: none; font-weight: bold}
+.titulo1rojo { font-family: Arial, Helvetica, sans-serif; font-size: 13pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #91B2CC}
+.titulo1Azul { font-family: Arial, Helvetica, sans-serif; font-size: 16pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #91B2CC}
+.titulo5 { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #91B2CC}
+.back1 {  background-color: #91B2CC}
+.back2 { background-color: #FFFFFF}
+.back3 { background-color: #E1E1E1}
+.back4 { background-color: #FFFFFF;font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: 9pt; font-weight: normal; font-variant: normal; text-transform: none; color: #666666; text-decoration: none}
+.back5 { background-color: #E1E1E1;font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: 9pt; font-weight: normal; font-variant: normal; text-transform: none; color: #666666; text-decoration: none}
+.back6 { background-color: #D2F8D1;font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: 9pt; font-weight: normal; font-variant: normal; text-transform: none; color: #666666; text-decoration: none}
+.border {  border: 1px #CCCCCC solid}
+a:hover {  text-decoration: underline}
+.resaltar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #999999;
+}
+
+.resaltar2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+}
+.resaltarojo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #990800;
+}
+.textarea {overflow: auto;overflow-x: none;font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: 9pt; font-weight: normal; font-variant: normal; text-transform: none; color: #666666; text-decoration: none}
+.encabezado1 { background-color: #FFFFFF;font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: 12pt; font-weight: bold; font-variant: normal; text-transform: none; color: #666666; text-decoration: none}
+
+
+
+.tituloNuevoPortal{font-family: arial, helvetica,sans-serif;
+font-size: 12pt;
+color: #092648;}
+
+
+.texto1a {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: 9pt; font-weight: normal; font-variant: normal; text-transform: none; color: #0C0C0C; text-decoration: none}
+
+.texto1b {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; line-height: 9pt; font-weight: normal; font-variant: normal; text-transform: none; color: #0C0C0C; text-decoration: none}
+
+
+#form-login input[type="submit"]{
+	background: url("../images/btn_entrar.jpg") no-repeat;
+	color:#FFF;
+	font-family:Arial,sans-serif;
+	font-weight:bold;
+	border:none; 
+	background-color:none;
+	padding:3px 32px 10px 27px;
+	margin: 10px 10px 10px 30px;
+}	
+
+
+.texto-nuevo-portal{
+text-align: justify;
+color: #6B6B6B;
+font-family: Arial, sans-serif;
+font-size: 10pt;
+}
+
+.texto-centrado-nuevo-portal{
+text-align: center;
+color: #6B6B6B;
+font-family: Arial, sans-serif;
+font-size: 10pt;
+}
+
+.texto11 {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 12pt; color: #666666; letter-spacing: normal; word-spacing: 0.5pt}
+
