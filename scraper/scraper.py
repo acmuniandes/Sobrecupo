@@ -16,6 +16,7 @@ LOG_FREQUENCY = 2400
 #Global variables--------------
 
 classList = []
+errorCounter = 0
 #Pointer used inside the loop to recall information between <table> tags
 classPointer = None   
 
@@ -64,6 +65,9 @@ def scrape():
 
 def scrapeDep(depTag):
 
+    global firstTable
+    global isTitleTable
+
     #Stores the url from the tag
     depHTML = depTag['href'][37:-1]
 
@@ -73,26 +77,43 @@ def scrapeDep(depTag):
         depHTML = BASE_URL + depHTML
 
     depPage = request(depHTML)
-
-    depSoup = BeautifulSoup(depPage, 'html5lib') 
+    
+    depSoup = BeautifulSoup(depPage, 'html5lib')
+    #Set firstTable to true: entering to a new dep
+    firstTable = True
+    isTitleTable = True
 
     for tableTag in depSoup.find_all('table', cellspacing="1"):
         extractTables(tableTag)
 
-
+#Global variables used for iteration
+firstTable = True
+#Boolean iterator for table scraping
+isTitleTable = True
 
 def extractTables(tableTag):
 
     global classPointer
+    global firstTable
+    global isTitleTable
+    global errorCounter
+    global processString
 
     #Determine how many descendants the actual <table> tag has
     descendants = len(list(tableTag.descendants))
 
     #Check if it is a schedules section
-    schedules = matchSchedule(descendants)
-    if schedules:
-        #TODO Fix for classes with 3 or more teachers: use boolean iteration
-        #   -Table structure doesn't change, so, it's not caused by teacher quantity
+    schedules = 0
+    isTitleTable = tableTag['width'] == '575'
+
+    if not isTitleTable:
+        schedules = matchSchedule(descendants)
+
+    if firstTable:
+        print("HeadTable: " + str(descendants))
+        firstTable = False
+    elif schedules or not isTitleTable:
+        #TODO Fix for dep: automatizaci-on de procesos
         
         #Adds schedules and teacher's name to currentClass pointer
         iterateSchedules(tableTag, schedules)
@@ -101,18 +122,21 @@ def extractTables(tableTag):
         if validateClass(classPointer):
             classList.append(classPointer)
             logProcess(classPointer)
-            print("----" + classPointer.name + " added----")
+            print("----" + classPointer.name + " added----" + classPointer.teacher)
         else:
-            print("----" + classPointer.name + " dismissed----")
+            print("----" + classPointer.name + " dismissed----  sch: " + str(classPointer.schedules) + " teacher: " + str(classPointer.teacher) + " sch': " + str(schedules))
         #Reset classPointer
-        classPointer = None        
+        classPointer = None       
+        isTitleTable = True 
         
-    elif descendants >= 77 and descendants < 370:
+    elif descendants >= 77 and descendants < 370 and isTitleTable:
         #TODO Prettify/document next 8 lines
         try:
-            classPointer = _Class(tableTag.find_all(encontrarTitulo)[0].string.strip())
+            classPointer = _Class(tableTag.find_all(findTitle)[0].string.strip())
+            isTitleTable = False
         except Exception as error:
-            print(str(error) + " desc = " + str(descendants) + " - 47 = " + str(descendants-47))
+            print(str(error) + " desc = " + str(descendants) + " - 47 = " + str(descendants-47) + " boolean: " + str(isTitleTable) + " counter = " + str(errorCounter) + " \n\n" + str(tableTag))
+            log(processString)
     else:
         print(descendants)
 
@@ -127,7 +151,8 @@ def matchSchedule(numOfDescendants):
     schedules = 0
     #TODO Check if there are courses with more than 9 different schedules
     for c in range(10):
-        fitsSchedule = numOfDescendants == 83 + c*EXTRA_SCHEDULE
+        schRange = 83 + c*EXTRA_SCHEDULE
+        fitsSchedule = numOfDescendants == schRange or numOfDescendants == schRange+1
         if fitsSchedule:
             schedules = c + 1
             break
@@ -138,6 +163,7 @@ def matchSchedule(numOfDescendants):
 def iterateSchedules(parentTag, schedules):
     #Mark first <tr>
     actualTag = parentTag.find('tr')[MARKER] = MARKED
+
 
     #Find <tr> tags with schedule info, the last one contains teacher's name
     scheduleTRs = parentTag.find_all(detectScheduleTR)
@@ -156,8 +182,9 @@ def iterateSchedules(parentTag, schedules):
     actualTag = scheduleTRs[schedules]
     teacher = actualTag.find('td', width='172').string.strip()
 
-    extra = actualTag.find_all('td')
-    print (str(len(extra)))
+    #Multiple teacher detection
+    #extra = actualTag.find_all('td')
+    #print (str(len(extra)))
 
     #Finally, add info to current class pointer
     classPointer.completeInfo(scheduleList, teacher)
@@ -217,7 +244,7 @@ def validateClass(clss):
 processString = ""
 def logProcess(clss):
     global processString
-    string = "\n" + LOG_SEPARATOR + "\n" + clss.name 
+    string = "\n" + LOG_SEPARATOR + "\n" + clss.name + "{" + clss.teacher + "}"
     for schedule in clss.schedules:
         string += "\n   " + debugSchedule(schedule)
     processString += string
@@ -235,7 +262,7 @@ def detectScheduleTR(tag):
     return tag.name == "tr" and tag.get(MARKER) is None
 
 
-def encontrarTitulo(tag):
+def findTitle(tag):
     return tag.has_attr('width') and tag['width'] == "156" and " " in tag.string
 
 #Excecution
