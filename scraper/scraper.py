@@ -83,7 +83,8 @@ def scrapeDep(depTag):
     firstTable = True
     isTitleTable = True
 
-    for tableTag in depSoup.find_all('table', cellspacing="1"):
+    for tableTag in depSoup.find_all(findValidTables):
+        print(tableTag.string)
         extractTables(tableTag)
 
 #Global variables used for iteration
@@ -101,6 +102,7 @@ def extractTables(tableTag):
 
     #Determine how many descendants the actual <table> tag has
     descendants = len(list(tableTag.descendants))
+    print("desc: " + str(descendants))
 
     #Check if it is a schedules section
     schedules = 0
@@ -114,6 +116,7 @@ def extractTables(tableTag):
         firstTable = False
     elif schedules or not isTitleTable:
         #TODO Fix for dep: automatizaci-on de procesos
+            #Fix: classes with 5 or more schedules stop formating <td> tags since 5'th tag (Array notaion: [0] - [4] = valid)
         
         #Adds schedules and teacher's name to currentClass pointer
         iterateSchedules(tableTag, schedules)
@@ -133,6 +136,7 @@ def extractTables(tableTag):
         #TODO Prettify/document next 8 lines
         try:
             classPointer = _Class(tableTag.find_all(findTitle)[0].string.strip())
+            print(classPointer.name)
             isTitleTable = False
         except Exception as error:
             print(str(error) + " desc = " + str(descendants) + " - 47 = " + str(descendants-47) + " boolean: " + str(isTitleTable) + " counter = " + str(errorCounter) + " \n\n" + str(tableTag))
@@ -167,7 +171,7 @@ def iterateSchedules(parentTag, schedules):
 
     #Find <tr> tags with schedule info, the last one contains teacher's name
     scheduleTRs = parentTag.find_all(detectScheduleTR)
-    #print("TR list len = " + str(len(scheduleTRs)) + "// Schedules var = " + str(schedules))
+    print("TR list len = " + str(len(scheduleTRs)) + "// Schedules var = " + str(schedules))
     #Initializate object's return list
     scheduleList = []
 
@@ -175,8 +179,12 @@ def iterateSchedules(parentTag, schedules):
     for schNum in range(schedules):
         #Picks a <tr> tag containing a schedule
         actualTag = scheduleTRs[schNum]
-        #Extracts it's info into an Schedule object and adds it to the list
-        scheduleList.append(extractSchedule(actualTag))
+
+        if schNum < 5:
+            #Extracts it's info into an Schedule object and adds it to the list
+            scheduleList.append(extractSchedule(actualTag))
+        else:
+            scheduleList.append(generalSchExtraction(actualTag))
 
     #Extracts current class' teacher(s) name
     actualTag = scheduleTRs[schedules]
@@ -200,6 +208,16 @@ def extractSchedule(tag):
     dateEnd = info[3].string.strip()
 
     #Instantiates Schedule object with the given info
+    return Schedule(weekdays, classTime, classroom, dateStart, dateEnd)
+
+def generalSchExtraction(tag):
+    info = tag.find_all('td')
+    weekdays = info[1].string.strip()
+    classTime = info[2].string.strip()
+    classroom = info[3].string.strip()
+    dateStart = info[4].string.strip()
+    dateEnd = info[5].string.strip()
+
     return Schedule(weekdays, classTime, classroom, dateStart, dateEnd)
 
 #Auxiliary methods-------------
@@ -264,6 +282,9 @@ def detectScheduleTR(tag):
 
 def findTitle(tag):
     return tag.has_attr('width') and tag['width'] == "156" and " " in tag.string
+
+def findValidTables(tag):
+    return tag.name == 'table' and tag['cellspacing'] == '1'and len(list(tag.descendants)) != 25
 
 #Excecution
 scrape()
