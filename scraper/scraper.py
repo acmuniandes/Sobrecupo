@@ -10,13 +10,15 @@ ACCEPT_LANGUAGE = "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3"
 EXTRA_SCHEDULE = 26
 MARKER = 'marked'
 MARKED = 'True'
-LOG_SEPARATOR = '---------------------------------------------'
+LOG_CLASS_SEPARATOR = '---------------------------------------------'
+LOG_DEPT_SEPARATOR = '============================================================='
 LOG_FREQUENCY = 2400
 
 #Global variables--------------
 
 classList = []
 errorCounter = 0
+processString = ""
 #Pointer used inside the loop to recall information between <table> tags
 classPointer = None   
 
@@ -67,11 +69,13 @@ def scrapeDep(depTag):
 
     global firstTable
     global isTitleTable
+    global processString
 
-    #Stores the url from the tag
+    #Stores the url from the tag, slicing used to remove URL first part
     depHTML = depTag['href'][37:-1]
 
     print("Entering: " + depHTML)
+    processString += "\n" + LOG_DEPT_SEPARATOR + "\n" + depTag['href'][83:-1] + "\n" + LOG_DEPT_SEPARATOR
 
     if isRelative(depHTML):
         depHTML = BASE_URL + depHTML
@@ -84,7 +88,6 @@ def scrapeDep(depTag):
     isTitleTable = True
 
     for tableTag in depSoup.find_all(findValidTables):
-        print(tableTag.string)
         extractTables(tableTag)
 
 #Global variables used for iteration
@@ -102,7 +105,7 @@ def extractTables(tableTag):
 
     #Determine how many descendants the actual <table> tag has
     descendants = len(list(tableTag.descendants))
-    print("desc: " + str(descendants))
+    #print("desc: " + str(descendants))
 
     #Check if it is a schedules section
     schedules = 0
@@ -115,8 +118,6 @@ def extractTables(tableTag):
         print("HeadTable: " + str(descendants))
         firstTable = False
     elif schedules or not isTitleTable:
-        #TODO Fix for dep: automatizaci-on de procesos
-            #Fix: classes with 5 or more schedules stop formating <td> tags since 5'th tag (Array notaion: [0] - [4] = valid)
         
         #Adds schedules and teacher's name to currentClass pointer
         iterateSchedules(tableTag, schedules)
@@ -127,7 +128,7 @@ def extractTables(tableTag):
             logProcess(classPointer)
             print("----" + classPointer.name + " added----" + classPointer.teacher)
         else:
-            print("----" + classPointer.name + " dismissed----  sch: " + str(classPointer.schedules) + " teacher: " + str(classPointer.teacher) + " sch': " + str(schedules))
+            print("----" + classPointer.name + " dismissed----" + " teacher: " + str(classPointer.teacher))
         #Reset classPointer
         classPointer = None       
         isTitleTable = True 
@@ -136,12 +137,11 @@ def extractTables(tableTag):
         #TODO Prettify/document next 8 lines
         try:
             classPointer = _Class(tableTag.find_all(findTitle)[0].string.strip())
-            print(classPointer.name)
             isTitleTable = False
         except Exception as error:
             print(str(error) + " desc = " + str(descendants) + " - 47 = " + str(descendants-47) + " boolean: " + str(isTitleTable) + " counter = " + str(errorCounter) + " \n\n" + str(tableTag))
             log(processString)
-    else:
+    else: #Unreachable code since boolean iteration implementation
         print(descendants)
 
 
@@ -171,7 +171,8 @@ def iterateSchedules(parentTag, schedules):
 
     #Find <tr> tags with schedule info, the last one contains teacher's name
     scheduleTRs = parentTag.find_all(detectScheduleTR)
-    print("TR list len = " + str(len(scheduleTRs)) + "// Schedules var = " + str(schedules))
+    #print("TR list len = " + str(len(scheduleTRs)) + "// Schedules var = " + str(schedules))
+
     #Initializate object's return list
     scheduleList = []
 
@@ -259,10 +260,9 @@ def validateClass(clss):
         valid = valid and len(clss.schedules[0].weekdays) >0
     return valid
 
-processString = ""
 def logProcess(clss):
     global processString
-    string = "\n" + LOG_SEPARATOR + "\n" + clss.name + "{" + clss.teacher + "}"
+    string = "\n" + LOG_CLASS_SEPARATOR + "\n" + clss.name + " {" + clss.teacher + "}"
     for schedule in clss.schedules:
         string += "\n   " + debugSchedule(schedule)
     processString += string
@@ -270,9 +270,12 @@ def logProcess(clss):
         log(processString)
         processString = ""
 
+#Writes in log.log file the desired string
+#In order to write a new line add the line skip to the beginning of the string
 def log(strng):
     with open('Log.log', 'a') as file:
         file.write(strng)
+
 #Tag recognition Methods(bs4)--
 
 #Accepts tags that aren't marked
@@ -284,7 +287,8 @@ def findTitle(tag):
     return tag.has_attr('width') and tag['width'] == "156" and " " in tag.string
 
 def findValidTables(tag):
-    return tag.name == 'table' and tag['cellspacing'] == '1'and len(list(tag.descendants)) != 25
+    desc = len(list(tag.descendants))
+    return tag.name == 'table' and tag['cellspacing'] == '1'and desc != 25 and desc != 11
 
 #Excecution
 scrape()
