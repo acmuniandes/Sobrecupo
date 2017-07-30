@@ -84,6 +84,9 @@ TALLER AUTOCONOCIMIENTO {MUNOZ CIFUENTES JESUS}
 TALLER AUTOCONOCIMIENTO {BERNAL VARGAS LUZ STELLA}
    - - @1400 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
+TALLER AUTOCONOCIMIENTO {LEON DIAZ INGRID MARCELA}
+   - - @0630 - 0920[I](08/08/17 to 25/11/17)
+---------------------------------------------
 TALLER AUTOCONOCIMIENTO {TRIANA QUIJANO ADRIANA FERNAN}
    - - @0930 - 1220[J](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -128,7 +131,8 @@ RESPONSABILIDAD SOCIAL {FRANCO BORRERO NATHALIA}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 RESPONSABILIDAD SOCIAL {GARCIA LOPEZ JORGE HERNAN}
-   - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
+   - - @1100 - 1220[J](08/08/17 to 25/11/17)
+   - - @1100 - 1220[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 GERENCIA DE RECURSOS HUMANOS {GATTAS BULTAIF LINA PATRICIA}
    - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
@@ -203,6 +207,9 @@ OPERACIONES Y LOGISTICA {VELASCO NUBIA}
 ---------------------------------------------
 OPERACIONES Y LOGIST. (INGLES) {THIELL MARCUS}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+ANALISIS ENTORNO COLOMBIANO {MARTINEZ GAITAN JAIME BERNARDO}
+   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 ANALISIS ENTORNO COLOMBIANO {ANDONOVA VENETA}
    - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
@@ -342,9 +349,6 @@ MERCADEO VERDE {ARIAS PUENTES CLAUDIA PATRICIA}
    - - @0800 - 0920[I](08/08/17 to 25/11/17)
    - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-MERCADEO INTERNACIONAL {FERRO CORTES LUZ MARINA}
-   - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
----------------------------------------------
 SALES AND DISTRIBUTION MANAGEM {GARCIA GARCIA ARMANDO}
    - - @0930 - 1050[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -382,9 +386,8 @@ ESTRATEGIA {MONTES JUAN CARLOS}
 ESTRATEGIA {CUELLAR URBANO ERNESTO}
    - - @0630 - 0750[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-SERVICE MANAGEMENT {}
-   - - @0630 - 0750[J](08/08/17 to 25/11/17)
-   - - @0630 - 0750[M](08/08/17 to 25/11/17)
+ESTRATEGIA {CUELLAR URBANO ERNESTO}
+   - - @0630 - 0750[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 INTROD. LOGÍSTICA HUMANITARIA {VILLA BETANCUR SEBASTIAN}
    - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
@@ -414,9 +417,6 @@ NEGOCIOS INTERNACIONALES {GARCIA DUQUE JUANA CATALINA}
    - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 NEGOCIOS INTERNACIONALES {BARRIGA PALACIO JORGE RICARDO}
-   - - @0800 - 0920[M      V](08/08/17 to 25/11/17)
----------------------------------------------
-MERCADOS EMERGENTES {}
    - - @0800 - 0920[M      V](08/08/17 to 25/11/17)
 =============================================================
 depto=ANTR&nombreDepto=Antropolog%ED
@@ -473,7 +473,8 @@ INSTRUMENTOS DE INVESTIGACION {ANDRADE ANDRADE SERGIO JAVIER}
    - - @1700 - 1950[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 PROBLEMAS ANTROPOLOGICOS DEL D {CAICEDO FERNANDEZ ALHENA}
-   - - @0800 - 0920[M      V](08/08/17 to 25/11/17)
+   - - @0800 - 0920[V](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 ORGANIZACION SOCIAL {FLEISCHER FRIEDERIKE}
    - - @1230 - 1350[L    I](08/08/17 to 25/11/17)
@@ -485,13 +486,16 @@ TALLER PRODUCCION DOCUMENTALES {STOLLBROCK TRUJILLO GERRIT KARL DARIO}
    - - @1400 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 ARQUEOLOGIA DE COLOMBIA {ARCHILA MONTAÑEZ SONIA}
-   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
+   - - @0930 - 1050[I](08/08/17 to 25/11/17)
+   - - @0930 - 1050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 METODO DE ANALISIS LINGÜISTICO {AGUIRRE LICHT DANIEL GUILLERM}
-   - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
+   - - @0930 - 1050[J](08/08/17 to 25/11/17)
+   - - @0930 - 1050[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESCUELAS ANTROPOLOGICAS 2 {GAITAN AMMANN FELIPE}
-   - - @0800 - 0920[L    I](08/08/17 to 25/11/17)
+   - - @0800 - 0920[I](08/08/17 to 25/11/17)
+   - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 SM ARTE-TECNOLOG DE LA MEMORIA {JIMENEZ CALLE VALENTINA}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
@@ -526,7 +530,7 @@ TALLER DE COMPOSICION 1 {ALBORNOZ RUGELES CRISTINA}
 TALLER DE COMPOSICION 1 {PINILLA ACEVEDO MAURICIO F}
    - - @0800 - 1050[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE COMPOSICION 1 {}
+TALLER DE COMPOSICION 1 {MOSQUERA IRAGORRI MANUELA}
    - - @0800 - 1050[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 TALLER DE COMPOSICION 1 {RENGIFO BARRETO JOSE IGNACIO}
@@ -544,9 +548,6 @@ TALLER DE COMPOSICION 2 {ANZELLINI FAJARDO STEFANO}
 TALLER DE COMPOSICION 2 {NAVARRO MORALES MARIA ELISA}
    - - @1530 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE COMPOSICION 2 {FONSECA ULLOA JUANITA}
-   - - @1530 - 1820[I](08/08/17 to 25/11/17)
----------------------------------------------
 TALLER DE COMPOSICION 2 {SANCHEZ CAICEDO ANDRES NORBERTO}
    - - @1530 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -559,7 +560,7 @@ TALLER DE HISTORIA 1 {GOOSSENS MAARTEN}
 TALLER DE HISTORIA 1 {MAZUERA NIETO EDUARDO}
    - - @0800 - 1050[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE HISTORIA 1 {}
+TALLER DE HISTORIA 1 {PARRA ESCOBAR CATALINA}
    - - @0800 - 1050[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 TALLER DE HISTORIA 1 {RODRIGUEZ VARGAS DAVID FELIPE}
@@ -568,13 +569,10 @@ TALLER DE HISTORIA 1 {RODRIGUEZ VARGAS DAVID FELIPE}
 TALLER DE HISTORIA 2 {MENDEZ CARDENAS RAFAEL ERNESTO}
    - - @1530 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE HISTORIA 2 {QUINTANA GUERRERO INGRID}
-   - - @1530 - 1820[J](08/08/17 to 25/11/17)
----------------------------------------------
 TALLER DE HISTORIA 2 {ARIZA PARRADO LUCAS}
    - - @1530 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE HISTORIA 2 {PARRA ESCOBAR CATALINA}
+TALLER DE HISTORIA 2 {QUINTANA GUERRERO INGRID}
    - - @1530 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 TALLER DE HISTORIA 2 {VEGA ROSAS RAFAEL ALFONSO}
@@ -588,7 +586,8 @@ HIST PROPORCIONES ARTE Y ARQU {ANZELLINI FAJARDO STEFANO}
    - - @1230 - 1350[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ARQUITEC. CUERPO Y PERCEPCIÓN {ISAAK CAMILO}
-   - - @1400 - 1520[M      V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 GRANDES OBRAS ARQU RENACIMIEN {NAVARRO MORALES MARIA ELISA}
    - - @1230 - 1350[L        V](08/08/17 to 25/11/17)
@@ -605,7 +604,7 @@ TALLER TECNICO 1 {VILLAZON GODOY RAFAEL ENRIQUE}
 TALLER TECNICO 1 {COTE MENENDEZ EDUARDO}
    - - @0800 - 1050[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER TECNICO 1 {}
+TALLER TECNICO 1 {GARCIA VARGAS JAIME}
    - - @0800 - 1050[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 TALLER TECNICO 2 {VILLATE MATIZ MARIA CLAUDIA}
@@ -644,9 +643,6 @@ TALLER CIUDAD 1 {LEAL SIMBAQUEBA JUANA MARCELA}
 TALLER CIUDAD 1 {RAMIREZ GERMAN}
    - - @0800 - 1050[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER CIUDAD 2 {QUINTANA GUERRERO INGRID}
-   - - @1530 - 1820[M](08/08/17 to 25/11/17)
----------------------------------------------
 TALLER CIUDAD 2 {ARTEAGA ARREDONDO ISABEL CRISTINA}
    - - @1530 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -656,7 +652,7 @@ TALLER CIUDAD 2 {CONCHA SERRANO MARIA CAROLINA}
 TALLER CIUDAD 2 {TORRES LEON ANDREA CAROLINA}
    - - @1530 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER CIUDAD 2 {}
+TALLER CIUDAD 2 {QUINTANA GUERRERO INGRID}
    - - @1530 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 VISUALIZACION Y SIMULACIÓN ARQ {VELANDIA RAYO DIEGO ALEJANDRO}
@@ -664,9 +660,6 @@ VISUALIZACION Y SIMULACIÓN ARQ {VELANDIA RAYO DIEGO ALEJANDRO}
 ---------------------------------------------
 DIBUJO ARQUITECTONICO ANALOGO {PINILLA ACEVEDO MAURICIO F}
    - - @1230 - 1520[J](08/08/17 to 25/11/17)
----------------------------------------------
-DIBUJO ARQUITECTONICO ANALOGO {}
-   - - @1230 - 1520[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 DIBUJO ARQUITECTONICO ANALOGO {MOSQUERA IRAGORRI MANUELA}
    - - @1230 - 1520[M](08/08/17 to 25/11/17)
@@ -976,7 +969,7 @@ FOTO BASICA 1 {VILLALBA STEWART MARIA VICTORIA}
 FOTO BASICA 1 {VILLALBA STEWART MARIA VICTORIA}
    - - @1400 - 1650[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-FOTO BASICA 1 {VANEGAS TORRES JAVIER MAURICIO}
+FOTO BASICA 1 {}
    - - @0800 - 1350[S](08/08/17 to 25/11/17)
 ---------------------------------------------
 FOTO BASICA 1 {ALONSO RICO JUAN CARLOS}
@@ -1018,6 +1011,10 @@ FOTO BÁSICA 2 :DIGITAL {FORERO RAMIREZ SANTIAGO}
 ---------------------------------------------
 DIBUJO CIENTIFICO BASICO {FRANCO GARCIA CAROLINA}
    - - @1400 - 1650[L](08/08/17 to 25/11/17)
+---------------------------------------------
+PINTURA DESDE 1950 {UHIA FERNANDO}
+   - - @1400 - 1520[I](08/08/17 to 25/11/17)
+   - - @1400 - 1520[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 ACABADOS CERÁMICOS {RONCANCIO OLMOS NUBIA}
    - - @1100 - 1350[M    J](08/08/17 to 25/11/17)
@@ -1082,7 +1079,7 @@ TALLER DE ARTES ESCENICAS {SALAZAR APARICIO PEDRO ALEJANDRO}
 TALLER DE ESCENOGRAFIA {HOYOS LAGO JULIAN JOSE}
    - - @1400 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE ARTES ESCENICAS 3 {}
+TALLER DE ARTES ESCENICAS 3 {SALAZAR APARICIO PEDRO ALEJANDRO}
    - - @1700 - 1950[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 DIBUJO DEL CUERPO {MEJIA DIAZ JUAN FERNANDO}
@@ -1118,7 +1115,7 @@ PINTURA Y OBJETO {PEÑA PARGA ESTEBAN}
 PINTURA Y ESPACIO {RICKENMANN IVAN}
    - - @0800 - 1350[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESCULTURA Y ESPACIO PUBLICO {}
+ESCULTURA Y ESPACIO PUBLICO {GUZMAN RUIZ EDGAR}
    - - @0800 - 1350[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 GRABADO EN METAL {RODA MARCOS}
@@ -1178,13 +1175,13 @@ TALLER DE ARTE Y PATRIMONIO {JIMENEZ VILLALTA MARIA MARGARITA}
 EL MUSEO IMAGINARIO {GOMEZ ECHEVERRI NICOLAS}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ARTE PRISION DIALOGO SOCIAL {}
+ARTE PRISION DIALOGO SOCIAL {ARANGO BOTERO TATIANA}
    - - @0800 - 1150[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 DIBUJO EXPERIMENTAL {MEJIA DIAZ JUAN FERNANDO}
    - - @0930 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-INSTALACION {}
+INSTALACION {LEZACA DE PAZ JESUS ALBERTO}
    - - @0800 - 1350[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 LIBRO ARTE {FRANCO GARCIA CAROLINA}
@@ -1196,7 +1193,7 @@ PINTURA EXPERIMENTAL {MEJIA PEREZ CATALINA}
 TALLER AVANZADO ARTES PLASTIC {OBREGON MARTINEZ DE IRUJO BELTRAN PEDRO}
    - - @0800 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-NARRATIVA NO LINEAL {}
+NARRATIVA NO LINEAL {LAPIDUS PINI SEBASTIAN}
    - - @1700 - 1950[J](08/08/17 to 25/11/17)
    - - @1700 - 1950[M](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -1506,8 +1503,7 @@ COMPL ECOLOGIA: PRINC Y APLICA {}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 IMP. REGIONAL CAMBIO AMB. GLO {GONZALEZ ARANGO CATALINA}
-   - - @0800 - 0920[J](08/08/17 to 25/11/17)
-   - - @0800 - 0920[M](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 EVOLUCION-TEO {CADENA ORDONEZ CARLOS DANIEL}
    - - @0930 - 1020[M  I  J](08/08/17 to 25/11/17)
@@ -1525,8 +1521,7 @@ EVOLUCION-LAB {}
    - - @1700 - 1850[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 INVERTEBRADOS-TEO {REALPE REBOLLEDO EMILIO}
-   - - @0800 - 0920[J](08/08/17 to 25/11/17)
-   - - @0800 - 0920[M](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 INVERTEBRADOS-LAB {}
    - - @1700 - 1950[M](08/08/17 to 25/11/17)
@@ -1547,7 +1542,8 @@ BOTANICA-LAB {}
    - - @1400 - 1650[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 ECOLOGIA-TEO {STEVENSON PABLO}
-   - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
+   - - @1530 - 1650[J](08/08/17 to 25/11/17)
+   - - @1530 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 ECOLOGIA-LAB {}
    - - @0800 - 1050[S](08/08/17 to 25/11/17)
@@ -1556,7 +1552,8 @@ ECOLOGIA-LAB {}
    - - @1100 - 1350[S](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISIOLOGIA ANIMAL-TEO {DELGADILLO MENDEZ DIANA ALEXANDRA}
-   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISIOLOGIA ANIMAL-LAB {}
    - - @1100 - 1350[L](08/08/17 to 25/11/17)
@@ -1601,7 +1598,7 @@ BOTANICA SISTEMATICA-LAB {}
 ORNITOLOGIA-TEO {CADENA ORDONEZ CARLOS DANIEL}
    - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ORNITOLOGIA-LAB {}
+ORNITOLOGIA-LAB {GOMEZ MONTES CAMILA}
    - - @1100 - 1350[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 ECOLOGIA SENSORIAL {MOLINA ESCOBAR JORGE ALBERTO}
@@ -2020,20 +2017,20 @@ SALUD Y GÉNERO {FEDOR AMADOR THERESA MARIE}
 SEM. RORTY: DEL ELIM. A LA IRO {REY SALAMANCA SANTIAGO}
    - - @0630 - 0920[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-SEM. "LA MENTIRA" {SANTOS CASTRO JUAN SAMUEL}
+SEM. LA MENTIRA {SANTOS CASTRO JUAN SAMUEL}
    - - @0630 - 0920[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-ETNOGRAFIAS AFROCOLOMBIANAS {GASSON PACHECO RAFAEL ANGEL}
+ETNOGRAFIAS AFROCOLOMBIANAS {LEIVA ESPITIA ANDREA}
    - - @0630 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CULTURA A LA VISTA {GASSON PACHECO RAFAEL ANGEL}
+CULTURA A LA VISTA {GAITAN AMMANN FELIPE}
    - - @1700 - 1950[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 SEM.ESTÉTICA PARA EL SIGLO XXI {LEHNER SANCLEMENTE ANDREA}
    - - @0630 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CAPITALISMO Y HUMANISMO {MEJIA PEREZ ANDREA}
-   - - @1700 - 1950[I](08/08/17 to 25/11/17)
+   - - @1700 - 1950[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 SEM.FILOSOFÍA Y CONSTR. DE PAZ {DE ZUBIRIA SAMPER SERGIO}
    - - @1700 - 1950[J](08/08/17 to 25/11/17)
@@ -2120,6 +2117,15 @@ FUNDAMENTOS DE ASEGURAMIENTO {CHOCONTA MELENDEZ MARTIN BERNARDO}
 ---------------------------------------------
 SISTEMAS INFORMAC. EMPRESARIAL {SANCHEZ OSORIO CINTHIA CAROLINA}
    - - @1230 - 1350[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+PRACTICA I {BOHORQUEZ CIFUENTES JUAN CARLOS}
+   - - @1700 - 1720[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+PRACTICA I {GARCIA HERNANDEZ MAURICIO}
+   - - @1700 - 1720[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+PRACTICA I {ERAZO PINILLA FABIO}
+   - - @1700 - 1720[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 ETICA PROFESIONAL {GONZALEZ ROSA ISABEL}
    - - @1530 - 1650[J](08/08/17 to 25/11/17)
@@ -2318,7 +2324,7 @@ HERRAMIENTAS VIDA UNIVERSITARI {CARO RINCON JENNY ROCIO}
 HERRAMIENTAS VIDA UNIVERSITARI {COLORADO QUEVEDO LUIS GABRIEL}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-HERRAMIENTAS VIDA UNIVERSITARI {RENGIFO FONNEGRA MARIA}
+HERRAMIENTAS VIDA UNIVERSITARI {CAÑIZARES ESCOBAR CATALINA}
    - - @0800 - 0920[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 HERRAMIENTAS VIDA UNIVERSITARI {CORTES ROMERO YURY CECILIA}
@@ -3020,7 +3026,7 @@ SEMINARIO TRABAJO DE GRADO {ROJAS ANDRADE GABRIEL ARTURO}
 depto=DERE&nombreDepto=Derech
 =============================================================
 ---------------------------------------------
-INTRODUCCION AL DERECHO {}
+INTRODUCCION AL DERECHO {RAMIREZ SIERRA DIEGO FERNANDO}
    - - @0630 - 0820[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
 INTRODUCCION AL DERECHO {JIMENEZ VALENCIA FARIDY}
@@ -3158,7 +3164,7 @@ TEORIA GENERAL DEL ESTADO {BARRETO ROZO ANTONIO FELIPE}
 HISTORIA DE LAS INSTITUCIONES {GONZALEZ JACOME JORGE}
    - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-HISTORIA DE LAS INSTITUCIONES {}
+HISTORIA DE LAS INSTITUCIONES {FIGUEROA GARCIA HERREROS NICOLAS}
    - - @1700 - 1820[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 HISTORIA DE LAS INSTITUCIONES {GUTIERREZ VIVAS JORGE MIGUEL}
@@ -3187,7 +3193,8 @@ OBLIGACIONES I {VARON PALOMINO JUAN CARLOS}
    - - @1700 - 1850[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 OBLIGACIONES I {ALDANA GANTIVA CARLOS ANDRES}
-   - - @0630 - 0820[L      J](08/08/17 to 25/11/17)
+   - - @0630 - 0820[J](08/08/17 to 25/11/17)
+   - - @0630 - 0820[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 OBLIGACIONES I {TEJEIRO LOPEZ CARLOS ENRIQUE}
    - - @0800 - 0950[M    J](08/08/17 to 25/11/17)
@@ -3196,7 +3203,8 @@ OBLIGACIONES I {PERILLA CASTRO CARLOS ANDRES}
    - - @0800 - 0950[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 OBLIGACIONES II {ORTIZ GERARDO}
-   - - @0630 - 0820[M    J](08/08/17 to 25/11/17)
+   - - @0630 - 0820[J](08/08/17 to 25/11/17)
+   - - @0630 - 0820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 OBLIGACIONES II {ROJAS QUIÑONES SERGIO}
    - - @0630 - 0820[L    I](08/08/17 to 25/11/17)
@@ -3273,6 +3281,9 @@ RELACIONES FAMILIARES {JIMENEZ VALENCIA FARIDY}
 RELACIONES FAMILIARES {ZABALA OSPINA LILIA}
    - - @1700 - 1850[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
+RELACIONES FAMILIARES {}
+   - - @1700 - 1850[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
 DERECHO COMERCIAL {REMOLINA ANGARITA NELSON}
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -3295,7 +3306,8 @@ DERECHO CONSTITUCIONAL {GONZALEZ JACOME JORGE}
    - - @0930 - 1120[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 DERECHO CONSTITUCIONAL {RESTREPO SALDARRIAGA ESTEBAN}
-   - - @0930 - 1120[M    J](08/08/17 to 25/11/17)
+   - - @0930 - 1120[J](08/08/17 to 25/11/17)
+   - - @0930 - 1120[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 JUEZ E INTERPRET CONSTITUCIONA {LOPEZ STERUP HENRIK}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
@@ -3352,7 +3364,7 @@ ARGUMENTACION EN EL PROCESO PE {CADAVID LONDOÑO PAULA}
 PENAL ESPECIAL {POSADA MAYA RICARDO}
    - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-PENAL ESPECIAL {}
+PENAL ESPECIAL {CORDOBA ANGULO MIGUEL}
    - - @0630 - 0750[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 PENAL ESPECIAL {CORREA FLOREZ MARIA CAMILA}
@@ -3419,7 +3431,7 @@ ESTUDIOS CULTURALES DERECHO {BONILLA MALDONADO DANIEL EDUARDO}
 SOCIEDADES {REY VALLEJO ALFREDO PABLO}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-SOCIEDADES {}
+SOCIEDADES {PEÑA RAMIREZ MARIA VICTORIA}
    - - @0800 - 0920[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 SOCIEDADES {MENDOZA DAZA JOSE MIGUEL}
@@ -3459,7 +3471,7 @@ DERECHO BURSATIL {ACEVEDO CUELLAR MONICA MARIA}
 PROPIEDAD INDUSTRIAL {ORTEGA DIAZ JUAN FRANCISCO}
    - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-DERE E INDUST DE LA MUSICA {}
+DERE E INDUST DE LA MUSICA {VELASQUEZ VELA MARIA CONSUELO}
    - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 DERECHO INTERNACIONAL PRIVADO {COMELLAS ANGULO PAULA}
@@ -3658,7 +3670,7 @@ CAPACITACIÓN ARQ-DIS {GARCIA ARDILA MARIA PAULA}
 ---------------------------------------------
 CAPACITACIÓN ARQ-DIS {GARCIA ARDILA MARIA PAULA}
    - - @1100 - 1250[S](09/09/17 to 09/09/17)
-   - - @0700 - 0850[S](16/09/17 to 14/10/17)
+   - - @0900 - 1050[S](16/09/17 to 14/10/17)
 ---------------------------------------------
 ESTUDIO 1 {BARON ARISTIZABAL MARIA PAULA}
    - - @1400 - 1550[I    V](08/08/17 to 25/11/17)
@@ -3667,6 +3679,9 @@ ESTUDIO 1 {NAVARRO SANINT MIGUEL}
    - - @1100 - 1250[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESTUDIO 1 {DE LOS REYES DAVID PATRICIO}
+   - - @1400 - 1550[I    V](08/08/17 to 25/11/17)
+---------------------------------------------
+ESTUDIO 1 {ACEVEDO TOVAR ALEJANDRO}
    - - @1400 - 1550[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESTUDIO 2 {LASCAR ANGELICA}
@@ -3774,9 +3789,6 @@ ESTUDIO 3 {NIEMAN JANSSEN CHRISTIAAN JOB}
 ---------------------------------------------
 ESTUDIO 3 {PACHECO SAENZ MIGUEL}
    - - @0830 - 1020[M    J](08/08/17 to 25/11/17)
----------------------------------------------
-ESTUDIO 3 {}
-   - - @1030 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESTUDIO 4 {SANCHEZ ALDANA ELIANA MARIA}
    - - @1030 - 1220[M    J](08/08/17 to 25/11/17)
@@ -3910,9 +3922,6 @@ FOTOGRAFÍA MICROSCÓPICA {LEAÑO BARRETO MARIA JOSE}
 DISEÑO DE VIDEOJUEGOS {VASCO RUIZ GABRIEL EMILIO}
    - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-VIDEO/DOCUMENTAL {}
-   - - @0930 - 1220[M](08/08/17 to 25/11/17)
----------------------------------------------
 DISEÑO Y PRODUCCIÓN DE SONIDO {AGUDELO BERNAL DAVID RICARDO}
    - - @0930 - 1220[I](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -3947,7 +3956,7 @@ E6: PROD. Y SERVICIOS MÉDICOS {NAVARRO SANINT MIGUEL}
    - - @1400 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 CREATIVIDAD {LASCAR ANGELICA}
-   - - @1530 - 1620[J](08/08/17 to 25/11/17)
+   - - @1530 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 HISTORIA DEL DISEÑO 2 {PEÑA IGUAVITA CESAR AUGUSTO}
    - - @1230 - 1350[M      V](08/08/17 to 25/11/17)
@@ -4133,7 +4142,7 @@ DDHH, AMBIENTE Y MINERÍA {}
 depto=DPRO&nombreDepto=Maestr%EDa%20Dise%F1o%20Procesos%20y%20%20Product
 =============================================================
 ---------------------------------------------
-SEGURIDAD DE PROCESOS Y PRODUC {}
+SEGURIDAD DE PROCESOS Y PRODUC {MUÑOZ GIRALDO FELIPE}
    - - @1700 - 1820[V](11/08/17 to 11/08/17)
    - - @0800 - 1220[S](12/08/17 to 12/08/17)
    - - @1400 - 1750[S](12/08/17 to 12/08/17)
@@ -4144,7 +4153,7 @@ SEGURIDAD DE PROCESOS Y PRODUC {}
    - - @1700 - 1820[V](29/09/17 to 29/09/17)
    - - @0800 - 1220[S](30/09/17 to 30/09/17)
 ---------------------------------------------
-CONTROL OPTIMO DE PROCESOS {}
+CONTROL OPTIMO DE PROCESOS {GOMEZ RAMIREZ JORGE MARIO}
    - - @1700 - 2050[J](10/08/17 to 10/08/17)
    - - @0800 - 1220[V](11/08/17 to 11/08/17)
    - - @1400 - 1520[V](11/08/17 to 11/08/17)
@@ -4155,7 +4164,7 @@ CONTROL OPTIMO DE PROCESOS {}
    - - @1700 - 2050[J](28/09/17 to 28/09/17)
    - - @0800 - 1220[V](29/09/17 to 29/09/17)
 ---------------------------------------------
-TRANSFORM.Y TRANSP.HIDROCARB. {}
+TRANSFORM.Y TRANSP.HIDROCARB. {ASUAJE TOVAR MIGUEL ALEJANDRO}
    - - @1700 - 1820[V](20/10/17 to 20/10/17)
    - - @0800 - 1220[S](21/10/17 to 21/10/17)
    - - @1400 - 1750[S](21/10/17 to 21/10/17)
@@ -4177,7 +4186,7 @@ ANALISIS CICLO VIDA Y ECOL.IND {ORTIZ PABLO}
    - - @1700 - 1820[V](24/11/17 to 24/11/17)
    - - @1400 - 1750[S](25/11/17 to 25/11/17)
 ---------------------------------------------
-MAT. POLIMERICOS ING. PRODUCTO {}
+MAT. POLIMERICOS ING. PRODUCTO {SALCEDO GALAN FELIPE}
    - - @1700 - 2050[J](19/10/17 to 19/10/17)
    - - @0800 - 1220[V](20/10/17 to 20/10/17)
    - - @1400 - 1520[V](20/10/17 to 20/10/17)
@@ -4209,7 +4218,7 @@ INTROD. ECON COLOMBIANA {CABALLERO CARLOS}
 INTROD. ECON COLOMBIANA {CARRASQUILLA BARRERA ALBERTO}
    - - @1100 - 1220[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTROD. ECON COLOMBIANA {MUNEVAR ESCALANTE ISABELA}
+COMPL INTROD. ECON COLOMBIANA {LACOUTURE GONZALEZ SANTIAGO ELIAS}
    - - @1530 - 1650[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTROD. ECON COLOMBIANA {CHEGWIN DUGAND VALENTINA}
@@ -4221,10 +4230,10 @@ COMPL INTROD. ECON COLOMBIANA {CAMACHO MUÑOZ JUANITA}
 COMPL INTROD. ECON COLOMBIANA {MACHADO RODRIGUEZ GERMAN DARIO}
    - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTROD. ECON COLOMBIANA {}
+COMPL INTROD. ECON COLOMBIANA {MICAN RIVERA LAURA CATALINA}
    - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTROD. ECON COLOMBIANA {}
+COMPL INTROD. ECON COLOMBIANA {SALAS DIAZ RICARDO JOSE}
    - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTROD. ECON COLOMBIANA {MACHADO RODRIGUEZ GERMAN DARIO}
@@ -4248,10 +4257,10 @@ PENSANDO PROBLEMAS {VARGAS MARTINEZ MONICA BEATRIZ}
 COMPL.PENSANDO PROBLEMAS {QUINTERO HOLGUIN JOSE MIGUEL}
    - - @0800 - 0920[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL.PENSANDO PROBLEMAS {}
+COMPL.PENSANDO PROBLEMAS {RODRIGUEZ MARTINEZ ANDRES FELIPE}
    - - @0930 - 1050[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL.PENSANDO PROBLEMAS {}
+COMPL.PENSANDO PROBLEMAS {CHAVES PUENTES JUAN CAMILO}
    - - @0930 - 1050[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL.PENSANDO PROBLEMAS {RODRIGUEZ MARTINEZ ANDRES FELIPE}
@@ -4275,13 +4284,13 @@ TALLER DE EXCEL ECON {GARCIA ARDILA MARIA PAULA}
 TALLER DE EXCEL ECON {IREGUI PARRA NATALIA}
    - - @0630 - 0750[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE STATA {}
+TALLER DE STATA {GOMEZ ECHEVERRY SANTIAGO}
    - - @1230 - 1350[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 TALLER DE STATA {}
    - - @1700 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE MATLAB {}
+TALLER DE MATLAB {ACOSTA PARDO CRISTHIAN JULIAN}
    - - @1230 - 1350[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 TALLER DE ARCGIS {CAMACHO BAQUERO ANDRES FELIPE}
@@ -4306,10 +4315,10 @@ MICROECONOMIA 2 {IBAÑEZ LONDOÑO ANA MARIA}
 MICROECONOMIA 2 {MALDONADO JORGE HIGINIO}
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICROECONOMÍA 2 {}
+COMPL MICROECONOMÍA 2 {ARTEAGA VALLEJO JULIAN GABRIEL}
    - - @0800 - 0920[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICROECONOMÍA 2 {}
+COMPL MICROECONOMÍA 2 {HILLER ZAPATA TATIANA}
    - - @0800 - 0920[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL MICROECONOMÍA 2 {}
@@ -4328,19 +4337,19 @@ MICROECONOMIA 3 {NUPIA OSCAR}
 MICROECONOMIA 3 {CASTRO RAUL}
    - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICROECONOMÍA 3 {}
+COMPL MICROECONOMÍA 3 {RODRIGUEZ CASTELLANOS CLAUDIA JULIANA}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICROECONOMÍA 3 {}
+COMPL MICROECONOMÍA 3 {ESLAVA SAENZ FRANCISCO}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICROECONOMÍA 3 {}
+COMPL MICROECONOMÍA 3 {AVELLA NIÑO MANUEL FELIPE}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICROECONOMÍA 3 {}
+COMPL MICROECONOMÍA 3 {HERNANDEZ MONTENEGRO DANIEL ALBERTO}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICROECONOMÍA 3 {}
+COMPL MICROECONOMÍA 3 {GUZMAN BOTERO ANDRES}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 EVAL. ECONOMICA DE PROYECTOS {GARCIA LEONARDO}
@@ -4358,10 +4367,10 @@ COMPL. TEORIA DE JUEGOS {MOLINA ALVAREZ LIZETH MELISSA}
 COMPL. TEORIA DE JUEGOS {AVELLA NIÑO MANUEL FELIPE}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. TEORIA DE JUEGOS {}
+COMPL. TEORIA DE JUEGOS {VEGA CARVAJAL ALEXANDER}
    - - @1230 - 1350[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. TEORIA DE JUEGOS {}
+COMPL. TEORIA DE JUEGOS {ESLAVA SAENZ FRANCISCO}
    - - @1230 - 1350[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 TEORIA DEL CONSUMIDOR Y FIRMA {CANO AUGUSTO}
@@ -4373,16 +4382,16 @@ TEORIA DEL CONSUMIDOR Y FIRMA {CANO AUGUSTO}
 TEORIA DEL CONSUMIDOR Y FIRMA {GUERRA FORERO JOSE ALBERTO}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL TEORIA DEL CONS Y FIRMA {}
+COMPL TEORIA DEL CONS Y FIRMA {ALAPE OSPINA CARLOS ANDRES}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL TEORIA DEL CONS Y FIRMA {ARIZA ESTEVEZ JOSE GUILLERMO}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL TEORIA DEL CONS Y FIRMA {}
+COMPL TEORIA DEL CONS Y FIRMA {FONSECA GOMEZ MANUELA}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL TEORIA DEL CONS Y FIRMA {}
+COMPL TEORIA DEL CONS Y FIRMA {HERNANDEZ SANTAMARIA PEDRO OSWALDO}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL TEORIA DEL CONS Y FIRMA {AREVALO BUITRAGO JULIAN RICARDO}
@@ -4394,10 +4403,10 @@ COMPL TEORIA DEL CONS Y FIRMA {JAULIN MENDEZ OSCAR FERNANDO}
 COMPL TEORIA DEL CONS Y FIRMA {GARCIA SOLANO DIEGO JOSE}
    - - @1700 - 1820[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL TEORIA DEL CONS Y FIRMA {}
+COMPL TEORIA DEL CONS Y FIRMA {HOYOS MARTIN ANDRES FELIPE}
    - - @1700 - 1820[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL TEORIA DEL CONS Y FIRMA {}
+COMPL TEORIA DEL CONS Y FIRMA {VARGAS RIVERA JUAN SEBASTIAN}
    - - @1700 - 1820[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 INTRODUCCIÓN A LA MICRO {MOYA ANDRES}
@@ -4418,13 +4427,13 @@ INTRODUCCIÓN A LA MICRO {BARDEY DAVID FRANCOIS GOERGES}
 COMPL INTRODUCCION A LA MICRO {PARRA ESCOBAR FREDDY FELIPE}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCION A LA MICRO {ARANGO PIÑEROS FELIPE}
+COMPL INTRODUCCION A LA MICRO {RIVERA ZABARAIN MARIA CAMILA}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTRODUCCION A LA MICRO {JIMENEZ RIVEROS JUAN MIGUEL}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCION A LA MICRO {}
+COMPL INTRODUCCION A LA MICRO {MARTINEZ RODRIGUEZ LAURA JEANET}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTRODUCCION A LA MICRO {GODOY PINEDA JUAN FELIPE}
@@ -4457,7 +4466,7 @@ COMPL INTRODUCCION A LA MICRO {GUZMAN BOTERO ANDRES}
 COMPL INTRODUCCION A LA MICRO {CAMELO PATIÑO CARLOS ANDRES}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCION A LA MICRO {}
+COMPL INTRODUCCION A LA MICRO {MARTINEZ RODRIGUEZ LAURA JEANET}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 MACROECONOMIA 2 {PEREZ REINA DAVID ALEJANDRO}
@@ -4469,13 +4478,13 @@ MACROECONOMIA 2 {ZAMBRANO RIVEROS JORGE ANDRES}
 COMPL MACROECONOMIA 2 {ESPINOSA CASTRO DANIEL}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MACROECONOMIA 2 {}
+COMPL MACROECONOMIA 2 {PINZON HERNANDEZ DANIEL ALEJANDRO}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL MACROECONOMIA 2 {GOMEZ ACEVEDO LAURA}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MACROECONOMIA 2 {}
+COMPL MACROECONOMIA 2 {QUINTERO HOLGUIN JOSE MIGUEL}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 MACROECONOMIA 3 {WILLS RESTREPO DANIEL SANTIAGO}
@@ -4488,10 +4497,10 @@ MACROECONOMIA 3 {CAICEDO SOLER SANTIAGO}
 COMPL MACROECONOMIA 3 {LEON MONCADA SANTIAGO}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MACROECONOMIA 3 {}
+COMPL MACROECONOMIA 3 {MELO MARTIN JOHAN SEBASTIAN}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MACROECONOMIA 3 {}
+COMPL MACROECONOMIA 3 {SANTOS CARDENAS DANIELA}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL MACROECONOMIA 3 {MORENO PABON JUAN SEBASTIAN}
@@ -4516,31 +4525,31 @@ COMPL INTRODUCCIÓN A LA MACRO {}
 COMPL INTRODUCCIÓN A LA MACRO {GALEANO ZURBARAN ANDRES FELIPE}
    - - @1100 - 1220[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCIÓN A LA MACRO {}
+COMPL INTRODUCCIÓN A LA MACRO {ACOSTA PARDO CRISTHIAN JULIAN}
    - - @1100 - 1220[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCIÓN A LA MACRO {}
+COMPL INTRODUCCIÓN A LA MACRO {RODRIGUEZ CAJAMARCA NATALIA}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTRODUCCIÓN A LA MACRO {PULIDO RAMIREZ XIOMARA}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCIÓN A LA MACRO {}
+COMPL INTRODUCCIÓN A LA MACRO {TORRES HERRERA MARIA JOSE}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCIÓN A LA MACRO {}
+COMPL INTRODUCCIÓN A LA MACRO {MELO MARTIN JOHAN SEBASTIAN}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCIÓN A LA MACRO {}
+COMPL INTRODUCCIÓN A LA MACRO {MONTENEGRO HELFER PABLO}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCIÓN A LA MACRO {}
+COMPL INTRODUCCIÓN A LA MACRO {HERNANDEZ MONTENEGRO DANIEL ALBERTO}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTRODUCCIÓN A LA MACRO {PINZON GIRALDO ALVARO JOSE}
    - - @0800 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRODUCCIÓN A LA MACRO {}
+COMPL INTRODUCCIÓN A LA MACRO {PINZON HERNANDEZ DANIEL ALEJANDRO}
    - - @0800 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTRODUCCIÓN A LA MACRO {GOMEZ ACEVEDO LAURA}
@@ -4561,16 +4570,16 @@ ECONOMETRIA 1 {ROSALES RAMON}
 ECONOMETRIA 1 {LAAJAJ RACHID}
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL ECONOMETRIA 1 {}
+COMPL ECONOMETRIA 1 {CAMACHO BAQUERO ANDRES FELIPE}
    - - @0800 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL ECONOMETRIA 1 {}
+COMPL ECONOMETRIA 1 {GAMBOA RINCKOAR DANIEL}
    - - @0800 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL ECONOMETRIA 1 {}
+COMPL ECONOMETRIA 1 {SANTOS VILLAGRAN NICOLAS EDUARDO}
    - - @0800 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL ECONOMETRIA 1 {}
+COMPL ECONOMETRIA 1 {GOMEZ MAHECHA JOHN ALEXANDER}
    - - @0800 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ECONOMIA MARXISTA {JARAMILLO GONZALEZ EDGAR SAMUEL}
@@ -4583,7 +4592,7 @@ ECONOMETRIA 2 {BONILLA JORGE ALEXANDER}
    - - @1400 - 1520[J](08/08/17 to 25/11/17)
    - - @1400 - 1520[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-ECONOMETRIA 2 {BERNAL RAQUEL}
+ECONOMETRIA 2 {BONILLA JORGE ALEXANDER}
    - - @1100 - 1220[J](08/08/17 to 25/11/17)
    - - @1100 - 1220[M](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -4605,7 +4614,7 @@ COMERCIO INTERNACIONAL {TOVAR JORGE}
 HISTORIA ECONOMICA DE COLOMBIA {KERGUELEN RICARDO}
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-HISTORIA ECONOMICA DE COLOMBIA {}
+HISTORIA ECONOMICA DE COLOMBIA {VILLAVECES NIÑO JUANITA}
    - - @0630 - 0750[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 HIST.ANALISIS ECONOMICO {SIERRA SALAMANCA ANDRES FELIPE}
@@ -4684,7 +4693,7 @@ VALORAC Y ESTRUCTURACIÓN FINAN {ZEA GOMEZ CAMILO}
 ECONOMÍA POLÍTICA DE GÉNERO {TRIBIN URIBE ANA MARIA}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ECO AGRAR DESARRR POSCONFLICTO {}
+ECO AGRAR DESARRR POSCONFLICTO {CORREDOR RIOS ARMANDO}
    - - @1700 - 1820[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CRIMINALIDAD ECON Y FINANCIERA {REY ALFREDO}
@@ -4694,14 +4703,15 @@ MICRO AVANZ EQUILIBRIO GENERAL {GUERRA FORERO JOSE ALBERTO}
    - - @0800 - 0920[J](08/08/17 to 25/11/17)
    - - @0800 - 0920[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICRO AVANZ EQUILIBRIO G {}
+COMPL MICRO AVANZ EQUILIBRIO G {GARCIA SOLANO DIEGO JOSE}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICRO AVANZ EQUILIBRIO G {}
+COMPL MICRO AVANZ EQUILIBRIO G {PEREZ GIRALDO DANIELA}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 MACROECONOMIA AVANZADA CP {LOPEZ JOSE IGNACIO}
-   - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
+   - - @1400 - 1520[I](08/08/17 to 25/11/17)
+   - - @1400 - 1520[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL MACROECONOMI AVANZADA CP {ARANGO PIÑEROS FELIPE}
    - - @0630 - 0750[J](08/08/17 to 25/11/17)
@@ -4800,7 +4810,7 @@ INTRO ANALIS ESPACIAL DE DATOS {CARRIAZO OSORIO FERNANDO}
 MICRO AVAN EQUILIBRIO GRAL DOC {GUERRA FORERO JOSE ALBERTO}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL MICRO AVAN EQUILIBRIO G {}
+COMPL MICRO AVAN EQUILIBRIO G {CASTRO PUELLO JORGE ALBERTO}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 MACROECONOMIA CP DOC {LOPEZ JOSE IGNACIO}
@@ -4825,12 +4835,12 @@ depto=EDUC&nombreDepto=Educaci%F3
 =============================================================
 ---------------------------------------------
 AMBIENT.APREND.A TRAVES HISTOR {PALACIOS MENA NANCY}
-   - - @1130 - 1250[L    I](08/08/17 to 25/11/17)
+   - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 AMBIENT.APREND.A TRAVES HISTOR {RODRIGUEZ GOMEZ DIANA}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-AMBIENT.APREND.A TRAVES HISTOR {}
+AMBIENT.APREND.A TRAVES HISTOR {GARCIA CARDONA PAULA BIBIANA}
    - - @0930 - 1050[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CONSTRUCTIVISMO Y APRENDIZAJE {GOMEZ LOZANO MARIA TERESA}
@@ -4862,7 +4872,7 @@ INFANCIA Y CULTURA {MOLANO FLECHAS ANDRES ELIAS}
    - - @1400 - 1520[J](08/08/17 to 25/11/17)
    - - @1400 - 1520[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-INFANCIA Y CULTURA {}
+INFANCIA Y CULTURA {BERMEO VALENCIA MARIA JOSE}
    - - @1400 - 1520[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 HISTORIA DE LA PEDAGOGÍA {HERRERA GONZALEZ JOSE DARIO}
@@ -4993,14 +5003,24 @@ TESIS 2 {FLORES HINOJOS IRMA ALICIA}
    - - @1100 - 1350[S](28/10/17 to 28/10/17)
    - - @1100 - 1350[S](18/11/17 to 18/11/17)
 ---------------------------------------------
-BILINGUISMO Y NEUROCOGNICION {}
-   - - @0800 - 1050[S](08/08/17 to 25/11/17)
+BILINGUISMO Y NEUROCOGNICION {GARCIA CARDONA PAULA BIBIANA}
+   - - @0800 - 1050[S](12/08/17 to 12/08/17)
+   - - @0800 - 1050[S](26/08/17 to 26/08/17)
+   - - @0800 - 1050[S](16/09/17 to 16/09/17)
+   - - @0800 - 1050[S](14/10/17 to 14/10/17)
+   - - @0800 - 1050[S](28/10/17 to 28/10/17)
+   - - @0800 - 1050[S](18/11/17 to 18/11/17)
 ---------------------------------------------
 EDUCACION E INTERCULTURALIDAD {TRUSCOTT DE MEJIA ANNE-MARIE}
    - - @1700 - 1950[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 AMB DE APR APOY CON TECNO {OSORIO LUZ ADRIANA}
-   - - @0800 - 1050[S](08/08/17 to 25/11/17)
+   - - @0800 - 1050[S](12/08/17 to 12/08/17)
+   - - @0800 - 1050[S](26/08/17 to 26/08/17)
+   - - @0800 - 1050[S](16/09/17 to 16/09/17)
+   - - @0800 - 1050[S](14/10/17 to 14/10/17)
+   - - @0800 - 1050[S](28/10/17 to 28/10/17)
+   - - @0800 - 1050[S](18/11/17 to 18/11/17)
 ---------------------------------------------
 PEDAGOGÍAS DESARROLLO P CIENTI {HERNANDEZ CAROLA}
    - - @0800 - 1100[S](12/08/17 to 12/08/17)
@@ -5019,7 +5039,12 @@ CALIDAD EDUCACIÓN AMERICA LAT. {BAXTER JORGE GRANT}
    - - @0800 - 1100[S](18/11/17 to 18/11/17)
 ---------------------------------------------
 PEDAGOGIAS CRITICAS {MEJIA DELGADILLO JORGE ANDRES}
-   - - @0800 - 1050[S](08/08/17 to 25/11/17)
+   - - @0800 - 1050[S](12/08/17 to 12/08/17)
+   - - @0800 - 1050[S](26/08/17 to 26/08/17)
+   - - @0800 - 1050[S](16/09/17 to 16/09/17)
+   - - @0800 - 1050[S](14/10/17 to 14/10/17)
+   - - @0800 - 1050[S](28/10/17 to 28/10/17)
+   - - @0800 - 1050[S](18/11/17 to 18/11/17)
 ---------------------------------------------
 POLÍTICAS EDUCATIVAS Y VIOLENC {RODRIGUEZ GOMEZ DIANA}
    - - @1700 - 1950[M](08/08/17 to 25/11/17)
@@ -5050,8 +5075,8 @@ COLOQUIO DE INVESTIGACION V {MEJIA DELGADILLO JORGE ANDRES}
 COLOQUIO DE INVESTIGACION VI {MEJIA DELGADILLO JORGE ANDRES}
    - - @1400 - 1650[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-AVANZADO INVESTIGACIÓN CUALITA {TRUSCOTT DE MEJIA ANNE-MARIE}
-   - - @1400 - 1650[V](08/08/17 to 25/11/17)
+AVANZADO INVESTIGACIÓN CUALITA {BERMEO VALENCIA MARIA JOSE}
+   - - @1400 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 COLOQUIO DE INVESTIGACIÓN VIII {MEJIA DELGADILLO JORGE ANDRES}
    - - @1400 - 1650[J](08/08/17 to 25/11/17)
@@ -5273,11 +5298,8 @@ ANÁLISIS DE PROBLEMAS GLOBALES {WEINTRAUB MICHAEL LEE}
 COMPORT. Y POLITICAS PUBLICAS {HAM GONZALEZ ANDRES}
    - - @0930 - 1050[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-IMPLEM. POLIT. PUBLIC.COLOMBIA {}
+IMPLEM. POLIT. PUBLIC.COLOMBIA {ZULETA GONZALEZ MARIA MARGARITA}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
----------------------------------------------
-TALLER DE LIDERAZGO 3 Y 4 {GAVIRIA LIEVANO XIMENA}
-   - - @0930 - 1050[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 INTERVENCIÓN LOCAL DE PROB SOC {LUCUMI CUESTA DIEGO IVÁN}
    - - @1530 - 1820[L](08/08/17 to 25/11/17)
@@ -5323,6 +5345,9 @@ THE POLITICS OF PEACEBUILDING {}
 ---------------------------------------------
 DEMOGRAFIA APLICADA (INGLES) {HESSEL PHILIPP}
    - - @1700 - 1950[V](08/08/17 to 25/11/17)
+---------------------------------------------
+IMPLEM. POLIT. PUBLIC.COLOMBIA {ZULETA GONZALEZ MARIA MARGARITA}
+   - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
 =============================================================
 depto=EINT&nombreDepto=Estudios%20Internacionales%2
 =============================================================
@@ -5390,8 +5415,7 @@ FILOSOFIA COMO ARTE DE VIVIR {ARIZA RODRIGUEZ SERGIO REINEL}
    - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 TEORÍA Y PRÁCTICA DE LOS DDHH {ARANGO RIVADENEIRA RODOLFO}
-   - - @1400 - 1520[J](08/08/17 to 25/11/17)
-   - - @1400 - 1520[M](08/08/17 to 25/11/17)
+   - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 KANT {ARANGO RIVADENEIRA RODOLFO}
    - - @0930 - 1050[J](08/08/17 to 25/11/17)
@@ -5484,7 +5508,7 @@ COMPL. FÍSICA BÁSICA 1 {USECHE REYES DIEGO HERNANDO}
 COMPL. FÍSICA BÁSICA 1 {BEDOYA FIERRO DIEGO ANDRES}
    - - @1700 - 1850[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. FÍSICA BÁSICA 1 {}
+COMPL. FÍSICA BÁSICA 1 {RAMIREZ MILANO DIEGO LUIS}
    - - @1700 - 1850[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. FÍSICA BÁSICA 1 {MENDOZA NAVAS LUIS MIGUEL}
@@ -5493,10 +5517,10 @@ COMPL. FÍSICA BÁSICA 1 {MENDOZA NAVAS LUIS MIGUEL}
 COMPL. FÍSICA BÁSICA 1 {RAMIREZ ALVARADO CARLOS A}
    - - @1400 - 1550[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-LABORATORIO DE FISICA BASICA 1 {}
+LABORATORIO DE FISICA BASICA 1 {NAVARRETE RODRIGUEZ MARIA CRISTINA}
    - - @0900 - 1050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LABORATORIO DE FISICA BASICA 1 {}
+LABORATORIO DE FISICA BASICA 1 {NAVARRETE RODRIGUEZ MARIA CRISTINA}
    - - @1100 - 1250[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 LABORATORIO DE FISICA BASICA 1 {RESTREPO AYALA MATEO}
@@ -5508,10 +5532,10 @@ LABORATORIO DE FISICA BASICA 1 {RESTREPO AYALA MATEO}
 LABORATORIO DE FISICA BASICA 1 {OLAYA CORTES DANIEL ESTEBAN}
    - - @1700 - 1850[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LABORATORIO DE FISICA BASICA 1 {}
+LABORATORIO DE FISICA BASICA 1 {NAVARRETE RODRIGUEZ MARIA CRISTINA}
    - - @0700 - 0850[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA I {}
+FISICA I {NARVAEZ MORALES JACKELINE}
    - - @0630 - 0750[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA I {AVILA BERNAL CARLOS ARTURO}
@@ -5532,10 +5556,10 @@ FISICA I {CAMACHO BELTRAN ANGELA STELLA}
 FISICA I {RODRIGUEZ DUENAS FERNEY JAVIER}
    - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA I {}
+FISICA I (INGLES) {}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA I {}
+FISICA I {CONTRERAS HERRADA ERNESTO JOSE}
    - - @0930 - 1050[V](08/08/17 to 25/11/17)
    - - @0930 - 1050[M](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -5545,7 +5569,7 @@ FISICA I {QUIROGA PUELLO LUIS}
 FISICA I {BARGUEÑO DE RETES PEDRO}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA I (INGLES) {VALENCIA GONZALEZ ALEJANDRA}
+FISICA I {VALENCIA GONZALEZ ALEJANDRA}
    - - @1400 - 1520[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. FÍSICA I {FRAGA FLORES JORGE FERNANDO}
@@ -5599,10 +5623,10 @@ COMPL. FÍSICA I {RODRIGUEZ URREGO RONALD ELIECER}
 COMPL. FÍSICA I {}
    - - @1300 - 1450[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. FÍSICA I {RESTREPO AYALA MATEO}
+COMPL. FÍSICA I {}
    - - @1300 - 1450[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. FÍSICA I {}
+COMPL. FÍSICA I {RESTREPO AYALA MATEO}
    - - @1300 - 1450[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. FÍSICA I {}
@@ -5620,7 +5644,7 @@ COMPL. FÍSICA I {MENDEZ VALDERRAMA JUAN FELIPE}
 COMPL. FÍSICA I {MENDEZ VALDERRAMA JUAN FELIPE}
    - - @1400 - 1550[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. FÍSICA I {SUAREZ PEREZ JOHN FREDY}
+COMPL. FÍSICA I {TORRES RAMIREZ MICHAEL}
    - - @1500 - 1650[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. FÍSICA I {MARTINEZ CASTAÑEDA GUSTAVO ADOLFO}
@@ -5710,22 +5734,22 @@ FISICA EXPERIMENTAL I {CASTRO RODRIGUEZ DIEGO ALBERTO}
 FISICA EXPERIMENTAL I {VARGAS SANCHEZ ANDRES FELIPE}
    - - @1100 - 1250[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {ALFONSO JEISON ESTIVENS}
    - - @1300 - 1450[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {SILVA FORERO CHRISTIAN ORLANDO}
    - - @1300 - 1450[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {ALFONSO JEISON ESTIVENS}
    - - @1500 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {SILVA FORERO CHRISTIAN ORLANDO}
    - - @1500 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {ALFONSO JEISON ESTIVENS}
    - - @1700 - 1850[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {SILVA FORERO CHRISTIAN ORLANDO}
    - - @1700 - 1850[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA EXPERIMENTAL I {GARZON MIGUEZ OSCAR FERNANDO}
@@ -5746,25 +5770,25 @@ FISICA EXPERIMENTAL I {HERNANDEZ ARBOLEDA ALEJANDRO}
 FISICA EXPERIMENTAL I {RAMOS MORENO LILIANA MARGARITA}
    - - @1100 - 1250[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {SALCEDO PIMIENTA JOSE DANILO}
    - - @1300 - 1450[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA EXPERIMENTAL I {OLAYA CORTES DANIEL ESTEBAN}
    - - @1300 - 1450[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {RAMIREZ MILANO DIEGO LUIS}
    - - @1500 - 1650[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {SALCEDO PIMIENTA JOSE DANILO}
    - - @1500 - 1650[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {RAMIREZ MILANO DIEGO LUIS}
    - - @1700 - 1850[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {}
+FISICA EXPERIMENTAL I {SALCEDO PIMIENTA JOSE DANILO}
    - - @1700 - 1850[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {SUAREZ PEREZ JOHN FREDY}
+FISICA EXPERIMENTAL I {TORRES RAMIREZ MICHAEL}
    - - @0700 - 0850[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA EXPERIMENTAL I {VARGAS SANCHEZ ANDRES FELIPE}
@@ -5773,7 +5797,7 @@ FISICA EXPERIMENTAL I {VARGAS SANCHEZ ANDRES FELIPE}
 FISICA EXPERIMENTAL I {RAMOS MORENO LILIANA MARGARITA}
    - - @1100 - 1250[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL I {SUAREZ PEREZ JOHN FREDY}
+FISICA EXPERIMENTAL I {TORRES RAMIREZ MICHAEL}
    - - @1300 - 1450[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA EXPERIMENTAL I {FAJARDO JAIRO ANDRES}
@@ -5809,8 +5833,8 @@ FISICA EXPERIMENTAL I {FAJARDO JAIRO ANDRES}
 FISICA EXPERIMENTAL I {MENDEZ VALDERRAMA JUAN FELIPE}
    - - @1700 - 1850[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA BASICA 2 {LEIDY CHAD}
-   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+FISICA BASICA 2 {}
+   - - @1700 - 1820[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. FÍSICA BÁSICA 2 {MENDOZA NAVAS LUIS MIGUEL}
    - - @1700 - 1850[M](08/08/17 to 25/11/17)
@@ -5848,7 +5872,7 @@ LABORATORIO DE FISICA BASICA 2 {HENAO AYALA MARIO ANDRES}
 FISICA II {}
    - - @0630 - 0750[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA II {}
+FISICA II {LEIDY CHAD}
    - - @0800 - 0920[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA II {TELLEZ ACOSTA GABRIEL}
@@ -5857,22 +5881,22 @@ FISICA II {TELLEZ ACOSTA GABRIEL}
 FISICA II {NUÑEZ PORTELA MAYERLIN}
    - - @1100 - 1220[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA II {}
+FISICA II {SABOGAL MARTINEZ BEATRIZ EUGENIA}
    - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA II {LEIDY CHAD}
    - - @1400 - 1520[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA II {}
+FISICA II (INGLES) {SVOZILIC JIRI}
    - - @1530 - 1650[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA II (INGLES) {}
+FISICA II (INGLES) {DAS SIBA PRASAD}
    - - @1700 - 1820[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA II {OOSTRA VANNOPPEN BENJAMIN}
    - - @1230 - 1350[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA II {}
+FISICA II {NARVAEZ GONZALEZ ANGELA CAROLINA}
    - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. FÍSICA II {BERMUDEZ MANJARRES ANDRES DARIO}
@@ -5974,10 +5998,10 @@ COMPL. FÍSICA II {}
 COMPL. FÍSICA II {}
    - - @0900 - 1050[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. FÍSICA II {}
+COMPL. FÍSICA II {RAMIREZ JIMENEZ DIEGO FERNANDO}
    - - @0900 - 1050[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. FÍSICA II {}
+COMPL. FÍSICA II {RAMIREZ JIMENEZ DIEGO FERNANDO}
    - - @0900 - 1050[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. FÍSICA II {USECHE REYES DIEGO HERNANDO}
@@ -6064,7 +6088,7 @@ FISICA EXPERIMENTAL II {}
 FISICA EXPERIMENTAL II {}
    - - @1500 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICA EXPERIMENTAL II {}
+FISICA EXPERIMENTAL II {RAMIREZ JIMENEZ DIEGO FERNANDO}
    - - @1700 - 1850[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA EXPERIMENTAL II {}
@@ -6091,7 +6115,7 @@ ONDAS Y FLUIDOS {}
 COMPL. ONDAS Y FLUIDOS {VARELA ALVAREZ LUCAS}
    - - @1700 - 1850[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. ONDAS Y FLUIDOS {VARELA ALVAREZ LUCAS}
+COMPL. ONDAS Y FLUIDOS {}
    - - @1700 - 1850[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. ONDAS Y FLUIDOS {}
@@ -6162,9 +6186,6 @@ MUNDOS LEJANOS {GARCIA VARELA JOSE ALEJANDRO}
 ASTROBIOLOGÍA: VIDA EN EL UNIV {NOWAKOWSKY MAREK}
    - - @1700 - 1820[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER DE ASTRONOMIA {FORERO ROMERO JAIME ERNESTO}
-   - - @1300 - 1350[V](08/08/17 to 25/11/17)
----------------------------------------------
 METODOS MATEMATICOS {SABOGAL MARTINEZ BEATRIZ EUGENIA}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -6191,11 +6212,11 @@ HERRAMIENTAS COMPUTACIONALES {}
 HERRAMIENTAS COMPUTACIONALES {PRADA GONZALEZ JESUS DAVID}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-MÉTODOS COMPUTACIONALES {}
+MÉTODOS COMPUTACIONALES {ARIAS CALLEJAS VERONICA}
    - - @1800 - 1920[L](08/08/17 to 25/11/17)
    - - @0630 - 0750[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-MÉTODOS COMPUTACIONALES {ARIAS CALLEJAS VERONICA}
+MÉTODOS COMPUTACIONALES {}
    - - @1230 - 1350[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB. MÉTODOS COMPUTACIONALES {ARIAS CALLEJAS VERONICA}
@@ -6238,6 +6259,9 @@ SEMINARIO DE FISICA TEORICA {BOTERO ALONSO}
 SEM. QFT/FISICA-MATEMATICA {REYES LEGA ANDRES FERNANDO}
    - - @1600 - 1750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
+SEM 2. QFT/FISICA-MATEMATICA {}
+   - - @1600 - 1750[V](08/08/17 to 25/11/17)
+---------------------------------------------
 MECANICA CUANTICA II {FLOREZ BUSTOS CARLOS ANDRES}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -6247,7 +6271,7 @@ FISICA ESTADISTICA {TELLEZ ACOSTA GABRIEL}
 RELATIVIDAD GRAL Y COSMOLOGIA {BARGUEÑO DE RETES PEDRO}
    - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-SEMINARIO DE ALTAS ENERGIAS {AVILA BERNAL CARLOS ARTURO}
+SEMINARIO DE ALTAS ENERGIAS {FLOREZ BUSTOS CARLOS ANDRES}
    - - @1600 - 1750[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISICA DE PARTICULAS {ROLDAN GIRALDO JOSE ROLANDO}
@@ -6293,7 +6317,7 @@ SEM1.QFT/FISICA-MATEMATICA {REYES LEGA ANDRES FERNANDO}
 SEM2.QFT/FISICA-MATEMATICA {REYES LEGA ANDRES FERNANDO}
    - - @1600 - 1750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-MECANICA ESTADISTICA {}
+MECANICA ESTADISTICA {PEDRAZA JUAN MANUEL}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 LABORATORIO AVANZADO {VALENCIA GONZALEZ ALEJANDRA}
@@ -6302,10 +6326,10 @@ LABORATORIO AVANZADO {VALENCIA GONZALEZ ALEJANDRA}
 RELATIVIDAD GRAL-COSMOLOGIA {BARGUEÑO DE RETES PEDRO}
    - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-SEMINARIO 1 ALTAS ENERGIAS {AVILA BERNAL CARLOS ARTURO}
+SEMINARIO 1 ALTAS ENERGIAS {FLOREZ BUSTOS CARLOS ANDRES}
    - - @1600 - 1750[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-SEMINARIO 2 ALTAS ENERGIAS {AVILA BERNAL CARLOS ARTURO}
+SEMINARIO 2 ALTAS ENERGIAS {FLOREZ BUSTOS CARLOS ANDRES}
    - - @1600 - 1750[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 SEMINARIO DE OPTICA CUANTICA {VALENCIA GONZALEZ ALEJANDRA}
@@ -6314,7 +6338,7 @@ SEMINARIO DE OPTICA CUANTICA {VALENCIA GONZALEZ ALEJANDRA}
 SEMINARIO 2 DE OPTICA CUANTICA {VALENCIA GONZALEZ ALEJANDRA}
    - - @1400 - 1550[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ELECTRODINAMICA {KELKAR NEELIMA}
+ELECTRODINAMICA (INGLES) {KELKAR NEELIMA}
    - - @0930 - 1050[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 SEMINARIO 1 MATERIA CONDENSADA {QUIROGA PUELLO LUIS}
@@ -6378,7 +6402,8 @@ GEOCIENCIAS Y PATRIMONIO CULTU {BLANCO QUINTERO IDAEL}
    - - @1230 - 1350[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 DINOSAURIOS (INGLES) {NOE LESLIE FRANCIS}
-   - - @1400 - 1520[I    V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 DESASTRES NATURALES {PARDO VILLAVECES NATALIA}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
@@ -6459,10 +6484,10 @@ LABORATORIO DE PETROLOGÍA {SUAREZ ROJAS ALBA MARINA}
 LABORATORIO DE PETROLOGÍA {SUAREZ ROJAS ALBA MARINA}
    - - @1600 - 1750[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LABORATORIO DE PETROLOGÍA {}
+LABORATORIO DE PETROLOGÍA {CARRASCO RINCON ELISA}
    - - @0700 - 0850[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-LABORATORIO DE PETROLOGÍA {}
+LABORATORIO DE PETROLOGÍA {CARRASCO RINCON ELISA}
    - - @0930 - 1120[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 LABORATORIO DE PETROLOGÍA {SUAREZ ROJAS ALBA MARINA}
@@ -6551,7 +6576,8 @@ VANGUARDIAS ARTÍSTICAS {BERNAL MARIA CLARA}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ARTE CONTEMPORANEO {GUERRERO JUAN CARLOS}
-   - - @1530 - 1650[L      J](08/08/17 to 25/11/17)
+   - - @1530 - 1650[J](08/08/17 to 25/11/17)
+   - - @1530 - 1650[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 PREHISPANIC ART {HERRERA WASSILOWSKY ALEXANDER CHARLES}
    - - @0800 - 0920[I    V](08/08/17 to 25/11/17)
@@ -6649,6 +6675,9 @@ HISTORIA DE LOS ESTADOS UNIDOS {QUINTERO TORO CAMILO}
 HISTORIA DE LA MEDICINA {QUINTERO TORO CAMILO}
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
+HISTORIA DE LA MEDICINA {QUINTERO TORO CAMILO}
+   - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
 HISTORIA DE LA COMIDA {VAN AUSDAL SHAWN}
    - - @0930 - 1050[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -6709,6 +6738,7 @@ EL HOMBRE ARTIFICIAL {NAVARRETE RODRIGUEZ SANDRA CAROLINA}
    - - @1530 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 FISIOL. CUANTIT. ING. BIOM. 2 {CORDOVEZ JUAN MANUEL}
+   - - @1700 - 1750[L](08/08/17 to 25/11/17)
    - - @0800 - 0920[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB FISIOL. CUANTI. ING. BIOM2 {CALVACHI PRIETO PAOLA}
@@ -6925,17 +6955,18 @@ COMPL INTRO A ING AMBIENTAL {}
 INTRODUCCION A ING CIVIL {GUEVARA MALDONADO JOSE ALBERTO}
    - - @1400 - 1520[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRO A ING CIVIL {}
+COMPL INTRO A ING CIVIL {PUPO ARGUELLO LORENA}
    - - @1700 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRO A ING CIVIL {}
+COMPL INTRO A ING CIVIL {PUPO ARGUELLO LORENA}
    - - @1700 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTRO A ING CIVIL {}
+COMPL INTRO A ING CIVIL {PUPO ARGUELLO LORENA}
    - - @1700 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESTATICA {SANCHEZ MAURICIO}
-   - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
+   - - @1100 - 1220[I](08/08/17 to 25/11/17)
+   - - @1100 - 1220[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESTATICA {RINCON GARCIA JOSE RAUL}
    - - @0630 - 0750[L    I](08/08/17 to 25/11/17)
@@ -7018,8 +7049,12 @@ LAB MECANICA DE MATERIALES {TRUJILLO LOPEZ ALEJANDRA}
 LAB MECANICA DE MATERIALES {TRUJILLO LOPEZ ALEJANDRA}
    - - @1200 - 1250[M](08/08/17 to 25/11/17)
 ---------------------------------------------
+LAB MECANICA DE MATERIALES {}
+   - - @1000 - 1050[L](08/08/17 to 25/11/17)
+---------------------------------------------
 MATERIALES EN INGENIERIA CIVIL {CABRERA CABRERA MIGUEL ANGEL}
-   - - @0800 - 0920[L  M](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
+   - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 MATERIALES EN INGENIERIA CIVIL {WILLS SANIN JAIME}
    - - @0630 - 0750[L  M](08/08/17 to 25/11/17)
@@ -7050,9 +7085,6 @@ LAB MATERIALES ING CIVIL {MONTAÑEZ GIL SANDRA JULIANA}
 ---------------------------------------------
 LAB MATERIALES ING CIVIL {MONTAÑEZ GIL SANDRA JULIANA}
    - - @0800 - 0920[V](08/08/17 to 25/11/17)
----------------------------------------------
-GEOMATICA (INGLES) {PAEZ BARAJAS DANIEL EDUARDO}
-   - - @1830 - 1950[I  J](08/08/17 to 25/11/17)
 ---------------------------------------------
 GEOMÁTICA {CAMACHO CASTILLA RICARDO}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
@@ -7127,6 +7159,12 @@ COMPL ANALISIS SIST ESTRUCT. {CORDOBA SAENZ LAURA SOFIA}
 COMPL ANALISIS SIST ESTRUCT. {CORDOBA SAENZ LAURA SOFIA}
    - - @0800 - 0920[V](08/08/17 to 25/11/17)
 ---------------------------------------------
+COMPL ANALISIS SIST ESTRUCT. {}
+   - - @0800 - 0920[V](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPL ANALISIS SIST ESTRUCT. {}
+   - - @0800 - 0920[V](08/08/17 to 25/11/17)
+---------------------------------------------
 LAB ANALISIS SIST. ESTRUCTURAL {CORDOBA SAENZ LAURA SOFIA}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -7144,6 +7182,12 @@ LAB ANALISIS SIST. ESTRUCTURAL {CORDOBA SAENZ LAURA SOFIA}
 ---------------------------------------------
 LAB ANALISIS SIST. ESTRUCTURAL {CORDOBA SAENZ LAURA SOFIA}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
+---------------------------------------------
+LAB ANALISIS SIST. ESTRUCTURAL {}
+   - - @1530 - 1650[V](08/08/17 to 25/11/17)
+---------------------------------------------
+LAB ANALISIS SIST. ESTRUCTURAL {}
+   - - @1700 - 1820[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 FUNDAMENTOS DE GEOTECNIA {ESTRADA MEJIA NICOLAS}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
@@ -7705,7 +7749,7 @@ SIST INTEGRADO DRENAJE URBANO {SALDARRIAGA VALDERRA JUAN GUILLERMO}
 MODELACION DE HIDROSISTEMAS {DIAZGRANADOS MARIO}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ECONOMIA, REGULAC.AGUA URBANA {PARDO OSCAR}
+ECONOMIA, REGULAC.AGUA URBANA {PARDO GIBSON OSCAR}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ECONOMIA DEL TRANSPORTE {GUZMAN VALDERRAMA ANDRES FELIPE}
@@ -7720,7 +7764,7 @@ DISE.TRANSPORTE NO MOTORIZADO {RODRIGUEZ VALENCIA ALVARO}
 TRANSPORTE INTERURBANO D CARGA {OSPINA GERMAN ALFREDO}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-POLIT. PUBLIC.SECTOR MOVILIDAD {GUZMAN GARCIA LUIS ANGEL}
+POLIT. PUBLIC.SECTOR MOVILIDAD {BOCAREJO JUAN PABLO}
    - - @0630 - 0920[V](08/08/17 to 25/11/17)
 =============================================================
 depto=IELE&nombreDepto=Ingenier%EDa%20El%E9ctrica%20y%20Electr%F3nic
@@ -7732,19 +7776,19 @@ INTR. A LA INGENIERIA ELECTR. {BOHORQUEZ REYES JUAN CARLOS}
 COMPL INTR. INGENIERIA ELECTR {RINCON CONTRERAS EDUARDO ANDRES}
    - - @1530 - 1620[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTR. INGENIERIA ELECTR {RINCON CONTRERAS EDUARDO ANDRES}
+COMPL INTR. INGENIERIA ELECTR {QUIBANO ALARCON LUIS EDUARDO}
    - - @1530 - 1620[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTR. INGENIERIA ELECTR {RINCON CONTRERAS EDUARDO ANDRES}
    - - @1530 - 1620[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTR. INGENIERIA ELECTR {RINCON CONTRERAS EDUARDO ANDRES}
+COMPL INTR. INGENIERIA ELECTR {QUIBANO ALARCON LUIS EDUARDO}
    - - @1100 - 1150[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL INTR. INGENIERIA ELECTR {RINCON CONTRERAS EDUARDO ANDRES}
    - - @1100 - 1150[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL INTR. INGENIERIA ELECTR {RINCON CONTRERAS EDUARDO ANDRES}
+COMPL INTR. INGENIERIA ELECTR {QUIBANO ALARCON LUIS EDUARDO}
    - - @1100 - 1150[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB.INTR.ING.ELECTRI Y ELECT {}
@@ -7786,13 +7830,13 @@ FUNDAMENTOS DE CIRCUITOS {SALAZAR ANTONIO}
 FUNDAMENTOS DE CIRCUITOS {}
    - - @0800 - 0920[L    I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB.FUNDAMENTOS CIRCUITOS {}
+LAB.FUNDAMENTOS CIRCUITOS {RINCON CONTRERAS EDUARDO ANDRES}
    - - @1530 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB.FUNDAMENTOS CIRCUITOS {}
+LAB.FUNDAMENTOS CIRCUITOS {RINCON CONTRERAS EDUARDO ANDRES}
    - - @1230 - 1350[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB.FUNDAMENTOS CIRCUITOS {}
+LAB.FUNDAMENTOS CIRCUITOS {RINCON CONTRERAS EDUARDO ANDRES}
    - - @0930 - 1050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB.FUNDAMENTOS CIRCUITOS {}
@@ -7804,22 +7848,22 @@ LAB.FUNDAMENTOS CIRCUITOS {}
 CIRCUITOS E INSTRUMENTACION {SALAZAR ANTONIO}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CIRCUITOS E INSTRUMENTACION {}
+CIRCUITOS E INSTRUMENTACION {ARIAS MARTINEZ BRAYAN ALEXIS}
    - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. CIRCUITOS INSTRUMENTACION {}
+LAB. CIRCUITOS INSTRUMENTACION {TRUJILLO RIAÑO MANUEL DAVID}
    - - @1100 - 1220[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. CIRCUITOS INSTRUMENTACION {}
+LAB. CIRCUITOS INSTRUMENTACION {TRUJILLO RIAÑO MANUEL DAVID}
    - - @1100 - 1220[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. CIRCUITOS INSTRUMENTACION {}
+LAB. CIRCUITOS INSTRUMENTACION {TRUJILLO RIAÑO MANUEL DAVID}
    - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. CIRCUITOS INSTRUMENTACION {}
+LAB. CIRCUITOS INSTRUMENTACION {TRUJILLO RIAÑO MANUEL DAVID}
    - - @0930 - 1050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. CIRCUITOS INSTRUMENTACION {}
+LAB. CIRCUITOS INSTRUMENTACION {TRUJILLO RIAÑO MANUEL DAVID}
    - - @1100 - 1220[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 TUTORIA IEE {GUERRERO HURTADO MAURICIO}
@@ -7828,10 +7872,10 @@ TUTORIA IEE {GUERRERO HURTADO MAURICIO}
 TUTORIA IEE {GUERRERO HURTADO MAURICIO}
    - - @1600 - 1650[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-FUNDAMENTOS DE REDES {BUSTAMANTE MILLER ROBERTO}
+FUNDAMENTOS DE REDES {TORRES HURTADO JUAN GUILLERMO}
    - - @1100 - 1220[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-FUNDAMENTOS DE REDES {}
+FUNDAMENTOS DE REDES {BECERRA PAREJA JORGE MARIO}
    - - @1700 - 1820[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB FUNDAMENTOS DE REDES {BERNAL BURGOS JUAN DIEGO}
@@ -7925,25 +7969,22 @@ CIENCIA, TECNOLOGIA Y GENERO {AVILA BERNAL ALBA GRACIELA}
 TECNOLOGÍA DE IRONMAN {OSMA CRUZ JOHANN FACCELO}
    - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-DEL-BEEP-AL-TWEET {GARCIA ROZO ANTONIO}
-   - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
----------------------------------------------
 ELEMENT.SISTEMAS ELECTRICOS {DE OLIVEIRA DE JESUS PAULO MANUEL}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB.ELEM.SISTEMAS ELECTRICOS {}
+LAB.ELEM.SISTEMAS ELECTRICOS {DIMAS CARO CRISTIAN DAVID}
    - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB.ELEM.SISTEMAS ELECTRICOS {}
+LAB.ELEM.SISTEMAS ELECTRICOS {DIMAS CARO CRISTIAN DAVID}
    - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB.ELEM.SISTEMAS ELECTRICOS {}
+LAB.ELEM.SISTEMAS ELECTRICOS {DIMAS CARO CRISTIAN DAVID}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB.ELEM.SISTEMAS ELECTRICOS {}
+LAB.ELEM.SISTEMAS ELECTRICOS {DIMAS CARO CRISTIAN DAVID}
    - - @1530 - 1650[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB.ELEM.SISTEMAS ELECTRICOS {}
+LAB.ELEM.SISTEMAS ELECTRICOS {DIMAS CARO CRISTIAN DAVID}
    - - @1700 - 1820[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 FUNDAMENTOS DE ELECTRÓNICA {AVILA BERNAL ALBA GRACIELA}
@@ -7955,7 +7996,7 @@ LAB FUNDAMENTOS DE ELECTRÓNICA {}
 LAB FUNDAMENTOS DE ELECTRÓNICA {}
    - - @1530 - 1650[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB FUNDAMENTOS DE ELECTRÓNICA {}
+LAB FUNDAMENTOS DE ELECTRÓNICA {ROMERO MEZA CAMILO ERNESTO}
    - - @1700 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB FUNDAMENTOS DE ELECTRÓNICA {}
@@ -7964,16 +8005,16 @@ LAB FUNDAMENTOS DE ELECTRÓNICA {}
 SISTEMAS ELECTRONICOS DIGITALE {SEGURA QUIJANO FREDY ENRIQUE}
    - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-SISTEMAS ELECTRONICOS DIGITALE {}
+SISTEMAS ELECTRONICOS DIGITALE {APONTE MORENO JOHN ALEXANDER}
    - - @1530 - 1650[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. SIST. ELECTRON. DIGITALES {}
+LAB. SIST. ELECTRON. DIGITALES {ROMERO MEZA CAMILO ERNESTO}
    - - @0800 - 0920[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. SIST. ELECTRON. DIGITALES {}
+LAB. SIST. ELECTRON. DIGITALES {ROMERO MEZA CAMILO ERNESTO}
    - - @0930 - 1050[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. SIST. ELECTRON. DIGITALES {}
+LAB. SIST. ELECTRON. DIGITALES {ROMERO MEZA CAMILO ERNESTO}
    - - @0930 - 1050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB. SIST. ELECTRON. DIGITALES {}
@@ -7983,8 +8024,7 @@ LAB. SIST. ELECTRON. DIGITALES {}
    - - @1700 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 ANALISIS DE SISTEMS DE CONTROL {QUIJANO SILVA NICANOR}
-   - - @1400 - 1520[J](08/08/17 to 25/11/17)
-   - - @1400 - 1520[M](08/08/17 to 25/11/17)
+   - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ANALISIS DE SISTEMS DE CONTROL {JIMENEZ VARGAS JOSE FERNANDO}
    - - @1100 - 1220[I    V](08/08/17 to 25/11/17)
@@ -8248,10 +8288,10 @@ REFUERZO PRINCIPIOS OPTIMIZAC. {ESCALLON BARRIOS MARIANA}
 REFUERZO PRINCIPIOS OPTIMIZAC. {ESCALLON BARRIOS MARIANA}
    - - @1530 - 1650[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PRINCIPIOS OPTIMIZAC. {}
+REFUERZO PRINCIPIOS OPTIMIZAC. {QUINTERO ROJAS SEBASTIAN}
    - - @1700 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PRINCIPIOS OPTIMIZAC. {}
+REFUERZO PRINCIPIOS OPTIMIZAC. {CELY GOMEZ DIEGO ALEJANDRO}
    - - @1700 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 MODELOS PROBABILISTICOS {OTERO LEON DANIEL FELIPE}
@@ -8272,7 +8312,7 @@ MODELOS PROBABILISTICOS {GUAJE ACOSTA OSCAR ORLANDO}
 PROBABILIDAD Y ESTADÍSTICA I {GARCIA CARRIZOSA LAURA MARIA}
    - - @0630 - 0750[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-PROBABILIDAD Y ESTADÍSTICA I {}
+PROBABILIDAD Y ESTADÍSTICA I {GONZALEZ RODRIGUEZ MARIO SALVADOR}
    - - @1400 - 1520[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 PROBABILIDAD Y ESTADÍSTICA I {GARCIA CARRIZOSA LAURA MARIA}
@@ -8299,73 +8339,73 @@ PROBABILIDAD Y ESTADÍSTICA I {CASTILLO HERNANDEZ MARIO JOSE}
 PROBABILIDAD Y ESTADÍSTICA I {TORRES GONZALO}
    - - @0930 - 1050[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {GIL CASTRO JUAN SEBASTIAN}
+REFUERZO PROBA Y ESTAD I {RAMIREZ ARIAS ANDRES FELIPE}
    - - @0630 - 0750[L](08/08/17 to 25/11/17)
----------------------------------------------
-REFUERZO PROBA Y ESTAD I {GIL CASTRO JUAN SEBASTIAN}
-   - - @0630 - 0750[L](08/08/17 to 25/11/17)
----------------------------------------------
-REFUERZO PROBA Y ESTAD I {VAGNONI MONDRAGON EMILIANO}
-   - - @0630 - 0750[L](08/08/17 to 25/11/17)
----------------------------------------------
-REFUERZO PROBA Y ESTAD I {VAGNONI MONDRAGON EMILIANO}
-   - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 REFUERZO PROBA Y ESTAD I {BERNAL LOZANO RODRIGO ARMANDO}
+   - - @0630 - 0750[L](08/08/17 to 25/11/17)
+---------------------------------------------
+REFUERZO PROBA Y ESTAD I {PACHON GUTIERREZ ADRIANA PAOLA}
+   - - @0630 - 0750[L](08/08/17 to 25/11/17)
+---------------------------------------------
+REFUERZO PROBA Y ESTAD I {GIL CASTRO JUAN SEBASTIAN}
+   - - @1230 - 1350[L](08/08/17 to 25/11/17)
+---------------------------------------------
+REFUERZO PROBA Y ESTAD I {MEJIA MARTINEZ NICOLAS}
    - - @1530 - 1650[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 REFUERZO PROBA Y ESTAD I {BERNAL LOZANO RODRIGO ARMANDO}
    - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {RAMIREZ ARIAS ANDRES FELIPE}
+REFUERZO PROBA Y ESTAD I {BERNAL LOZANO RODRIGO ARMANDO}
    - - @0930 - 1050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 REFUERZO PROBA Y ESTAD I {RAMIREZ ARIAS ANDRES FELIPE}
    - - @0930 - 1050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {ANGULO RODRIGUEZ SERGIO ALEJANDRO}
+REFUERZO PROBA Y ESTAD I {PACHON GUTIERREZ ADRIANA PAOLA}
    - - @1700 - 1820[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {ANGULO RODRIGUEZ SERGIO ALEJANDRO}
+REFUERZO PROBA Y ESTAD I {MEJIA MARTINEZ NICOLAS}
    - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {MEJIA MARTINEZ NICOLAS}
+REFUERZO PROBA Y ESTAD I {VAGNONI MONDRAGON EMILIANO}
    - - @1700 - 1820[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {MEJIA MARTINEZ NICOLAS}
+REFUERZO PROBA Y ESTAD I {ANGULO RODRIGUEZ SERGIO ALEJANDRO}
+   - - @1100 - 1220[L](08/08/17 to 25/11/17)
+---------------------------------------------
+REFUERZO PROBA Y ESTAD I {RAMIREZ ARIAS ANDRES FELIPE}
    - - @1100 - 1220[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 REFUERZO PROBA Y ESTAD I {PACHON GUTIERREZ ADRIANA PAOLA}
    - - @1100 - 1220[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 REFUERZO PROBA Y ESTAD I {PACHON GUTIERREZ ADRIANA PAOLA}
-   - - @1100 - 1220[L](08/08/17 to 25/11/17)
----------------------------------------------
-REFUERZO PROBA Y ESTAD I {}
    - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {}
+REFUERZO PROBA Y ESTAD I {ANGULO RODRIGUEZ SERGIO ALEJANDRO}
    - - @1400 - 1520[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {}
+REFUERZO PROBA Y ESTAD I {VAGNONI MONDRAGON EMILIANO}
    - - @1400 - 1520[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {}
+REFUERZO PROBA Y ESTAD I {VAGNONI MONDRAGON EMILIANO}
    - - @1530 - 1650[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO PROBA Y ESTAD I {}
+REFUERZO PROBA Y ESTAD I {ANGULO RODRIGUEZ SERGIO ALEJANDRO}
    - - @1530 - 1650[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 PROBABILIDAD Y ESTADISTICA II {VALENCIA CARLOS}
    - - @1400 - 1520[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-PROBABILIDAD Y ESTADISTICA II {}
+PROBABILIDAD Y ESTADISTICA II {ACOSTA RIVERA JUAN PABLO}
    - - @0630 - 0750[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-PROBABILIDAD Y ESTADISTICA II {}
+PROBABILIDAD Y ESTADISTICA II {FRANCO DE LOS RIOS CAMILO ANDRES}
    - - @1530 - 1650[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-PROBABILIDAD Y ESTADISTICA II {}
+PROBABILIDAD Y ESTADISTICA II {QUIN JACOME ANDRES FELIPE}
    - - @0630 - 0750[J](08/08/17 to 25/11/17)
    - - @0630 - 0750[M](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -8426,10 +8466,10 @@ REFUERZO SIST. APOYO DECISION {SEGURA ACOSTA DIEGO HERNÁN}
 REFUERZO SIST. APOYO DECISION {SEGURA ACOSTA DIEGO HERNÁN}
    - - @1100 - 1220[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO SIST. APOYO DECISION {}
+REFUERZO SIST. APOYO DECISION {RESTREPO TROMPA MARIA ALEJANDRA}
    - - @0930 - 1050[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-REFUERZO SIST. APOYO DECISION {}
+REFUERZO SIST. APOYO DECISION {RESTREPO TROMPA MARIA ALEJANDRA}
    - - @0930 - 1050[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CONTROL DE PRODUCCION {VELASQUEZ RIOBO JOSE LUIS}
@@ -8437,7 +8477,8 @@ CONTROL DE PRODUCCION {VELASQUEZ RIOBO JOSE LUIS}
    - - @1230 - 1350[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 CONTROL DE PRODUCCION {VELASQUEZ RIOBO JOSE LUIS}
-   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 CONTROL DE PRODUCCION {MARTIN ALDANA ANA LORENA}
    - - @0630 - 0750[I    V](08/08/17 to 25/11/17)
@@ -8502,16 +8543,16 @@ COMPL. PENS SISTE ORGANIZACION {BERNAL ALVARADO JUANITA}
 COMPL. PENS SISTE ORGANIZACION {BERNAL ALVARADO JUANITA}
    - - @1700 - 1750[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. PENS SISTE ORGANIZACION {}
+COMPL. PENS SISTE ORGANIZACION {BERNAL ALVARADO JUANITA}
    - - @1700 - 1750[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. PENS SISTE ORGANIZACION {}
+COMPL. PENS SISTE ORGANIZACION {BERNAL ALVARADO JUANITA}
    - - @1700 - 1750[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. PENS SISTE ORGANIZACION {}
+COMPL. PENS SISTE ORGANIZACION {BERNAL ALVARADO JUANITA}
    - - @1700 - 1750[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. PENS SISTE ORGANIZACION {}
+COMPL. PENS SISTE ORGANIZACION {BERNAL ALVARADO JUANITA}
    - - @1700 - 1750[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. PENS SISTE ORGANIZACION {AVILA MONTES LEONARDO}
@@ -8709,7 +8750,8 @@ PRON.Y.SERIES DE TIEMPO {CORREAL NUÑEZ MARIA ELSA}
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 METAHEURISTICAS {AMAYA GUIO CIRO ALBERTO}
-   - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
+   - - @1400 - 1520[J](08/08/17 to 25/11/17)
+   - - @1400 - 1520[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 FLUJO EN REDES {ALVAREZ MARTINEZ DAVID}
    - - @1700 - 1820[I    V](08/08/17 to 25/11/17)
@@ -8883,20 +8925,20 @@ LABORATORIO MECANICA FLUIDOS {TORO GOMEZ JOSE RAFAEL}
 LABORATORIO MECANICA FLUIDOS {TORO GOMEZ JOSE RAFAEL}
    - - @1230 - 1350[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-TRANSFERENC.CALOR {LOPEZ MEJIA OMAR DARIO}
-   - - @1700 - 1820[L    I](08/08/17 to 25/11/17)
----------------------------------------------
 TRANSFERENC.CALOR {GORDILLO ARIZA GERARDO}
    - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+TRANSFERENC.CALOR {LOPEZ MEJIA OMAR DARIO}
+   - - @1700 - 1820[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB TRANSFERENCIA DE CALOR {GORDILLO ARIZA GERARDO}
    - - @0800 - 0920[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB TRANSFERENCIA DE CALOR {GORDILLO ARIZA GERARDO}
-   - - @1530 - 1650[V](08/08/17 to 25/11/17)
+   - - @0800 - 0920[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB TRANSFERENCIA DE CALOR {GORDILLO ARIZA GERARDO}
-   - - @0800 - 0920[V](08/08/17 to 25/11/17)
+   - - @1530 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 INGENIERÍA DE MATERIALES {ESCOBAR GUTIERREZ JAIRO ARTURO}
    - - @0630 - 0750[L    I](08/08/17 to 25/11/17)
@@ -8927,7 +8969,8 @@ DINAMICA SISTEM.MECAN.(INGLES) {BARBIERI GIACOMO}
    - - @1530 - 1650[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 DINAMICA DE SISTEMAS MECANICOS {SUAREZ COLLAZOS LAURA JULIANA}
-   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB. DINAMICA SISTEM.MECANICOS {BARBIERI GIACOMO}
    - - @0800 - 0920[I](08/08/17 to 25/11/17)
@@ -8943,8 +8986,8 @@ DINAMICA DE MAQUINARIA {RODRIGUEZ HERRERA CARLOS FRANCISC}
    - - @1400 - 1520[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 DINAMICA DE MAQUINARIA {BARBIERI GIACOMO}
-   - - @1230 - 1350[V](08/08/17 to 25/11/17)
-   - - @1230 - 1350[I](08/08/17 to 25/11/17)
+   - - @1400 - 1520[V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB DINAMICA DE MAQUINARIA {RODRIGUEZ HERRERA CARLOS FRANCISC}
    - - @0930 - 1050[M](08/08/17 to 25/11/17)
@@ -9020,7 +9063,7 @@ MECANICA DE SOLIDOS AVANZADA {MATEUS SANDOVAL LUIS MARIO}
 MÁQUINAS HIDRÁULICAS {LOBOGUERRERO USCATEQUI JAIME}
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-CARACT.ESTR.SOL.CRISTAL.AMORF {MEDINA PERIILLA JORGE ALBERTO}
+CARACT. ESTRUCT. DE MATERIALES {MEDINA PERIILLA JORGE ALBERTO}
    - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 MODERN TOOLS FOR AUTOMATION {BARBIERI GIACOMO}
@@ -9077,6 +9120,9 @@ COMPL. FUND PROC. INDUSTRIALES {TINJACA RODRIGUEZ CRISTHIAN DAVID}
 ---------------------------------------------
 COMPL. FUND PROC. INDUSTRIALES {TINJACA RODRIGUEZ CRISTHIAN DAVID}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPL. FUND PROC. INDUSTRIALES {}
+   - - @0630 - 0750[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 TERMODINAMICA {ALVAREZ SOLANO OSCAR ALBERTO}
    - - @0800 - 0920[I    V](08/08/17 to 25/11/17)
@@ -9143,6 +9189,9 @@ LAB. EQUILIBRIO {VALBUENA NIÑO MARIA PAULA ANDREA}
 LAB. EQUILIBRIO {VALBUENA NIÑO MARIA PAULA ANDREA}
    - - @1400 - 1650[J](08/08/17 to 25/11/17)
 ---------------------------------------------
+LAB. EQUILIBRIO {}
+   - - @0800 - 1050[J](08/08/17 to 25/11/17)
+---------------------------------------------
 PROYECTO DE MITAD DE CARRERA {ALVAREZ SOLANO OSCAR ALBERTO}
    - - @1530 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -9196,7 +9245,7 @@ LAB. FENOMENOS TRANSPORTE 2 {BUITRAGO MORA HUGO MAURICIO}
    - - @1100 - 1220[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB. FENOMENOS TRANSPORTE 2 {BUITRAGO MORA HUGO MAURICIO}
-   - - @1230 - 1550[J](08/08/17 to 25/11/17)
+   - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB. FENOMENOS TRANSPORTE 2 {BUITRAGO MORA HUGO MAURICIO}
    - - @1230 - 1350[J](08/08/17 to 25/11/17)
@@ -9216,7 +9265,7 @@ TALLER DISEÑO EXPERIMENTAL {DURAN ARANGUREN DANIEL DAVID}
 TALLER DISEÑO EXPERIMENTAL {DURAN ARANGUREN DANIEL DAVID}
    - - @1700 - 1820[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-INGENIERIA DE REACCIONES {GOMEZ CASTRO JAVIER DAVID}
+INGENIERIA DE REACCIONES {PRADILLA RAGUA DIEGO CAMILO}
    - - @1530 - 1650[I](08/08/17 to 25/11/17)
    - - @1530 - 1650[L](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -9286,7 +9335,7 @@ LAB. OPERACIONES UNITARIAS {BALLESTEROS MARTINEZ MIGUEL ANGEL}
 LAB. OPERACIONES UNITARIAS {BALLESTEROS MARTINEZ MIGUEL ANGEL}
    - - @1230 - 1350[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-DISEÑO PLANTAS DE PROCESO {HERRICK DAVID EDWARD}
+DISEÑO PLANTAS DE PROCESO {MUÑOZ GIRALDO FELIPE}
    - - @1400 - 1650[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 TALLER DISEÑO PLANTAS {SIERRA ARCILA DIEGO ALEJANDRO}
@@ -9337,29 +9386,30 @@ TALLER DE OPTIMIZACION {GARCIA SARAVIA RAFAEL CRISTOBAL}
 SEM.PROYECTO GRADO {GOMEZ CASTRO JAVIER DAVID}
    - - @1230 - 1350[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-INGENIERIA BIOPROCESOS {}
+INGENIERIA BIOPROCESOS {GONZALEZ BARRIOS ANDRES FERNANDO}
    - - @1230 - 1350[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-ANAL. CICLO VIDA PROD. Y PROC. {}
-   - - @1230 - 1350[L    I](08/08/17 to 25/11/17)
+ANAL. CICLO VIDA PROD. Y PROC. {ORTIZ PABLO}
+   - - @1230 - 1350[I](08/08/17 to 25/11/17)
+   - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-ENFOQUE TMI DEL DISEÑO PRODUCT {}
+ENFOQUE TMI DEL DISEÑO PRODUCT {BAGAJEWICZ MIGUEL JORGE}
    - - @1400 - 1520[L  M  I  J](08/08/17 to 25/11/17)
 ---------------------------------------------
-FENOMENOS TRANSPOR AVANZADOS {}
+FENOMENOS TRANSPOR AVANZADOS {SALCEDO GALAN FELIPE}
    - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-SEGURIDAD DE PROCESOS IND. {}
+SEGURIDAD DE PROCESOS IND. {MUÑOZ GIRALDO FELIPE}
    - - @1100 - 1220[I](08/08/17 to 25/11/17)
    - - @1100 - 1220[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 SEMINARIO {GOMEZ CASTRO JAVIER DAVID}
    - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-DISEÑO OPTIMO SISTEMAS TERMICO {}
+DISEÑO OPTIMO SISTEMAS TERMICO {SIERRA RAMIREZ ROCIO}
    - - @1230 - 1350[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-OPER Y DISEÑO DE SIST TERMICOS {}
+OPER Y DISEÑO DE SIST TERMICOS {RIOS RATKOVICH NICOLAS}
    - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
 =============================================================
 depto=ISIS&nombreDepto=Ingenier%EDa%20de%20Sistemas%20y%20Computaci%F3
@@ -9428,7 +9478,7 @@ LAB MATEMÁTICA ESTRUCT Y LOGIC {SANCHEZ OTALORA NELSON ANDRES}
 DISEÑO Y ANALISIS DE ALGORI. {SOTELO AREVALO GERMAN AUGUSTO}
    - - @0630 - 0750[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-DISEÑO Y ANALISIS DE ALGORI. {}
+DISEÑO Y ANALISIS DE ALGORI. {DUITAMA CASTELLANOS JORGE ALEXANDER}
    - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 DISEÑO Y ANALISIS DE ALGORI. {CARDOSO RODRIGUEZ RODRIGO}
@@ -9455,7 +9505,7 @@ ALGORITMICA Y PROGR. OBJ. I {BELTRAN MENDEZ EDWARD ANTONIO}
 ALGORITMICA Y PROGR. OBJ. I {RESTREPO SARMIENTO JORGE ARTURO}
    - - @0630 - 0750[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALGORITMICA Y PROGR. OBJ. I {DUITAMA CASTELLANOS JORGE ALEXANDER}
+ALGORITMICA Y PROGR. OBJ. I {}
    - - @0800 - 0920[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGORITMICA Y PROGR. OBJ. I {GONZALEZ DIAZ JOSHSUA JAMES}
@@ -9573,7 +9623,7 @@ LAB ALGORITMICA Y PROG. OBJ I {BELTRAN MENDEZ EDWARD ANTONIO}
 LAB ALGORITMICA Y PROG. OBJ I {RESTREPO SARMIENTO JORGE ARTURO}
    - - @0630 - 0750[J](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB ALGORITMICA Y PROG. OBJ I {DUITAMA CASTELLANOS JORGE ALEXANDER}
+LAB ALGORITMICA Y PROG. OBJ I {}
    - - @0800 - 0920[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB ALGORITMICA Y PROG. OBJ I {GONZALEZ DIAZ JOSHSUA JAMES}
@@ -9879,10 +9929,10 @@ ARQUITECTURA EMPRESARIAL {VILLALOBOS SALCEDO JORGE ALBERTO}
 ARQUITECTURA Y DISEÑO DE SW {GARCES PERNETT KELLY JOHANY}
    - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. ARQUITEC. Y DISEÑO DE SW {}
+LAB. ARQUITEC. Y DISEÑO DE SW {ARRUZA HEDMAN FERNANDO}
    - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-LAB. ARQUITEC. Y DISEÑO DE SW {}
+LAB. ARQUITEC. Y DISEÑO DE SW {ARRUZA HEDMAN FERNANDO}
    - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 DESARROLLO DE SW EN EQUIPO {FORERO GONZALEZ CESAR AUGUSTO}
@@ -9894,6 +9944,9 @@ DESARROLLO DE SW EN EQUIPO {CASALLAS GUTIERREZ RUBBY}
 DESARROLLO DE SW EN EQUIPO {GARCES PERNETT KELLY JOHANY}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
+DESARROLLO DE SW EN EQUIPO {}
+   - - @1230 - 1350[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
 LAB DLLO DE SW EN EQUIPO {FORERO GONZALEZ CESAR AUGUSTO}
    - - @0800 - 0920[I](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -9902,6 +9955,9 @@ LAB DLLO DE SW EN EQUIPO {CASALLAS GUTIERREZ RUBBY}
 ---------------------------------------------
 LAB DLLO DE SW EN EQUIPO {GARCES PERNETT KELLY JOHANY}
    - - @1400 - 1520[L](08/08/17 to 25/11/17)
+---------------------------------------------
+LAB DLLO DE SW EN EQUIPO {}
+   - - @1230 - 1350[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 INFRAESTRUCTURA COMUNICACIONES {CASTRO BARRERA HAROLD ENRIQUE}
    - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
@@ -10025,8 +10081,9 @@ NIV. LECTURA EN INGLES {SANCHEZ DIAZ JOHN EDWARD}
    - - @1400 - 1520[M    J](08/08/17 to 30/09/17)
 ---------------------------------------------
 INGLES 1 - LENGUAS Y CULTURA {PRADA MALDONADO ANGELA TATIANA}
-   - - @1100 - 1220[I    V](08/08/17 to 25/11/17)
    - - @1100 - 1220[L](08/08/17 to 25/11/17)
+   - - @1100 - 1220[V](08/08/17 to 25/11/17)
+   - - @1100 - 1220[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 INGLES 2 - LENGUAS Y CULTURA {PEÑA DIX BEATRIZ}
    - - @1100 - 1220[L](08/08/17 to 25/11/17)
@@ -10180,7 +10237,7 @@ ENGLISH 05 {MAY CAITLIN SIMPSON}
    - - @0800 - 0920[M](08/08/17 to 30/09/17)
    - - @0800 - 0920[L    I  J  V](08/08/17 to 30/09/17)
 ---------------------------------------------
-ENGLISH 05 {BUSTOS GONZALEZ PATRICIA LORENA}
+ENGLISH 05 {GOMEZ MEJIA LUCY}
    - - @0800 - 0920[L    I    V](08/08/17 to 30/09/17)
    - - @0800 - 0920[J](08/08/17 to 30/09/17)
    - - @0800 - 0920[M](08/08/17 to 30/09/17)
@@ -10327,6 +10384,12 @@ ENGLISH 05 {VALERIYA LYTVYCHENKO}
    - - @1700 - 1820[M    J](09/10/17 to 02/12/17)
    - - @1700 - 1820[L    I    V](09/10/17 to 02/12/17)
 ---------------------------------------------
+ENGLISH 05 {BUSTOS GONZALEZ PATRICIA LORENA}
+   - - @1100 - 1220[L](08/08/17 to 30/09/17)
+   - - @1100 - 1220[J](08/08/17 to 30/09/17)
+   - - @1100 - 1220[I    V](08/08/17 to 30/09/17)
+   - - @1100 - 1220[M](08/08/17 to 30/09/17)
+---------------------------------------------
 ENGLISH 06 {SOTO QUINTERO CRISTINA}
    - - @0630 - 0750[L  M](09/10/17 to 02/12/17)
    - - @0630 - 0750[J](09/10/17 to 02/12/17)
@@ -10404,6 +10467,12 @@ ENGLISH 06 {CAMACHO PEREZ HUGO GIOVANNI}
 ENGLISH 06 {SICHKO LIUBAVA}
    - - @1700 - 1820[L  M  I  J  V](09/10/17 to 02/12/17)
 ---------------------------------------------
+ENGLISH 06 {}
+   - - @1100 - 1220[L](09/10/17 to 02/12/17)
+   - - @1100 - 1220[V](09/10/17 to 02/12/17)
+   - - @1100 - 1220[I](09/10/17 to 02/12/17)
+   - - @1100 - 1220[M    J](09/10/17 to 02/12/17)
+---------------------------------------------
 ENGLISH 07 - SPEAKING 1 {AZIZ ZAZA AHMAD REZA}
    - - @0630 - 0750[I    V](08/08/17 to 30/09/17)
    - - @0630 - 0750[M    J](08/08/17 to 30/09/17)
@@ -10414,7 +10483,7 @@ ENGLISH 07 - SPEAKING 1 {HORTON TYLER}
 ---------------------------------------------
 ENGLISH 07 - SPEAKING 1 {RINCON VASQUEZ ANA MILENA}
    - - @0630 - 0750[I    V](08/08/17 to 30/09/17)
-   - - @0630 - 0750[M](08/08/17 to 30/09/17)
+   - - @0630 - 0750[M    J](08/08/17 to 30/09/17)
 ---------------------------------------------
 ENGLISH 07 - SPEAKING 1 {VEGA ANGÉLICA}
    - - @0800 - 0920[I    V](08/08/17 to 30/09/17)
@@ -10436,7 +10505,7 @@ ENGLISH 07 - SPEAKING 1 {FLACO ALOMIAS JHONNY}
    - - @0930 - 1050[I    V](08/08/17 to 30/09/17)
    - - @0930 - 1050[M    J](08/08/17 to 30/09/17)
 ---------------------------------------------
-ENGLISH 07 - SPEAKING 1 {WILKIE DE HOLLMAN PAMELA}
+ENGLISH 07 - SPEAKING 1 {VEGA ANGÉLICA}
    - - @0930 - 1050[I    V](08/08/17 to 30/09/17)
    - - @0930 - 1050[M    J](08/08/17 to 30/09/17)
 ---------------------------------------------
@@ -10540,7 +10609,7 @@ ENGLISH 07 - SPEAKING 1 {ZIVKOVIC JOVANA}
    - - @1230 - 1350[I    V](09/10/17 to 02/12/17)
    - - @1230 - 1350[M    J](09/10/17 to 02/12/17)
 ---------------------------------------------
-ENGLISH 07 - SPEAKING 1 {ROPICKI MICHAEL WILLIAM}
+ENGLISH 07 - SPEAKING 1 {}
    - - @1230 - 1350[I    V](09/10/17 to 02/12/17)
    - - @1230 - 1350[M    J](09/10/17 to 02/12/17)
 ---------------------------------------------
@@ -10552,7 +10621,7 @@ ENGLISH 07 - SPEAKING 1 {RINCON VASQUEZ ANA MILENA}
    - - @1400 - 1520[I    V](09/10/17 to 02/12/17)
    - - @1400 - 1520[M    J](09/10/17 to 02/12/17)
 ---------------------------------------------
-ENGLISH 07 - SPEAKING 1 {LIZCANO RIVERA KAREN NATHALIA}
+ENGLISH 07 - SPEAKING 1 {}
    - - @1400 - 1520[I    V](09/10/17 to 02/12/17)
    - - @1400 - 1520[M    J](09/10/17 to 02/12/17)
 ---------------------------------------------
@@ -10560,7 +10629,7 @@ ENGLISH 07 - SPEAKING 1 {HORTON TYLER}
    - - @1400 - 1520[I    V](09/10/17 to 02/12/17)
    - - @1400 - 1520[M    J](09/10/17 to 02/12/17)
 ---------------------------------------------
-ENGLISH 07 - SPEAKING 1 {RAMIREZ RODRIGUEZ MARTHA ADELAIDA}
+ENGLISH 07 - SPEAKING 1 {}
    - - @1530 - 1650[I    V](09/10/17 to 02/12/17)
    - - @1530 - 1650[M    J](09/10/17 to 02/12/17)
 ---------------------------------------------
@@ -10576,7 +10645,7 @@ ENGLISH 07 - SPEAKING 1 {RAMIREZ LAMUS DANIEL ALFONSO}
    - - @1700 - 1820[I    V](09/10/17 to 02/12/17)
    - - @1700 - 1820[M    J](09/10/17 to 02/12/17)
 ---------------------------------------------
-ENGLISH 07 - SPEAKING 1 {HORTON TYLER}
+ENGLISH 07 - SPEAKING 1 {}
    - - @1700 - 1820[I    V](09/10/17 to 02/12/17)
    - - @1700 - 1820[M    J](09/10/17 to 02/12/17)
 ---------------------------------------------
@@ -10590,12 +10659,13 @@ ENGLISH 08 - WRITING 1 {KASULA ALEX JOSEF}
    - - @0800 - 0920[M  I  J  V](08/08/17 to 30/09/17)
 ---------------------------------------------
 ENGLISH 08 - WRITING 1 {PEÑA DIX BEATRIZ}
-   - - @0800 - 0920[M  I  J  V](08/08/17 to 30/09/17)
+   - - @0800 - 0920[I](08/08/17 to 30/09/17)
+   - - @0800 - 0920[M    J  V](08/08/17 to 30/09/17)
 ---------------------------------------------
 ENGLISH 08 - WRITING 1 {BRZEZINSKI JAIMIE}
    - - @0930 - 1050[M  I  J  V](08/08/17 to 30/09/17)
 ---------------------------------------------
-ENGLISH 08 - WRITING 1 {BRZEZINSKI JAIMIE}
+ENGLISH 08 - WRITING 1 {HORTON TYLER}
    - - @1100 - 1220[M  I  J  V](08/08/17 to 30/09/17)
 ---------------------------------------------
 ENGLISH 08 - WRITING 1 {RIDSDALE MURRAY KENNETH SCOTT}
@@ -10745,6 +10815,29 @@ ENGLISH 09A WRITING 2-SCIENCES {AZIZ ZAZA AHMAD REZA}
 ENGLISH 09A WRITING 2-SCIENCES {RIDSDALE MURRAY KENNETH SCOTT}
    - - @1700 - 1820[L    I    V](09/10/17 to 02/12/17)
 ---------------------------------------------
+ENGLISH 09A WRITING 2-SCIENCES {CRITES KELLEY}
+   - - @0930 - 1050[V](08/08/17 to 30/09/17)
+   - - @0930 - 1050[L    I](08/08/17 to 30/09/17)
+---------------------------------------------
+ENGLISH 09A WRITING 2-SCIENCES {CRITES KELLEY}
+   - - @0630 - 0750[V](08/08/17 to 30/09/17)
+   - - @0630 - 0750[L    I](08/08/17 to 30/09/17)
+---------------------------------------------
+ENGLISH 09A WRITING 2-SCIENCES {AZIZ ZAZA AHMAD REZA}
+   - - @0800 - 0920[V](08/08/17 to 30/09/17)
+   - - @0800 - 0920[L    I](08/08/17 to 30/09/17)
+---------------------------------------------
+ENGLISH 09A WRITING 2-SCIENCES {MCCORMACK THOMAS}
+   - - @1100 - 1220[L](08/08/17 to 30/09/17)
+   - - @1100 - 1220[V](08/08/17 to 30/09/17)
+   - - @1100 - 1220[I](08/08/17 to 30/09/17)
+---------------------------------------------
+ENGLISH 09A WRITING 2-SCIENCES {VALERIYA LYTVYCHENKO}
+   - - @1530 - 1650[L    I    V](08/08/17 to 30/09/17)
+---------------------------------------------
+ENGLISH 09A WRITING 2-SCIENCES {}
+   - - @1830 - 1950[L    I    V](08/08/17 to 30/09/17)
+---------------------------------------------
 ENGLISH 09B WRITING 2 -HUMANIT {PARROTT BRIAN CHRISTOPHER}
    - - @0630 - 0750[L    I    V](08/08/17 to 30/09/17)
 ---------------------------------------------
@@ -10774,6 +10867,16 @@ ENGLISH 09B WRITING 2 -HUMANIT {BRZEZINSKI JAIMIE}
 ---------------------------------------------
 ENGLISH 09B WRITING 2 -HUMANIT {BRZEZINSKI JAIMIE}
    - - @1400 - 1520[L    I    V](09/10/17 to 02/12/17)
+---------------------------------------------
+ENGLISH 09B WRITING 2 -HUMANIT {CRITES KELLEY}
+   - - @1230 - 1350[I    V](08/08/17 to 30/09/17)
+   - - @1230 - 1350[L](08/08/17 to 30/09/17)
+---------------------------------------------
+ENGLISH 09B WRITING 2 -HUMANIT {SUAREZ BENAVIDES RICARDO}
+   - - @1400 - 1520[L    I    V](08/08/17 to 30/09/17)
+---------------------------------------------
+ENGLISH 09B WRITING 2 -HUMANIT {}
+   - - @1700 - 1820[L    I    V](08/08/17 to 30/09/17)
 ---------------------------------------------
 ENGLISH 10A-SPEAKING2 ACADEMIC {AZIZ ZAZA AHMAD REZA}
    - - @0630 - 0750[L    I    V](09/10/17 to 02/12/17)
@@ -10808,6 +10911,21 @@ ENGLISH 10A-SPEAKING2 ACADEMIC {SCHMIDT KATRINA JANSEN}
 ENGLISH 10A-SPEAKING2 ACADEMIC {}
    - - @1700 - 1820[L    I    V](09/10/17 to 02/12/17)
 ---------------------------------------------
+ENGLISH 10A-SPEAKING2 ACADEMIC {}
+   - - @1230 - 1350[L](09/10/17 to 02/12/17)
+   - - @1230 - 1350[V](09/10/17 to 02/12/17)
+   - - @1230 - 1350[I](09/10/17 to 02/12/17)
+---------------------------------------------
+ENGLISH 10A-SPEAKING2 ACADEMIC {}
+   - - @1400 - 1520[L](09/10/17 to 02/12/17)
+   - - @1400 - 1520[V](09/10/17 to 02/12/17)
+   - - @1400 - 1520[I](09/10/17 to 02/12/17)
+---------------------------------------------
+ENGLISH 10A-SPEAKING2 ACADEMIC {}
+   - - @1700 - 1820[L](09/10/17 to 02/12/17)
+   - - @1700 - 1820[V](09/10/17 to 02/12/17)
+   - - @1700 - 1820[I](09/10/17 to 02/12/17)
+---------------------------------------------
 ENGLISH 10B SPEAKING2 PROFESS. {RYE EMMA}
    - - @0630 - 0750[L    I    V](09/10/17 to 02/12/17)
 ---------------------------------------------
@@ -10826,6 +10944,23 @@ ENGLISH 10B SPEAKING2 PROFESS. {BRUSKEWITZ NICOLE ADRIANA}
    - - @1400 - 1520[L](09/10/17 to 02/12/17)
    - - @1400 - 1520[V](09/10/17 to 02/12/17)
    - - @1400 - 1520[I](09/10/17 to 02/12/17)
+---------------------------------------------
+ENGLISH 10B SPEAKING2 PROFESS. {}
+   - - @0630 - 0750[V](09/10/17 to 02/12/17)
+   - - @0630 - 0750[L    I](09/10/17 to 02/12/17)
+---------------------------------------------
+ENGLISH 10B SPEAKING2 PROFESS. {}
+   - - @0930 - 1050[L](09/10/17 to 02/12/17)
+   - - @0930 - 1050[V](09/10/17 to 02/12/17)
+   - - @0930 - 1050[I](09/10/17 to 02/12/17)
+---------------------------------------------
+ENGLISH 10B SPEAKING2 PROFESS. {}
+   - - @1100 - 1220[I    V](09/10/17 to 02/12/17)
+   - - @1100 - 1220[L](09/10/17 to 02/12/17)
+---------------------------------------------
+ENGLISH 10B SPEAKING2 PROFESS. {}
+   - - @0800 - 0920[I    V](09/10/17 to 02/12/17)
+   - - @0800 - 0920[L](09/10/17 to 02/12/17)
 ---------------------------------------------
 FRANCÉS 1 {GARZON GONZALEZ ANGELA MILENA}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
@@ -11067,7 +11202,7 @@ ALEMAN 4 {SCHIFFERS JURGEN}
 ALEMAN 4 {DAVILA MATEUS PAUL RICARDO}
    - - @1400 - 1520[L    I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALEMAN 4 {VARGAS PRADA CLAUDIA ROCIO}
+ALEMAN 4 {}
    - - @1400 - 1520[L    I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CONVERSA Y ESCRIT EN ALEMÁN 4 {RINCON BARRERA NATALIA}
@@ -11419,6 +11554,11 @@ PORTUGUES 3 {ALVAREZ CABRAL TELMA}
    - - @1530 - 1650[V](08/08/17 to 25/11/17)
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
+PORTUGUES 3 {}
+   - - @1230 - 1350[L](08/08/17 to 25/11/17)
+   - - @1230 - 1350[V](08/08/17 to 25/11/17)
+   - - @1230 - 1350[I](08/08/17 to 25/11/17)
+---------------------------------------------
 PORTUGUES 4 {SACCHITELLI RIASCOS BIANCA}
    - - @1100 - 1220[L    I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -11469,8 +11609,9 @@ SOCIOLINGÜÍSTICA {JANSSEN GERRIET}
    - - @1400 - 1520[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 INGLES 4 - LENGUAS Y CULTURA {KASULA ALEX JOSEF}
+   - - @1100 - 1220[L](08/08/17 to 25/11/17)
+   - - @1100 - 1220[V](08/08/17 to 25/11/17)
    - - @1100 - 1220[I](08/08/17 to 25/11/17)
-   - - @1100 - 1220[L        V](08/08/17 to 25/11/17)
 ---------------------------------------------
 INGLES 5 - LENGUAS Y CULTURA {GOMEZ DELGADO OSCAR}
    - - @1100 - 1220[I](08/08/17 to 25/11/17)
@@ -11544,7 +11685,7 @@ JAPONES 6 {KONDO HIROMU}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
    - - @1100 - 1220[L    I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-IMAGEN Y SOCIEDADES {}
+IMAGEN Y SOCIEDADES {MERLO ALESSANDRA}
    - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESTUDIOS CULTURALES Y AMÉRICA {ASCHNER RESTREPO CAMILA}
@@ -11640,7 +11781,7 @@ ESCRITURA ACADEMICA POSTGRADO {}
 ESCRITURA ACADEMICA POSTGRADO {}
    - - @1700 - 1950[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-TALLER LECTURA 1 - CIFE IBAGUE {}
+TALLER LECTURA 1 - CIFE IBAGUE {RINCON VASQUEZ ANA MILENA}
    - - @0700 - 1150[S](05/08/17 to 05/08/17)
    - - @0700 - 1150[S](26/08/17 to 26/08/17)
    - - @0700 - 1150[S](09/09/17 to 09/09/17)
@@ -11779,7 +11920,7 @@ TALLER LECTURA 2 POSTGRADO {VEGA ANGÉLICA}
    - - @0800 - 1150[S](04/11/17 to 04/11/17)
    - - @0800 - 1150[S](25/11/17 to 25/11/17)
 ---------------------------------------------
-TALLER LECTURA 2 POSTGRADO {BENAVIDES AURA NATALIA}
+TALLER LECTURA 2 POSTGRADO {RINCON VASQUEZ ANA MILENA}
    - - @0800 - 1150[S](19/08/17 to 19/08/17)
    - - @0800 - 1150[S](02/09/17 to 02/09/17)
    - - @0800 - 1150[S](23/09/17 to 23/09/17)
@@ -11846,6 +11987,12 @@ INGLES DOCTORADOS 3 {ROPICKI MICHAEL WILLIAM}
    - - @0930 - 1050[J](08/08/17 to 25/11/17)
    - - @0930 - 1050[L  M  I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
+INGLES DOCTORADOS 3 {}
+   - - @0930 - 1050[L  M](08/08/17 to 25/11/17)
+   - - @0930 - 1050[V](08/08/17 to 25/11/17)
+   - - @0930 - 1050[J](08/08/17 to 25/11/17)
+   - - @0930 - 1050[I](08/08/17 to 25/11/17)
+---------------------------------------------
 INGLES DOCTORADOS 4 {BRUSKEWITZ NICOLE ADRIANA}
    - - @0930 - 1050[L    I    V](08/08/17 to 25/11/17)
 =============================================================
@@ -11889,7 +12036,7 @@ TEATRO: JUVENTUD Y REBELIÓN {ARBOLEDA LOZADA DIEGO AUGUSTO}
    - - @0800 - 0920[I](08/08/17 to 25/11/17)
    - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESPAÑOL {}
+ESPAÑOL {CAMARGO MOLANO YULY ANDREA}
    - - @0630 - 0750[L        V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESPAÑOL {}
@@ -11904,7 +12051,7 @@ ESPAÑOL {RUEDA REY NICOLAS FELIPE}
 ESPAÑOL {}
    - - @1530 - 1650[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESPAÑOL {CAMARGO MOLANO YULY ANDREA}
+ESPAÑOL {}
    - - @0630 - 0750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESPAÑOL {}
@@ -11913,7 +12060,7 @@ ESPAÑOL {}
 ESPAÑOL {ESLAVA BEJARANO SANTIAGO}
    - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESPAÑOL {CUBILLOS OCAMPO JULIAN ALBERTO}
+ESPAÑOL {}
    - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESPAÑOL {MANCERA RODRIGUEZ MERCEDES LUISA FERNANDA}
@@ -11927,7 +12074,7 @@ ESPAÑOL {}
    - - @0930 - 1050[J](08/08/17 to 25/11/17)
    - - @0930 - 1050[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESPAÑOL {}
+ESPAÑOL {CUBILLOS OCAMPO JULIAN ALBERTO}
    - - @0930 - 1050[I](08/08/17 to 25/11/17)
    - - @0930 - 1050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -11940,10 +12087,10 @@ ESPAÑOL {MANCERA RODRIGUEZ MERCEDES LUISA FERNANDA}
 ESPAÑOL {ESLAVA BEJARANO SANTIAGO}
    - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESPAÑOL {}
+ESPAÑOL {CORREA ISAZA JUAN CAMILO}
    - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESPAÑOL {ALZATE CADAVID CAROLINA}
+ESPAÑOL {}
    - - @1100 - 1220[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESPAÑOL {CUBILLOS OCAMPO JULIAN ALBERTO}
@@ -11967,7 +12114,7 @@ ESPAÑOL {BAK CELY LAURA}
 ESPAÑOL {}
    - - @1230 - 1350[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESPAÑOL {CORREA ISAZA JUAN CAMILO}
+ESPAÑOL {}
    - - @1400 - 1520[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESPAÑOL {NAVARRETE ASTORQUIZA SANTIAGO}
@@ -12004,6 +12151,9 @@ ESPAÑOL {}
 ---------------------------------------------
 ESPAÑOL {}
    - - @0630 - 0720[L    I    V](08/08/17 to 25/11/17)
+---------------------------------------------
+ESPAÑOL {ALZATE CADAVID CAROLINA}
+   - - @1100 - 1220[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 GRUPO DE TEATRO {SALAZAR APARICIO PEDRO ALEJANDRO}
    - - @1230 - 1350[M    J](08/08/17 to 25/11/17)
@@ -12102,7 +12252,7 @@ TALLER DE EDICIÓN {}
 ASISTENCIA DE INVESTIGACIÓN {}
    - - @1700 - 1820[L        V](08/08/17 to 25/11/17)
 ---------------------------------------------
-SEMINARIO-TRABAJO DE GRADO {}
+SEMINARIO-TRABAJO DE GRADO {LOZANO VASQUEZ ANDREA}
    - - @1100 - 1350[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 SEM.TRABAJO-GRADO EN CREACIÓN {}
@@ -12262,7 +12412,7 @@ GERENCIA DE LOGISTICA {SOTO JUAN PABLO}
 GERENCIA DE LOGISTICA {THIELL MARCUS}
    - - @1800 - 2050[J](10/08/17 to 02/11/17)
 ---------------------------------------------
-ESTRATEGIA {YAÑEZ ARENAS JAVIER}
+ESTRATEGIA {BARRIGA PALACIO JORGE RICARDO}
    - - @0800 - 1050[J](14/08/17 to 25/09/17)
    - - @0800 - 1050[L](14/08/17 to 25/09/17)
 ---------------------------------------------
@@ -12342,7 +12492,7 @@ ALGEBRA LINEAL 1 {ONSHUUS NIÑO ALF}
 ALGEBRA LINEAL 1 {CORREDOR LONDOÑO LUIS JAIME}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALGEBRA LINEAL 1 {BENEDETTI VELASQUEZ CAROLINA}
+ALGEBRA LINEAL 1 {}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 {MALAKHALTSEV MIKHAIL}
@@ -12357,7 +12507,7 @@ ALGEBRA LINEAL 1 {MEDINA LUNA MANUEL JAIR}
 ALGEBRA LINEAL 1 {SANABRIA CAMILO}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALGEBRA LINEAL 1 (INGLES) {WILSON MITSURU}
+ALGEBRA LINEAL 1 (INGLÉS) {WILSON MITSURU}
    - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 {PEREZ GUTIERREZ ALICIA}
@@ -12385,7 +12535,8 @@ ALGEBRA LINEAL 1 COMPL {JIMENEZ RAMIREZ JOSE DARIO}
    - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {OROZCO LOPEZ RONALD JULIO}
-   - - @1530 - 1620[L    I](08/08/17 to 25/11/17)
+   - - @1530 - 1620[I](08/08/17 to 25/11/17)
+   - - @1530 - 1620[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {ASTAIZA SULEZ WEYMAR ANDRES}
    - - @1530 - 1620[L    I](08/08/17 to 25/11/17)
@@ -12448,13 +12599,13 @@ ALGEBRA LINEAL 1 COMPL {SOTO OCHOA SIMON ANDRES}
    - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {AZUERO MUTIS JUAN CAMILO}
-   - - @1530 - 1650[L      J](08/08/17 to 25/11/17)
+   - - @1530 - 1620[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {MORENO PARIS JAVIER DAVID}
    - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {MORENO PARIS JAVIER DAVID}
-   - - @1530 - 1650[L      J](08/08/17 to 25/11/17)
+   - - @1530 - 1620[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {FIGUEROA SIERRA RAUL}
    - - @1530 - 1620[L    I](08/08/17 to 25/11/17)
@@ -12465,29 +12616,31 @@ ALGEBRA LINEAL 1 COMPL {PACHECO TOBO WILLIAM LEONARDO}
 ALGEBRA LINEAL 1 COMPL {FIGUEROA SIERRA RAUL}
    - - @1700 - 1750[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALGEBRA LINEAL 1 COMPL {VALERO SIERRA JUAN ANDRES}
+ALGEBRA LINEAL 1 COMPL {RAMIREZ DIAZ NICOLAS}
    - - @1530 - 1620[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {CARMONA GONZALEZ JUAN FELIPE}
    - - @1530 - 1620[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALGEBRA LINEAL 1 COMPL {VALERO SIERRA JUAN ANDRES}
+ALGEBRA LINEAL 1 COMPL {RAMIREZ DIAZ NICOLAS}
    - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {LIEVANO KARIM JUAN PABLO}
-   - - @1230 - 1350[L    I](08/08/17 to 25/11/17)
+   - - @1230 - 1320[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {MUÑOZ CARVAJAL JORGE DANIEL}
    - - @1700 - 1750[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 ALGEBRA LINEAL 1 COMPL {MUÑOZ CARVAJAL JORGE DANIEL}
-   - - @1230 - 1350[L    I](08/08/17 to 25/11/17)
+   - - @1230 - 1320[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALG. LINEAL 1 (HONORES) {ADARVE DELGADO SERGIO}
+ALGEBRA LINEAL 1 (HONORES) {ADARVE DELGADO SERGIO}
    - - @0930 - 1050[M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALGEBRA LINEAL 2 (INGLÉS) {RIVEROS PACHECO DAVID RICARDO}
-   - - @0930 - 1050[M    J  V](08/08/17 to 25/11/17)
+ALGEBRA LINEAL 2 {RIVEROS PACHECO DAVID RICARDO}
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
+   - - @0800 - 0920[V](08/08/17 to 25/11/17)
+   - - @0800 - 0920[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 PRECALCULO {BARRIGA TURRIAGO ELIANA LUCERO}
    - - @0630 - 0720[M  I  J  V](08/08/17 to 25/11/17)
@@ -12586,6 +12739,17 @@ PRECALCULO (SIGMA) {}
    - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
    - - @1530 - 1620[L        V](08/08/17 to 25/11/17)
 ---------------------------------------------
+PRECALCULO {}
+   - - @1100 - 1150[L](08/08/17 to 25/11/17)
+   - - @1100 - 1150[V](08/08/17 to 25/11/17)
+   - - @1100 - 1150[I](08/08/17 to 25/11/17)
+   - - @1100 - 1150[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+PRECALCULO {}
+   - - @0800 - 0850[L    I](08/08/17 to 25/11/17)
+   - - @0800 - 0850[V](08/08/17 to 25/11/17)
+   - - @0800 - 0850[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
 CALCULO DIFERENCIAL {DI PRISCO DE VENANZI CARLOS AUGUSTO}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -12605,10 +12769,8 @@ CALCULO DIFERENCIAL {SUESCUN GOMEZ NICOLAS}
    - - @0630 - 0750[L      J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO DIFERENCIAL {CASTRO OVALLE DANIEL FELIPE}
-   - - @1100 - 1220[L  M      V](08/08/17 to 25/11/17)
----------------------------------------------
-CALCULO DIFERENCIAL {BARRIGA TURRIAGO ELIANA LUCERO}
-   - - @1230 - 1350[L  M      V](08/08/17 to 25/11/17)
+   - - @1100 - 1220[M](08/08/17 to 25/11/17)
+   - - @1100 - 1220[L        V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO DIFERENCIAL {BENITEZ CASTRO FERNEY}
    - - @1400 - 1520[L  M      V](08/08/17 to 25/11/17)
@@ -12637,7 +12799,7 @@ CALCULO DIFERENCIAL {DONADO RINCON DANIEL ALBERTO}
 CALCULO DIFERENCIAL {FERRO LUIS JORGE}
    - - @1100 - 1220[L  M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALCULO DIFERENCIAL {MONTERO ROSERO JULIO ANDRES}
+CALCULO DIFERENCIAL {}
    - - @1400 - 1520[L  M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO DIFERENCIAL {}
@@ -12649,7 +12811,7 @@ CALCULO DIFERENCIAL (INGLÉS) {SCHRITTESSER DAVID}
 CALCULO DIFERENCIAL {ARIAS MARQUEZ JORGE ALBERTO}
    - - @0630 - 0750[L  M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALCULO DIFERENCIAL {CAPASSO CASTRO ITALO}
+CALCULO DIFERENCIAL {}
    - - @1700 - 1820[L  M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO DIFERENCIAL {BARRIGA TURRIAGO ELIANA LUCERO}
@@ -12663,7 +12825,7 @@ CALCULO DIFERENCIAL {TORRES GALINDO ARLEY FERNANDO}
    - - @1700 - 1820[V](08/08/17 to 25/11/17)
    - - @1700 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALCULO DIFERENCIAL {PARAMO FONSECA AQUILES ESTEBAN}
+CALCULO DIFERENCIAL {}
    - - @1530 - 1650[L  M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO DIFERENCIAL {LOPEZ GARCIA JOSE DARIO}
@@ -12703,8 +12865,8 @@ CALCULO VECTORIAL (INGLES) {BRESSLER PAUL}
    - - @0930 - 1050[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO VECTORIAL {CARDONA GUIO ALEXANDER}
-   - - @1700 - 1830[V](08/08/17 to 25/11/17)
-   - - @1700 - 1830[M](08/08/17 to 25/11/17)
+   - - @1700 - 1820[V](08/08/17 to 25/11/17)
+   - - @1700 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO VECTORIAL {ADARVE DELGADO SERGIO}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
@@ -12731,6 +12893,9 @@ CALCULO VECTORIAL {}
    - - @0800 - 0920[V](08/08/17 to 25/11/17)
    - - @0800 - 0920[I](08/08/17 to 25/11/17)
 ---------------------------------------------
+CALCULO VECTORIAL {}
+   - - @1230 - 1350[L  M      V](08/08/17 to 25/11/17)
+---------------------------------------------
 CALCULO VECTORIAL COMPL {OSORIO SALCEDO JUAN SEBASTIAN}
    - - @1400 - 1450[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -12740,13 +12905,13 @@ CALCULO VECTORIAL COMPL {PINZON PALACIOS SANTIAGO IVAN}
 CALCULO VECTORIAL COMPL {OSORIO SALCEDO JUAN SEBASTIAN}
    - - @1100 - 1150[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {PINZON PALACIOS SANTIAGO IVAN}
+CALCULO VECTORIAL COMPL {PINZON PALACIOS SANTIAGO IVAN}
    - - @1100 - 1150[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO VECTORIAL COMPL {SUAREZ SANABRIA LUIS CARLOS}
    - - @1100 - 1150[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {GARCIA SANCHEZ JAVIER HERNAN}
+CALCULO VECTORIAL COMPL {GARCIA SANCHEZ JAVIER HERNAN}
    - - @1100 - 1150[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO VECTORIAL COMPL {PEÑA HIDALGO JAIRO IVAN}
@@ -12755,19 +12920,19 @@ CALCULO VECTORIAL COMPL {PEÑA HIDALGO JAIRO IVAN}
 CALCULO VECTORIAL COMPL {GARCIA SANCHEZ JAVIER HERNAN}
    - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {VARGAS BELTRAN LUIS FELIPE}
+CALCULO VECTORIAL COMPL {VARGAS BELTRAN LUIS FELIPE}
    - - @0930 - 1020[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {SUAREZ SANABRIA LUIS CARLOS}
-   - - @1230 - 1350[L      J](08/08/17 to 25/11/17)
+CALCULO VECTORIAL COMPL {SUAREZ SANABRIA LUIS CARLOS}
+   - - @1230 - 1320[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {VARGAS BELTRAN LUIS FELIPE}
-   - - @1230 - 1350[L      J](08/08/17 to 25/11/17)
+CALCULO VECTORIAL COMPL {VARGAS BELTRAN LUIS FELIPE}
+   - - @1230 - 1320[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO VECTORIAL COMPL {AVILA GIRARDOT DANIEL FELIPE}
    - - @1530 - 1620[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {VENEGAS RAMIREZ CESAR FERNANDO}
+CALCULO VECTORIAL COMPL {VENEGAS RAMIREZ CESAR FERNANDO}
    - - @1530 - 1620[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO VECTORIAL COMPL {AVILA GIRARDOT DANIEL FELIPE}
@@ -12788,11 +12953,11 @@ CALCULO VECTORIAL COMPL {CARO REYES JERSON LEONARDO}
    - - @1230 - 1320[I](08/08/17 to 25/11/17)
    - - @1230 - 1320[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {WOSNITZKA MARTIN FELIX}
+CALCULO VECTORIAL COMPL {WOSNITZKA MARTIN FELIX}
    - - @1230 - 1320[I](08/08/17 to 25/11/17)
    - - @1230 - 1320[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {GALINDO OLARTE ANDRES FELIPE}
+CALCULO VECTORIAL COMPL {GALINDO OLARTE ANDRES FELIPE}
    - - @1530 - 1620[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO VECTORIAL COMPL {QUINTERO OSPINA RODOLFO ALEXANDER}
@@ -12801,16 +12966,16 @@ CALCULO VECTORIAL COMPL {QUINTERO OSPINA RODOLFO ALEXANDER}
 CALCULO VECTORIAL COMPL {GALINDO OLARTE ANDRES FELIPE}
    - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {QUINTERO OSPINA RODOLFO ALEXANDER}
+CALCULO VECTORIAL COMPL {QUINTERO OSPINA RODOLFO ALEXANDER}
    - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {BOLAÑOS CHAVEZ WILMAR REINERIO}
+CALCULO VECTORIAL COMPL {BOLAÑOS CHAVEZ WILMAR REINERIO}
    - - @1530 - 1620[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {}
+CALCULO VECTORIAL COMPL {SANCHEZ SANABRIA HENRY MAURICIO}
    - - @1530 - 1620[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-CAL. VECTORIAL COMPL {BOLAÑOS CHAVEZ WILMAR REINERIO}
+CALCULO VECTORIAL COMPL {BOLAÑOS CHAVEZ WILMAR REINERIO}
    - - @1700 - 1750[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC. VECTORIAL (HON) (INGLÉS) {WILSON MITSURU}
@@ -12829,7 +12994,9 @@ MATEMATICAS 1 (BIO-MED) {CASTRO OVALLE DANIEL FELIPE}
    - - @1700 - 1750[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
 MATEMATICAS 3 (BIO-MED) {ZAPATA RESTREPO OSCAR OSWALDO}
-   - - @1230 - 1350[M    J  V](08/08/17 to 25/11/17)
+   - - @1230 - 1350[M](08/08/17 to 25/11/17)
+   - - @1230 - 1350[V](08/08/17 to 25/11/17)
+   - - @1230 - 1350[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO INTEGRAL-ECUAC.DIFEREN {OULD AHMED}
    - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
@@ -12840,8 +13007,9 @@ CALCULO INTEGR -ECUAC.DIFEREN. {CORTISSOZ IRIARTE JEAN CARLOS}
 CALCULO INTEGRAL-ECUAC.DIFEREN {JUNCA PELAEZ MAURICIO JOSE}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALC INT-ECUAC.DIFER. {FERRI STEFANO}
-   - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
+CALCULO INTEGRAL-ECUAC.DIFEREN {FERRI STEFANO}
+   - - @1230 - 1350[V](08/08/17 to 25/11/17)
+   - - @1230 - 1350[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO INTEGRAL-ECUAC.DIFEREN {BACKELIN ERIK}
    - - @1400 - 1520[M      V](08/08/17 to 25/11/17)
@@ -12852,7 +13020,7 @@ CALCULO INTEGRAL-ECUAC.DIFEREN {DE LA VEGA RAMIRO}
 CALCULO INTEGRAL-ECUAC.DIFEREN {MARTINEZ BALDARES MARICARMEN}
    - - @1530 - 1650[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALCULO INTEGR -ECUAC.DIF. {OULD AHMED}
+CALCULO INTEGRAL-ECUAC.DIFEREN {OULD AHMED}
    - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC.NTEGR -ECUAC.DIF.(INGLES) {GETMANENKO ALEXANDER}
@@ -12861,7 +13029,7 @@ CALC.NTEGR -ECUAC.DIF.(INGLES) {GETMANENKO ALEXANDER}
 CALCULO INTEGRAL-ECUAC.DIFEREN {}
    - - @1700 - 1820[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALCULO INTEGRAL-ECUAC.DIFEREN {PARAMO FONSECA AQUILES ESTEBAN}
+CALCULO INTEGRAL-ECUAC.DIFEREN {}
    - - @1700 - 1820[M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO INTEGRAL-ECUAC.DIFEREN {MURCIA MAZO ALEXANDER}
@@ -12871,7 +13039,7 @@ CALCULO INTEGRAL-ECUAC.DIFEREN {RIVEROS PACHECO DAVID RICARDO}
    - - @1100 - 1220[M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC.INTEG-ECUAC.DIFEREN COMPL {WALTEROS VERGARA NICOLÁS JAVIER}
-   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
+   - - @0930 - 1020[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC.INTEG-ECUAC.DIFEREN COMPL {POST SACHA}
    - - @1400 - 1450[L    I](08/08/17 to 25/11/17)
@@ -12894,13 +13062,13 @@ CALC.INTEG-ECUAC.DIFEREN COMPL {LEGUIZAMON QUINCHE EDISON JAIR}
 CALC.INTEG-ECUAC.DIFEREN COMPL {PATERNINA AMADOR JOSE CARMELO}
    - - @1700 - 1750[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALC.INTEG-ECUAC.DIFEREN COMPL {SALAZAR SANDINO JUAN NICOLAS}
+CALC.INTEG-ECUAC.DIFEREN COMPL {NUMPAQUE ROA JUAN SEBASTIAN}
    - - @1100 - 1150[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC.INTEG-ECUAC.DIFEREN COMPL {PATERNINA AMADOR JOSE CARMELO}
    - - @1100 - 1150[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALC.INTEG-ECUAC.DIFEREN COMPL {NUMPAQUE ROA JUAN SEBASTIAN}
+CALC.INTEG-ECUAC.DIFEREN COMPL {SALAZAR SANDINO JUAN NICOLAS}
    - - @1700 - 1750[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC.INTEG-ECUAC.DIFEREN COMPL {GONZALEZ CASABIANCA FELIPE}
@@ -12960,14 +13128,15 @@ CALC.INTEG-ECUAC.DIFEREN COMPL {SANCHEZ MENDOZA DANIEL}
 CALC.INTEG-ECUAC.DIFEREN COMPL {POST SACHA}
    - - @1100 - 1150[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALC.INTEG-ECUAC.DIFEREN COMPL {}
+CALC.INTEG-ECUAC.DIFEREN COMPL {REMOLINA ARDILA REINEL LEANDRO}
    - - @1530 - 1620[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC.INTEG-ECUAC.DIFEREN COMPL {}
    - - @1530 - 1620[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC.INTEG-ECUAC.DIFEREN COMPL {URIBE MORALES JUAN FELIPE}
-   - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
+   - - @1700 - 1750[J](08/08/17 to 25/11/17)
+   - - @1700 - 1750[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALC.INTEG-ECUAC.DIFEREN COMPL {TAMAYO JIMENEZ DANIEL}
    - - @1700 - 1750[L      J](08/08/17 to 25/11/17)
@@ -12989,11 +13158,17 @@ CALCULO INTEGRAL-PROBABILIDAD {RODRIGUEZ GRANOBLES FREDY}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO INTEGRAL-PROBABILIDAD {BENITEZ CASTRO FERNEY}
-   - - @0930 - 1050[M    J  V](08/08/17 to 25/11/17)
+   - - @0930 - 1050[J](08/08/17 to 25/11/17)
+   - - @0930 - 1050[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO INTEGRAL-PROBABILIDAD {ORTIZ SANCHEZ ROBERTO}
    - - @1400 - 1520[J](08/08/17 to 25/11/17)
    - - @1400 - 1520[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+CALCULO INTEGRAL-PROBABILIDAD {}
+   - - @0930 - 1050[M](08/08/17 to 25/11/17)
+   - - @0930 - 1050[V](08/08/17 to 25/11/17)
+   - - @0930 - 1050[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO INTEGRAL-PROBAB COMPL {ASTAIZA SULEZ WEYMAR ANDRES}
    - - @0930 - 1020[L    I](08/08/17 to 25/11/17)
@@ -13005,7 +13180,7 @@ CALCULO INTEGRAL-PROBAB COMPL {ASTAIZA SULEZ WEYMAR ANDRES}
    - - @1230 - 1320[I](08/08/17 to 25/11/17)
    - - @1230 - 1320[L](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALCULO INTEGRAL-PROBAB COMPL {}
+CALCULO INTEGRAL-PROBAB COMPL {ROMERO PINEDO MARGUI ANGELICA}
    - - @1230 - 1320[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CALCULO INTEGRAL-PROBAB COMPL {TORRES GALINDO ARLEY FERNANDO}
@@ -13029,6 +13204,11 @@ ALGEBRA LINEAL 1 Y CALCULO 3 {BENITEZ CASTRO FERNEY}
 ALGEBRA LINEAL 1 Y CALCULO 3 {}
    - - @1530 - 1650[M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
+ALGEBRA LINEAL 1 Y CALCULO 3 {}
+   - - @1530 - 1650[M](08/08/17 to 25/11/17)
+   - - @1530 - 1650[V](08/08/17 to 25/11/17)
+   - - @1530 - 1650[J](08/08/17 to 25/11/17)
+---------------------------------------------
 COMPL. CALC. 3 ALG. LINEAL 1 {REYES CASTELLANOS CESAR AUGUSTO}
    - - @1400 - 1450[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -13038,13 +13218,13 @@ COMPL. CALC. 3 ALG. LINEAL 1 {MARTINEZ MARMOL OTAIVIN}
 COMPL. CALC. 3 ALG. LINEAL 1 {REYES CASTELLANOS CESAR AUGUSTO}
    - - @0800 - 0850[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. CALC. 3 ALG. LINEAL 1 {}
+COMPL. CALC. 3 ALG. LINEAL 1 {CORTES GOMEZ SANTIAGO ENRIQUE}
    - - @0800 - 0850[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. CALC. 3 ALG. LINEAL 1 {ANGEL BAUTISTA JOSE LEONARDO}
    - - @1100 - 1150[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-COMPL. CALC. 3 ALG. LINEAL 1 {DONADO RINCON DANIEL ALBERTO}
+COMPL. CALC. 3 ALG. LINEAL 1 {CORTES GOMEZ SANTIAGO ENRIQUE}
    - - @1100 - 1150[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL. CALC. 3 ALG. LINEAL 1 {ORTIZ GUZMAN FABIO}
@@ -13065,13 +13245,10 @@ ESTADISTICA 1 (C.SOCIALES) {ACUÑA GONZALEZ JULIAN EDUARDO}
 ESTADISTICA 1 (C.SOCIALES) {DEL CORRAL MARTINEZ CESAR AUGUSTO}
    - - @1230 - 1320[L  M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESTADISTICA 1 (C.SOCIALES) {MARTINEZ MARTINEZ CAMILO ANDRES}
+ESTADISTICA 1 (C.SOCIALES) {MARTINEZ MARMOL OTAIVIN}
    - - @1230 - 1320[L  M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESTADISTICA 1 (C.SOCIALES) {ARIAS MARQUEZ JORGE ALBERTO}
-   - - @1230 - 1320[L  M    J  V](08/08/17 to 25/11/17)
----------------------------------------------
-ESTADISTICA 1 (C.SOCIALES) {MONTOYA ROBLEDO RAFAEL}
+ESTADISTICA 1 (C.SOCIALES) {}
    - - @1230 - 1320[L  M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESTADISTICA 1 (C.SOCIALES) {CAPASSO CASTRO ITALO}
@@ -13101,7 +13278,7 @@ MATEMATICAS 2 (BIO-MED) {HERRERA QUEVEDO DIANA MARCELA}
 MATEMATICAS 2 (BIO-MED) {DEL CORRAL MARTINEZ CESAR AUGUSTO}
    - - @1700 - 1820[M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ESTADISTICA (CONTADURIA) {}
+ESTADISTICA (CONTADURIA) {VANEGAS GORDILLO ORLANDO}
    - - @1700 - 1820[L](08/08/17 to 25/11/17)
    - - @1700 - 1820[V](08/08/17 to 25/11/17)
    - - @1700 - 1820[I](08/08/17 to 25/11/17)
@@ -13160,13 +13337,13 @@ ECUACIONES DIFERENCIALES {ROCUTS SCHWEITZER}
 ECUACIONES DIFERENCIALES COMPL {RODRIGUEZ TORIJANO CARLOS ANDRES}
    - - @1700 - 1750[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ECUACIONES DIFERENCIALES COMPL {RAMIREZ DIAZ NICOLAS}
+ECUACIONES DIFERENCIALES COMPL {VALERO SIERRA JUAN ANDRES}
    - - @1700 - 1750[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ECUACIONES DIFERENCIALES COMPL {RODRIGUEZ TORIJANO CARLOS ANDRES}
    - - @0930 - 1020[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ECUACIONES DIFERENCIALES COMPL {RAMIREZ DIAZ NICOLAS}
+ECUACIONES DIFERENCIALES COMPL {VALERO SIERRA JUAN ANDRES}
    - - @0930 - 1020[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ECUACIONES DIFERENCIALES COMPL {GARCIA VARGAS JOHAN FELIPE}
@@ -13194,7 +13371,13 @@ ESTADISTICA (ECONOMIA) {BUENO ALEX ROLANDO}
    - - @0630 - 0750[L  M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 ESTADISTICA (ECONOMIA) {CASAS MONSEGNY MARTA CECILIA}
-   - - @0930 - 1050[L  M      V](08/08/17 to 25/11/17)
+   - - @0930 - 1050[M      V](08/08/17 to 25/11/17)
+   - - @0930 - 1050[L](08/08/17 to 25/11/17)
+---------------------------------------------
+ESTADÍSTICA ASUNTOS PÚBLICOS {DONADO RINCON DANIEL ALBERTO}
+   - - @1700 - 1820[L](08/08/17 to 25/11/17)
+   - - @1700 - 1820[J](08/08/17 to 25/11/17)
+   - - @1700 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 METODOS MATEM. PARA ECONO. {ORTIZ SANCHEZ ROBERTO}
    - - @0930 - 1020[L  M    J  V](08/08/17 to 25/11/17)
@@ -13208,17 +13391,21 @@ METODOS MATEM. PARA ECONO. {}
    - - @1700 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 METODOS MATEM. PARA ECONO. {GARRIDO LOPERA LILIANA}
+   - - @1230 - 1320[L](08/08/17 to 25/11/17)
+   - - @1230 - 1320[V](08/08/17 to 25/11/17)
+   - - @1230 - 1320[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+METODOS MATEM. PARA ECONO. {}
    - - @1230 - 1320[L  M    J  V](08/08/17 to 25/11/17)
 ---------------------------------------------
 INT.MODELOS MATEM.GEST.FINAN. {MEZIAT VELEZ RENE}
    - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALGEBRA ABSTRACTA 2 {KARPUK DAVID ANTON}
+ALGEBRA ABSTRACTA 2 (INGLÉS) {KARPUK DAVID ANTON}
    - - @1400 - 1550[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 TEORÍA ALGEBRÁICA DE NÚMEROS {MANTILLA SOLER GUILLERMO ARTURO}
-   - - @1400 - 1550[V](08/08/17 to 25/11/17)
-   - - @1400 - 1550[I](08/08/17 to 25/11/17)
+   - - @1400 - 1550[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 LOGICA 1 {CAICEDO FERRER XAVIER}
    - - @1400 - 1550[M    J](08/08/17 to 25/11/17)
@@ -13232,9 +13419,6 @@ INT. ALGEBRAS LIE Y SUS REPRES {MEDINA LUNA MANUEL JAIR}
 EL QUINTO PROBLEMA DE HILBERT {ONSHUUS NIÑO ALF}
    - - @0800 - 0950[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-TÓPICOS TEORÍA DE OPERADORES {}
-   - - @0800 - 0950[M    J](08/08/17 to 25/11/17)
----------------------------------------------
 ECUAC.DE LA FISICA MATEMATICA {GINIATOULLINE ANDREI}
    - - @1230 - 1350[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -13243,7 +13427,8 @@ GEOMETRIA RIEMANNIANA {CORTISSOZ IRIARTE JEAN CARLOS}
    - - @0900 - 1050[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 GEOMETRÍA DIFERENC. 2 (INGLÉS) {BRESSLER PAUL}
-   - - @1400 - 1550[I    V](08/08/17 to 25/11/17)
+   - - @1400 - 1550[V](08/08/17 to 25/11/17)
+   - - @1400 - 1550[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 TOPOLOGIA 1 {MALAKHALTSEV MIKHAIL}
    - - @0800 - 0950[M    J](08/08/17 to 25/11/17)
@@ -13287,8 +13472,7 @@ ALGEBRA CONMUTATIVA {BACKELIN ERIK}
    - - @1600 - 1750[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
 TEORIA ALGEBRAICA DE NUMEROS {MANTILLA SOLER GUILLERMO ARTURO}
-   - - @1400 - 1550[V](08/08/17 to 25/11/17)
-   - - @1400 - 1550[I](08/08/17 to 25/11/17)
+   - - @1400 - 1550[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
 TEMAS EN TOPOLOGIA CONJUNTISTA {DE LA VEGA RAMIRO}
    - - @0800 - 0950[M    J](08/08/17 to 25/11/17)
@@ -13296,7 +13480,7 @@ TEMAS EN TOPOLOGIA CONJUNTISTA {DE LA VEGA RAMIRO}
 INT. ALGEBRAS LIE Y SUS REPRES {MEDINA LUNA MANUEL JAIR}
    - - @1400 - 1550[I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ALGEBRA ABSTRACTA 2 {KARPUK DAVID ANTON}
+ALGEBRA ABSTRACTA 2 (INGLÉS) {KARPUK DAVID ANTON}
    - - @1400 - 1550[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 EL QUINTO PROBLEMA DE HILBERT {ONSHUUS NIÑO ALF}
@@ -13304,9 +13488,6 @@ EL QUINTO PROBLEMA DE HILBERT {ONSHUUS NIÑO ALF}
 ---------------------------------------------
 MEDIDA E INTEGRACION {FERRI STEFANO}
    - - @1600 - 1750[I    V](08/08/17 to 25/11/17)
----------------------------------------------
-TÓPICOS TEORÍA DE OPERADORES {}
-   - - @0800 - 0950[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
 GEOMETRIA RIEMANNIANA {CORTISSOZ IRIARTE JEAN CARLOS}
    - - @0900 - 1050[V](08/08/17 to 25/11/17)
@@ -13452,14 +13633,15 @@ BIOLOGIA CELULAR-TEO {VIVES FLOREZ MARTHA JOSEFINA}
    - - @0630 - 0750[V](08/08/17 to 25/11/17)
    - - @0630 - 0750[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-BIOLOGIA CELULAR-TEO {GUARNIZO CARLOS}
+BIOLOGIA CELULAR-TEO {}
    - - @0800 - 0920[L        V](08/08/17 to 25/11/17)
 ---------------------------------------------
 BIOLOGIA CELULAR-TEO {GUHL NANNETTI FELIPE}
    - - @1230 - 1350[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
 BIOLOGIA CELULAR-TEO {PARRA AVILA MIGUEL HERNANDO}
-   - - @1400 - 1520[J  V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 BIOLOGIA CELULAR-TEO {URIBE ARDILA JESUS ALFREDO}
    - - @1230 - 1320[L    I    V](08/08/17 to 25/11/17)
@@ -13648,10 +13830,10 @@ GENETICA FORENSE {PAREDES LOPEZ MANUEL}
 MICROBIOLOGIA MEDICA-TEO {CELIS ADRIANA MARCELA}
    - - @1530 - 1720[M](04/07/17 to 25/11/17)
 ---------------------------------------------
-MICROBIOLOGIA MEDICA-LAB {}
+MICROBIOLOGIA MEDICA-LAB {FARFAN ESQUIVEL JUAN CAMILO}
    - - @0800 - 1050[L](04/07/17 to 25/11/17)
 ---------------------------------------------
-MICROBIOLOGIA MEDICA-LAB {}
+MICROBIOLOGIA MEDICA-LAB {FARFAN ESQUIVEL JUAN CAMILO}
    - - @0800 - 1050[I](04/07/17 to 25/11/17)
 ---------------------------------------------
 GENOMICA Y BIOINFORMATICA {REYES MUÑOZ ALEJANDRO}
@@ -13884,7 +14066,6 @@ ELEMEN. DE DECISION CLINICA II {SARMIENTO DUEÑAS OLGA LUCIA}
    .NOREQ @1300 - 1550[V](04/07/17 to 25/11/17)
 ---------------------------------------------
 SEMI.II Y AT. PRI. A LA COMU. {FRANCO ALBA CARLOS AUGUSTO}
-   .NOREQ @0800 - 1150[S](04/07/17 to 25/11/17)
    .NOREQ @0700 - 0950[L  M  I  J  V](04/07/17 to 25/11/17)
 ---------------------------------------------
 GENÉTICA MÉDICA {GROOT DE RESTREPO HELENA}
@@ -14289,11 +14470,11 @@ FUNDAM. DESARROLLO SOSTENIBLE {TRUJILLO DIANA}
    - - @1400 - 1750[S](18/11/17 to 18/11/17)
 ---------------------------------------------
 CIENCIAS AMB. TOMAD. DE DECIS. {ANDRADE GERMAN}
-   - - @1000 - 1350[J  V  S](03/08/17 to 05/08/17)
+   - - @1000 - 1350[J  V](03/08/17 to 04/08/17)
    - - @1000 - 1350[J  V](24/08/17 to 25/08/17)
    - - @1000 - 1350[S](26/08/17 to 26/08/17)
    - - @1000 - 1350[J  V  S](14/09/17 to 16/09/17)
-   - - @1000 - 1350[J  V  S](05/10/17 to 07/10/17)
+   - - @1000 - 1350[J  V](05/10/17 to 06/10/17)
    - - @1000 - 1350[J  V  S](26/10/17 to 28/10/17)
    - - @1000 - 1350[J  V](16/11/17 to 17/11/17)
    - - @1000 - 1350[S](18/11/17 to 18/11/17)
@@ -14463,7 +14644,7 @@ MODELOS ANÁLISIS ESTADÍSTICO {CORREAL NUÑEZ MARIA ELSA}
    - - @1800 - 2050[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 HERRAM COMP. ANÁLISIS DATOS {}
-   - - @1900 - 2050[L](08/08/17 to 25/11/17)
+   - - @1800 - 2050[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 MODELAJE Y MEJORA DE PROCESOS {MEDAGLIA GONZALEZ ANDRES}
    - - @1800 - 2050[J](08/08/17 to 25/11/17)
@@ -14563,7 +14744,7 @@ SEM.PERMANENTE INVESTIGACIÓN {BARRERO FAJARDO MARIO}
    - - @1700 - 1950[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 TESIS DE MAESTRÍA {}
-   - - @0700 - 0950[S](08/08/17 to 25/11/17)
+   - - @1300 - 1550[S](08/08/17 to 25/11/17)
 ---------------------------------------------
 TUTORIAL DE PROFUNDIZACIÓN 1 {}
    - - @1000 - 1250[S](08/08/17 to 25/11/17)
@@ -14636,12 +14817,6 @@ CONSTRUCCIÓN PAZ Y TRANSICIÓN {RETTBERG ANGELIKA}
 ---------------------------------------------
 CONVIV Y RECONST TEJIDO SOCIAL {RIVAS GAMBOA ANGELA}
    - - @1700 - 1950[V](08/08/17 to 25/11/17)
----------------------------------------------
-PRÁCTICA PROFESIONAL {RETTBERG ANGELIKA}
-   - - @1700 - 1950[L](08/08/17 to 25/11/17)
----------------------------------------------
-TRABAJO DE GRADO {RETTBERG ANGELIKA}
-   - - @0630 - 0920[V](08/08/17 to 25/11/17)
 ---------------------------------------------
 ELECTIVO ARTE Y POLÍTICA {WILLS OTERO LAURA}
    - - @1700 - 1950[M](08/08/17 to 25/11/17)
@@ -14781,7 +14956,8 @@ MUSICA Y CINEMATOGRAFIA {GARCIA MARCELA}
    - - @0800 - 0920[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
 MUSIC AND WAR IN WESTERN WORD {GAMBOA HOYOS CAROLINA}
-   - - @1230 - 1350[M    J](08/08/17 to 25/11/17)
+   - - @1230 - 1350[J](08/08/17 to 25/11/17)
+   - - @1230 - 1350[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 LA HISTORIA DEL JAZZ {ACEVEDO OSCAR}
    - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
@@ -14967,7 +15143,7 @@ MORFOLOGIA 1 {LAPIDUS WOLKIND HORACIO}
 MORFOLOGIA 2 {TORRES LOPEZ RONDY FELIPE}
    - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
-CONJUNTO CUERDAS {}
+CONJUNTO CUERDAS {BIBBO STEPHANIE NICOLE}
    - - @1530 - 1650[M      V](08/08/17 to 25/11/17)
 ---------------------------------------------
 TALLER DE  COMPOSICION 1 {}
@@ -14999,6 +15175,9 @@ INSTRUMENTACION 2 {}
 ---------------------------------------------
 COMPOSICION 2 {PERALTA CACERES CATALINA LEONO}
    - - @1230 - 1320[J](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPOSICION 2 {PERALTA CACERES CATALINA LEONO}
+   - - @1600 - 1650[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 BANDA SONORA 2 {LOZANO MANCERA SANTIAGO}
    - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
@@ -15126,6 +15305,14 @@ LITERATURA VOCAL 3 {SILVA VALENCIA ANDRES ARTURO}
    - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
    - - @1230 - 1350[V](08/08/17 to 25/11/17)
 ---------------------------------------------
+LITERATURA VOCAL 4 {}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+   - - @1230 - 1350[V](08/08/17 to 25/11/17)
+---------------------------------------------
+LITERATURA VOCAL 5 {SILVA VALENCIA ANDRES ARTURO}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+   - - @1230 - 1350[V](08/08/17 to 25/11/17)
+---------------------------------------------
 ORQUESTACION 1 {LEON RENGIFO LUIS FERNANDO}
    - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -15216,9 +15403,9 @@ TALLER DE MEZCLA {COLLAZOS ROTAVISTA ALEJANDRO}
    - - @0800 - 1050[J](08/08/17 to 25/11/17)
 ---------------------------------------------
 PRE-PROYECTO PRODUCCIÓN - 15 {CARRERO SANCHEZ SANDRO}
-   - - @1500 - 1620[V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[V](08/08/17 to 25/11/17)
 ---------------------------------------------
-ORQUESTA {CUBIDES GREIFFESTEIN MANUEL FRANCISCO}
+ORQUESTA {}
    - - @1700 - 1920[V](08/08/17 to 25/11/17)
    - - @1700 - 1920[L    I](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -15371,7 +15558,8 @@ PSICOL SOCIAL EXPERIM {CRUZ VASQUEZ JULIO EDUARDO}
    - - @0800 - 0920[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
 PSICOL SOCIAL EXPERIM {PEREZ TRUJILLO MONICA}
-   - - @0800 - 0920[L      J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[L](08/08/17 to 25/11/17)
 ---------------------------------------------
 ENTREVISTA PSICOLOGICA {RIPOLL KAREN}
    - - @0630 - 0750[L      J](08/08/17 to 25/11/17)
@@ -15412,7 +15600,8 @@ DISEÑO Y ANÁLISIS DE INV. 2 {JIMENEZ LEAL WILLIAM}
    - - @1400 - 1520[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 DISEÑO Y ANÁLISIS DE INV. 3 {PEREZ TRUJILLO MONICA}
-   - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
+   - - @1230 - 1350[V](08/08/17 to 25/11/17)
+   - - @1230 - 1350[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 PSICOLOGIA APLICADA {MARTINEZ SEGURA MARIA ALEXIS}
    - - @1230 - 1350[L](08/08/17 to 25/11/17)
@@ -15737,9 +15926,6 @@ LABORATORIO DE QUÍMICA {}
 APLICACIONES DE QUÍMICA {PORTILLA SALINAS JAIME ANTONIO}
    - - @1530 - 1650[M  I](08/08/17 to 25/11/17)
 ---------------------------------------------
-APLICACIONES DE QUÍMICA {}
-   - - @1530 - 1650[M  I](08/08/17 to 25/11/17)
----------------------------------------------
 COMPL. DE APLICACIONES {}
    - - @1600 - 1650[L](08/08/17 to 25/11/17)
 ---------------------------------------------
@@ -15793,7 +15979,8 @@ LABORATORIO DE Q. INORG. II {}
    - - @0700 - 1050[S](08/08/17 to 25/11/17)
 ---------------------------------------------
 QUIMICA ORGANICA {GAMBA SANCHEZ DIEGO ALEXANDER}
-   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[J](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
 ---------------------------------------------
 COMPL  DE QUÍMICA ORGÁNICA {}
    - - @0800 - 0850[V](08/08/17 to 25/11/17)
@@ -15921,6 +16108,9 @@ LAB DE FUNDAMENT FISICOQUIM {}
 LAB DE FUNDAMENT FISICOQUIM {}
    - - @1400 - 1650[V](08/08/17 to 25/11/17)
 ---------------------------------------------
+LAB DE FUNDAMENT FISICOQUIM {}
+   - - @1400 - 1650[V](08/08/17 to 25/11/17)
+---------------------------------------------
 QUIMICA ANALITICA I {CORTES MONTAÑEZ MARIA TERESA}
    - - @1100 - 1220[I    V](08/08/17 to 25/11/17)
    - - @1100 - 1150[L](08/08/17 to 25/11/17)
@@ -15929,7 +16119,7 @@ LAB. QUIMICA ANALITICA I {}
    - - @1230 - 1620[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 LAB. QUIMICA ANALITICA I {}
-   - - @1230 - 1620[I](08/08/17 to 25/11/17)
+   - - @1400 - 1750[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 EXTRACCION - SEPARACION {CARAZZONE CHIARA}
    - - @1100 - 1220[L](08/08/17 to 25/11/17)
@@ -15970,18 +16160,18 @@ SEMINARIO I {VARGAS ESCAMILLA EDGAR FRANCISC}
 SEMINARIO II {VARGAS ESCAMILLA EDGAR FRANCISC}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-INORGÁNICA AVANZADA {}
+INORGÁNICA AVANZADA {REIBER ANDREAS}
    - - @1700 - 1820[V](08/08/17 to 25/11/17)
    - - @1700 - 1820[I](08/08/17 to 25/11/17)
 ---------------------------------------------
 CATÁLISIS EN LA IND. Y LABORAT {HURTADO BELALCAZAR JOHN JADY}
    - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
 ---------------------------------------------
-ORGÁNICA AVANZADA {}
+ORGÁNICA AVANZADA {PORTILLA SALINAS JAIME ANTONIO}
    - - @1700 - 1820[J](08/08/17 to 25/11/17)
    - - @1700 - 1820[M](08/08/17 to 25/11/17)
 ---------------------------------------------
-FISICOQUÍMICA AVANZADA {}
+FISICOQUÍMICA AVANZADA {CORTES MONTAÑEZ MARIA TERESA}
    - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
 =============================================================
 depto=RJUR&nombreDepto=REGIMEN%20JURID.FINAN.CONT.IMP
@@ -16064,36 +16254,512 @@ PROBABILIDAD Y ESTADISTICA {TORRES MACIAS ALVARO}
    - - @1400 - 1650[J](21/09/17 to 23/09/17)
    - - @1100 - 1350[S](21/09/17 to 23/09/17)
    - - @0800 - 1150[V](21/09/17 to 23/09/17)
+=============================================================
+depto=ADMI&nombreDepto=Administraci%F3n%20de%20Empresa
+=============================================================
 ---------------------------------------------
-REGULACION Y MDOS DE ENERGIA {DE OLIVEIRA DE JESUS PAULO MANUEL}
-   - - @1100 - 1350[S](10/08/17 to 12/08/17)
-   - - @0800 - 1150[V](10/08/17 to 12/08/17)
-   - - @1400 - 1650[J](10/08/17 to 12/08/17)
-   - - @0800 - 1150[V](31/08/17 to 02/09/17)
-   - - @1100 - 1350[S](31/08/17 to 02/09/17)
-   - - @1400 - 1650[J](31/08/17 to 02/09/17)
-   - - @0800 - 1150[V](21/09/17 to 23/09/17)
-   - - @1100 - 1350[S](21/09/17 to 23/09/17)
-   - - @1400 - 1650[J](21/09/17 to 23/09/17)
+FUNDAM.ADMON Y GERENCIA (ADMI) {DIAZ MATAJIRA LUIS}
+   - - @0930 - 1050[L    I    V](08/08/17 to 25/11/17)
 ---------------------------------------------
-DISEÑO SIST DE TRANSMISION {TORRES MACIAS ALVARO}
-   - - @1100 - 1350[S](12/10/17 to 14/10/17)
-   - - @1400 - 1650[J](12/10/17 to 14/10/17)
-   - - @0800 - 1150[V](12/10/17 to 14/10/17)
-   - - @0800 - 1150[V](09/11/17 to 11/11/17)
-   - - @1100 - 1350[S](09/11/17 to 11/11/17)
-   - - @1400 - 1650[J](09/11/17 to 11/11/17)
-   - - @1400 - 1650[J](30/11/17 to 02/12/17)
-   - - @1100 - 1350[S](30/11/17 to 02/12/17)
-   - - @0800 - 1150[V](30/11/17 to 02/12/17)
+FUNDAM.ADMON Y GERENCIA {CASTILLO GUTIERREZ JUAN PABLO}
+   - - @0630 - 0750[L      J](08/08/17 to 25/11/17)
 ---------------------------------------------
-CALIDAD DE LA POTENCIA {RAMOS LOPEZ GUSTAVO}
-   - - @0800 - 1150[J](12/10/17 to 14/10/17)
-   - - @0800 - 1050[S](12/10/17 to 14/10/17)
-   - - @1400 - 1650[V](12/10/17 to 14/10/17)
-   - - @1400 - 1650[V](09/11/17 to 11/11/17)
-   - - @0800 - 1150[J](09/11/17 to 11/11/17)
-   - - @0800 - 1050[S](09/11/17 to 11/11/17)
-   - - @1400 - 1650[V](30/11/17 to 02/12/17)
-   - - @0800 - 1150[J](30/11/17 to 02/12/17)
-   - - @0800 - 1050[S](30/11/17 to 02/12/17)
+FUNDAM.ADMON Y GERENCIA {PERALTA GUSTAVO}
+   - - @0630 - 0750[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAM.ADMON Y GERENCIA {DIAZ RAMIREZ JULIA HELENA}
+   - - @0630 - 0750[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAM.ADMON Y GERENCIA {DIAZ RAMIREZ JULIA HELENA}
+   - - @0800 - 0920[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+SERVIC. ECOSISTÉMICOS (INGLÉS) {VALDERRAMA ROJAS DIEGO}
+   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+SERVICIOS ECOSISTÉMICOS {VALDERRAMA ROJAS DIEGO}
+   - - @1700 - 1820[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+SERVICIOS ECOSISTÉMICOS {LINK OSPINA ANDRES}
+   - - @0630 - 0750[I    V](08/08/17 to 25/11/17)
+---------------------------------------------
+PLANEACION FINANCIERA {HUNG VARELA WEI-MAA FREDY}
+   - - @0630 - 0750[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+PLANEACION FINANCIERA {FUENTES FRIAS DARIO ALEJANDRO}
+   - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+PLANEACION FINANCIERA {TRUJILLO REYES OSCAR FRANCISCO}
+   - - @0630 - 0750[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+PLANEACION FINANCIERA {LOPEZ FAJARDO MARIANO ALBERTO}
+   - - @1100 - 1220[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER HABILIDADES INFORMATICA {RODRIGUEZ CORTES CARLOS ANDRES}
+   - - @0800 - 0920[V](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER HABILIDADES INFORMATICA {DIAZ VELASCO JOSE DARIO}
+   - - @0630 - 0750[J](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER HABILIDADES INFORMATICA {DIAZ VELASCO JOSE DARIO}
+   - - @1400 - 1520[M](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER HABILIDADES INFORMATICA {CACERES PORRAS MARTHA CONSTANZA}
+   - - @1400 - 1520[M](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER HABILIDADES INFORMATICA {CACERES PORRAS MARTHA CONSTANZA}
+   - - @1100 - 1220[M](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER HABILIDADES INFORMATICA {RODRIGUEZ CORTES CARLOS ANDRES}
+   - - @0930 - 1050[V](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER HABILIDADES INFORMATICA {URBINA FLOREZ ANDRES GUILLERMO}
+   - - @0630 - 0750[L](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER DE CREATIVIDAD {LEON DIAZ INGRID MARCELA}
+   - - @0630 - 0920[L](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER DE CREATIVIDAD {COLMENARES MISAS CARLOS FELIPE}
+   - - @0800 - 1050[M](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER DE CREATIVIDAD (INGLES) {KONOVALOV OLEG}
+   - - @0800 - 1050[I](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER DE CREATIVIDAD {FLECHAS BUSTOS ANGELICA MARIA}
+   - - @1400 - 1650[L](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER AUTOCONOCIMIENTO {URIBE ARBELAEZ SOFIA}
+   - - @0630 - 0920[L](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER AUTOCONOCIMIENTO {ACOSTA PEREIRA ANA MILENA}
+   - - @0800 - 1050[V](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER AUTOCONOCIMIENTO {MUNOZ CIFUENTES JESUS}
+   - - @1400 - 1650[L](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER AUTOCONOCIMIENTO {BERNAL VARGAS LUZ STELLA}
+   - - @1400 - 1650[V](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER AUTOCONOCIMIENTO {LEON DIAZ INGRID MARCELA}
+   - - @0630 - 0920[I](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER AUTOCONOCIMIENTO {TRIANA QUIJANO ADRIANA FERNAN}
+   - - @0930 - 1220[J](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER AUTOCONOCIMIENTO {URIBE ARBELAEZ SOFIA}
+   - - @0930 - 1220[L](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER AUTOCONOCIMIENTO {LEON DIAZ INGRID MARCELA}
+   - - @0930 - 1220[L](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPORT. ORGANIZACION.(INGLES) {MANDALAKI EMMANOUELA}
+   - - @0800 - 0920[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPORT. ORGANIZACIO. (INGLES) {SCHORCH SEBASTIAN LEON}
+   - - @1400 - 1520[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPORT. ORGANIZACIONAL {ROZO POSADA PAULA LILIANA}
+   - - @0930 - 1050[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPORT. ORGANIZACION.(INGLES) {SCHORCH SEBASTIAN LEON}
+   - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPORT. ORGANIZACIONAL {ROZO POSADA PAULA LILIANA}
+   - - @1100 - 1220[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+HISTORIA DESARROLLO EMPRES.COL {DURAN AMOROCHO XAVIER HERNANDO}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+HISTORIA DESARROLLO EMPRES.COL {DURAN AMOROCHO XAVIER HERNANDO}
+   - - @1700 - 1820[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+HISTORIA DESARROLLO EMPRES.COL {HERNANDEZ CASTILLO CARLOS EDUARDO}
+   - - @1400 - 1520[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+HISTORIA DESARROLLO EMPRES.COL {HERNANDEZ CASTILLO CARLOS EDUARDO}
+   - - @1700 - 1820[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+RESPONSABILIDAD SOCIAL INGLES {RUEDA FAJARDO XIMENA}
+   - - @0930 - 1050[V](08/08/17 to 25/11/17)
+   - - @0930 - 1050[I](08/08/17 to 25/11/17)
+---------------------------------------------
+RESPONSABILIDAD SOCIAL {FRANCO BORRERO NATHALIA}
+   - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+RESPONSABILIDAD SOCIAL {GARCIA LOPEZ JORGE HERNAN}
+   - - @1100 - 1220[J](08/08/17 to 25/11/17)
+   - - @1100 - 1220[L](08/08/17 to 25/11/17)
+---------------------------------------------
+GERENCIA DE RECURSOS HUMANOS {GATTAS BULTAIF LINA PATRICIA}
+   - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+GERENCIA DE RECURSOS HUMANOS {AMAYA GONZALEZ RENATA}
+   - - @0800 - 0920[I    V](08/08/17 to 25/11/17)
+---------------------------------------------
+DECISIONES DE INVERSION {BAUTISTA MENA RAFAEL DE JESUS}
+   - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+DECISIONES DE INVERSION {MORA VALENCIA ANDRES}
+   - - @0930 - 1050[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+DECISIONES DE INVERSION {MALAGON PENEN JULIANA}
+   - - @1400 - 1520[V](08/08/17 to 25/11/17)
+   - - @1400 - 1520[M](08/08/17 to 25/11/17)
+---------------------------------------------
+FINANZAS 3: ESTRATEG. (INGLÉS) {GONZALEZ MAXIMILIANO}
+   - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+FINANZAS 3:ESTRATEGIA {CARDONA MAGNE EMILIO}
+   - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+COMPORTAMIENTO DEL CONSUMIDOR {ESTRADA MEJIA CATALINA}
+   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+COLOMBIA Y SUS INSTIT.(ADMON) {OROZCO SILVA LUIS ENRIQUE}
+   - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+COLOMBIA Y SUS INSTITUCIONES {WILLS HERRERA EDUARDO}
+   - - @1100 - 1220[J](08/08/17 to 25/11/17)
+   - - @1100 - 1220[M](08/08/17 to 25/11/17)
+---------------------------------------------
+COLOMBIA Y SUS INSTITUCIONES {CASTILLO VALLEJO ALEJANDRO}
+   - - @0630 - 0750[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+COLOMBIA Y SUS INSTITUCIONES {CASTANO MESA LINA MARIA}
+   - - @0800 - 0920[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAMENTOS MERCADEO {GARCIA JIMENEZ ALFREDO}
+   - - @0630 - 0750[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAMENTOS DE MERCADEO {ARIAS PUENTES CLAUDIA PATRICIA}
+   - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAMENTOS MERCADEO (INGLES) {ESTRADA MEJIA CATALINA}
+   - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAMENTOS DE MERCADEO {PEREZ CIFUENTES GABRIEL}
+   - - @0630 - 0750[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAMENTOS DE MERCADEO {LOMBANA ROA JUAN JOSE}
+   - - @0630 - 0750[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAMENTOS DE MERCADEO {OREJARENA SERRANO GERMAN ALFREDO}
+   - - @0630 - 0750[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+INVESTIGACION DE MERCADOS {BARRIOS FAJARDO ANDRES ALBERTO}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+INVESTIGACION DE MERCADOS {MARTINEZ FALLA FELIPE ANDRES}
+   - - @0630 - 0750[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+INVESTIGACION DE MERCADOS {MARTINEZ FALLA FELIPE ANDRES}
+   - - @0800 - 0920[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+OPERACIONES Y LOGISTICA {MONTOYA TORRES JAIRO RAFAEL}
+   - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+OPERACIONES Y LOGISTICA {VELASCO NUBIA}
+   - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+OPERACIONES Y LOGIST. (INGLES) {THIELL MARCUS}
+   - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+ANALISIS ENTORNO COLOMBIANO {MARTINEZ GAITAN JAIME BERNARDO}
+   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+ANALISIS ENTORNO COLOMBIANO {ANDONOVA VENETA}
+   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+ANALISIS ENTORNO COLOMBIANO {ANDONOVA VENETA}
+   - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+ANALISIS ENTORNO COLOMBIANO {CUELLAR URBANO ERNESTO}
+   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+HERRAMIENTAS TOMA DECI I {OROZCO LUZ ELENA}
+   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+HERRAMIENTAS TOMA DECI I {TABORDA RIOS RODRIGO}
+   - - @1100 - 1220[I    V](08/08/17 to 25/11/17)
+---------------------------------------------
+HERRAMIENTAS TOMA DECI II {MONTOYA TORRES JAIRO RAFAEL}
+   - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+HERRAMIENTAS TOMA DECI II {VILLA BETANCUR SEBASTIAN}
+   - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+HERRAMIENTAS TOMA DECI II {OROZCO LUZ ELENA}
+   - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+ORGANIZACIONES {DAVILA LADRON DE GUEVARA CAMILO}
+   - - @0630 - 0750[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+ORGANIZACIONES {DAVILA LADRON DE GUEVARA CAMILO}
+   - - @0630 - 0750[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+ORGANIZACIONES {RUIZ GUTIERREZ JAIME ALBERTO}
+   - - @0800 - 0920[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+ORGANIZACIONES {SCHNARCH GONZALEZ DAVID}
+   - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+ORGANIZACIONES {SCHNARCH GONZALEZ DAVID}
+   - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+ORGANIZACIONES {MARTINEZ AVELLA MARIO ERNESTO}
+   - - @1700 - 1950[I](08/08/17 to 25/11/17)
+---------------------------------------------
+LA GESTION DE LO PUBLICO {TRUJILLO DIANA}
+   - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+LA GESTION DE LO PUBLICO {VELEZ LESMEZ MARIA ALEJANDRA}
+   - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+LA GESTION DE LO PUBLICO {FORERO PINEDA CLEMENTE}
+   - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+CONSULTORIA {GONZALEZ QUESADA ANABELL}
+   - - @1530 - 1650[M](08/08/17 to 25/11/17)
+   - - @1400 - 1650[V](08/08/17 to 25/11/17)
+---------------------------------------------
+CONSULTORIA {GONZALEZ QUESADA ANABELL}
+   - - @1530 - 1650[M](08/08/17 to 25/11/17)
+   - - @1400 - 1650[V](08/08/17 to 25/11/17)
+---------------------------------------------
+PLANES DE NEGOCIOS {GUERRERO ALVARADO ANDRES JOSE}
+   - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+EMPRENDI. INNOVACION.(INGLES) {KONOVALOV OLEG}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+EMPRENDIMIENTO E INNOVACION {ESTRADA PRADA FELIPE}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+EMPRENDIMIENTO E INNOVACION {HERNANDEZ MORA JORGE ALBERTO}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+EMPRENDIMIENTO E INNOVACION {VESGA RAFAEL}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+EMPRENDIMIENTO E INNOVACION {GUERRERO ALVARADO ANDRES JOSE}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+EMPRENDIMIENTO E INNOVACION {SERVANTIE VINCIANE MARIE CATHERINE}
+   - - @1530 - 1650[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+JUEGO GERENCIAL {LOPEZ FAJARDO MARIANO ALBERTO}
+   - - @1700 - 1820[L](08/08/17 to 25/11/17)
+   - - @0630 - 0920[V](08/08/17 to 25/11/17)
+---------------------------------------------
+JUEGO GERENCIAL {FUENTES FRIAS DARIO ALEJANDRO}
+   - - @1700 - 1820[L](08/08/17 to 25/11/17)
+   - - @0630 - 0920[M](08/08/17 to 25/11/17)
+---------------------------------------------
+JUEGO GERENCIAL {FUENTES FRIAS DARIO ALEJANDRO}
+   - - @1700 - 1950[M](08/08/17 to 25/11/17)
+   - - @1700 - 1820[L](08/08/17 to 25/11/17)
+---------------------------------------------
+JUEGO GERENCIAL {BRITTO RODRIGO}
+   - - @1700 - 1950[I](08/08/17 to 25/11/17)
+   - - @1700 - 1820[L](08/08/17 to 25/11/17)
+---------------------------------------------
+GESTIÓN CULT.:NOCIONES BÁSICAS {RUIZ GUTIERREZ JAIME ALBERTO}
+   - - @1100 - 1220[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+GERENCIA AMBIENTAL (INGLES) {MEJIA DUGAND SANTIAGO}
+   - - @0800 - 0920[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+MODELOS DE LIDERAZGO {LEON DIAZ INGRID MARCELA}
+   - - @1230 - 1520[L](08/08/17 to 25/11/17)
+---------------------------------------------
+EMPRESAS FAMILIA:CIELO-INFIERN {VELEZ MONTES DIEGO}
+   - - @1100 - 1220[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+OPCION DE GRADO (ESTRATEGIA) {FERRO CORTES LUZ MARINA}
+   - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+OPCION DE GRADO-TG (MERCADEO) {OSPINA SILVA JOSE MIGUEL}
+   - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+OPCION DE GRADO-TG (FINANZAS) {MORA VALENCIA ANDRES}
+   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+FINANZAS PERSONALES {RODRIGUEZ RAGA SANTIAGO}
+   - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+MERCADO DE CAPITALES {LEON CAMACHO BERNARDO}
+   - - @0930 - 1050[J](08/08/17 to 25/11/17)
+   - - @0930 - 1050[M](08/08/17 to 25/11/17)
+---------------------------------------------
+MERCADOS DERIVADOS {ARCILA BARRERA CARLOS ALFREDO}
+   - - @1230 - 1350[V](08/08/17 to 25/11/17)
+   - - @1230 - 1350[M](08/08/17 to 25/11/17)
+---------------------------------------------
+MERCADOS DERIVADOS (INGLES) {GONZALEZ MAXIMILIANO}
+   - - @1400 - 1520[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+MARKETING COMMUNICATIONS {PEREZ CIFUENTES GABRIEL}
+   - - @0800 - 0920[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+MERCADEO VERDE {ARIAS PUENTES CLAUDIA PATRICIA}
+   - - @0800 - 0920[I](08/08/17 to 25/11/17)
+   - - @0800 - 0920[L](08/08/17 to 25/11/17)
+---------------------------------------------
+SALES AND DISTRIBUTION MANAGEM {GARCIA GARCIA ARMANDO}
+   - - @0930 - 1050[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+OPCIONES REALES {BAUTISTA MENA RAFAEL DE JESUS}
+   - - @1400 - 1520[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+FINANCIACIÓN DE EMPRENDIMIENT {GUERRERO ALVARADO ANDRES JOSE}
+   - - @1100 - 1220[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+MARK. CULTU. AND ARTS(ESPAÑOL) {MUÑOZ VELA MONICA MARIA}
+   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+SISTEM. INFORMACGER.(INGLES) {CAMACHO AHUMADA SONIA MARCELA}
+   - - @1100 - 1220[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+SISTEMAS INFORMACION GERENCIAL {CAMACHO AHUMADA SONIA MARCELA}
+   - - @1400 - 1520[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+SISTEMAS INFORMACION GERENCIAL {RUIZ VALDIVIESO MAURICIO}
+   - - @1400 - 1520[J](08/08/17 to 25/11/17)
+   - - @1400 - 1520[M](08/08/17 to 25/11/17)
+---------------------------------------------
+INTEL.NEGOC.MERCAD.RELAC.(CRM) {RUIZ VALDIVIESO MAURICIO}
+   - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+MARKETING DIGITAL {NOVELLA PINZON ANDRES MAURICIO}
+   - - @1230 - 1350[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+ESTRATEGIA {MONTES JUAN CARLOS}
+   - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+ESTRATEGIA {MONTES JUAN CARLOS}
+   - - @0800 - 0920[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+ESTRATEGIA {CUELLAR URBANO ERNESTO}
+   - - @0630 - 0750[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+ESTRATEGIA {CUELLAR URBANO ERNESTO}
+   - - @0630 - 0750[I    V](08/08/17 to 25/11/17)
+---------------------------------------------
+INTROD. LOGÍSTICA HUMANITARIA {VILLA BETANCUR SEBASTIAN}
+   - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+TALL. HABILIDADES GERENC. {MUNOZ CIFUENTES JESUS}
+   - - @1700 - 1950[L](08/08/17 to 25/11/17)
+---------------------------------------------
+TÉCNICAS DE NEGOCIACIÓN {CANAL MARGARITA}
+   - - @1200 - 1430[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER DE INNOVACION {VESGA RAFAEL}
+   - - @1700 - 1950[I](08/08/17 to 25/11/17)
+---------------------------------------------
+ESTRATEGIAS DE NEGOCIACION {AZUERO ISAZA MARCO ANTONIO}
+   - - @0800 - 1050[M](08/08/17 to 25/11/17)
+---------------------------------------------
+ALIMENTOS Y OPORTUN.EMPRENDED. {PEÑA FERNANDEZ CLAUDIO HUMBERTO}
+   - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+MERCADEO DEPORTIVO {LLORENTE CARREÑO ALVARO}
+   - - @0630 - 0750[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+NEGOCIOS INTERNACIONALES {CARRILLO JUAN}
+   - - @0930 - 1050[L      J](08/08/17 to 25/11/17)
+---------------------------------------------
+NEGOCIOS INTERNACIONALES {GARCIA DUQUE JUANA CATALINA}
+   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+NEGOCIOS INTERNACIONALES {BARRIGA PALACIO JORGE RICARDO}
+   - - @0800 - 0920[M      V](08/08/17 to 25/11/17)
+=============================================================
+depto=ANTR&nombreDepto=Antropolog%ED
+=============================================================
+---------------------------------------------
+TALLER DE INDUCCIÓN {WHITE NARVAEZ HILDA}
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAMENTOS DE ANTROPOLOGIA {CASTILLEJO ALEJANDRO}
+   - - @1100 - 1220[I](08/08/17 to 25/11/17)
+   - - @1100 - 1220[L](08/08/17 to 25/11/17)
+---------------------------------------------
+METODOS CUALITATIVOS DE INVEST {SUAREZ MONTANEZ ROBERTO}
+   - - @1400 - 1650[V](08/08/17 to 25/11/17)
+---------------------------------------------
+METODOS CUALITATIVOS DE INVEST {OLARTE SIERRA MARIA FERNANDA}
+   - - @1400 - 1650[V](08/08/17 to 25/11/17)
+---------------------------------------------
+LA CONDICION HUMANA {ESPINOSA ARANGO MONICA LUCIA}
+   - - @1100 - 1220[M      V](08/08/17 to 25/11/17)
+---------------------------------------------
+PENSAMIENTO INDIGENA {AGUIRRE LICHT DANIEL GUILLERM}
+   - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+NATURALEZA Y CULTURA {ARCHILA MONTAÑEZ SONIA}
+   - - @1100 - 1220[I](08/08/17 to 25/11/17)
+   - - @1100 - 1220[L](08/08/17 to 25/11/17)
+---------------------------------------------
+THE CITY:HIST.ECON.POL.SOC.CUL {FLEISCHER FRIEDERIKE}
+   - - @0930 - 1050[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+TRES MOMENTOS HISTORICOS {FORERO ANGEL ANA MARIA}
+   - - @0930 - 1050[I    V](08/08/17 to 25/11/17)
+---------------------------------------------
+DIVERSIDAD HUMANA {NIÑO VARGAS JUAN CAMILO}
+   - - @1230 - 1350[I    V](08/08/17 to 25/11/17)
+---------------------------------------------
+CAPITALISMO: HRIA Y CULTURA {SERJE MARGARITA}
+   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+FUNDAMENTOS DE ARQUEOLOGIA {BERREY CHARLES ADAMA}
+   - - @1530 - 1650[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+AZTECAS, MAYAS E INCAS {JARAMILLO LUIS GONZALO}
+   - - @0930 - 1050[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+DE EVOLUCION CULTURA HUMANA {RAMOS ELIZABETH}
+   - - @0800 - 0920[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+ANTROPOLOGÍA BIOLÓGICA {RAMOS ELIZABETH}
+   - - @1100 - 1220[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+INSTRUMENTOS DE INVESTIGACION {ANDRADE ANDRADE SERGIO JAVIER}
+   - - @1700 - 1950[J](08/08/17 to 25/11/17)
+---------------------------------------------
+PROBLEMAS ANTROPOLOGICOS DEL D {CAICEDO FERNANDEZ ALHENA}
+   - - @0800 - 0920[V](08/08/17 to 25/11/17)
+   - - @0800 - 0920[M](08/08/17 to 25/11/17)
+---------------------------------------------
+ORGANIZACION SOCIAL {FLEISCHER FRIEDERIKE}
+   - - @1230 - 1350[L    I](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER ESCRITURA ESC.CAMPO2017 {CAICEDO FERNANDEZ ALHENA}
+   - - @1700 - 1950[J](08/08/17 to 25/11/17)
+---------------------------------------------
+TALLER PRODUCCION DOCUMENTALES {STOLLBROCK TRUJILLO GERRIT KARL DARIO}
+   - - @1400 - 1650[M](08/08/17 to 25/11/17)
+---------------------------------------------
+ARQUEOLOGIA DE COLOMBIA {ARCHILA MONTAÑEZ SONIA}
+   - - @0930 - 1050[I](08/08/17 to 25/11/17)
+   - - @0930 - 1050[L](08/08/17 to 25/11/17)
+---------------------------------------------
+METODO DE ANALISIS LINGÜISTICO {AGUIRRE LICHT DANIEL GUILLERM}
+   - - @0930 - 1050[J](08/08/17 to 25/11/17)
+   - - @0930 - 1050[M](08/08/17 to 25/11/17)
+---------------------------------------------
+ESCUELAS ANTROPOLOGICAS 2 {GAITAN AMMANN FELIPE}
+   - - @0800 - 0920[I](08/08/17 to 25/11/17)
+   - - @0800 - 0920[L](08/08/17 to 25/11/17)
+---------------------------------------------
+SM ARTE-TECNOLOG DE LA MEMORIA {JIMENEZ CALLE VALENTINA}
+   - - @1700 - 1820[M    J](08/08/17 to 25/11/17)
+---------------------------------------------
+SM EDUCACION Y FLIA AME LATINA {PEDRAZA GOMEZ ZANDRA}
+   - - @1400 - 1650[L](08/08/17 to 25/11/17)
+---------------------------------------------
+METODOLOGIA DE PRACTICA {ESTUPIÑAN BEJARANO JUAN PABLO}
+   - - @1700 - 1950[I](08/08/17 to 25/11/17)
+---------------------------------------------
+DISEÑO DE MONOGRAFIA {OLARTE SIERRA MARIA FERNANDA}
+   - - @1700 - 1950[I](08/08/17 to 25/11/17)

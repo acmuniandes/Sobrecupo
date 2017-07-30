@@ -13,6 +13,7 @@ MARKED = 'True'
 LOG_CLASS_SEPARATOR = '---------------------------------------------'
 LOG_DEPT_SEPARATOR = '============================================================='
 LOG_FREQUENCY = 2400
+SEMESTRAL_END = "25/11/17"
 
 #Global variables--------------
 
@@ -25,7 +26,7 @@ classPointer = None
 #Classes-----------------------
 
 #Models neccesary information for a single class' schedule (a class may have multiple schedules)
-#Contains weekdays, time (hhmm - hhmm), classroom and  start/end dates
+#Contains weekdays, time (hhmm - hhmm), classroom and start/end dates
 class Schedule:
     #Attributes set in 'constructor' method
     def __init__(self, weekdays, classTime, classroom, dateStart, dateEnd):
@@ -35,7 +36,7 @@ class Schedule:
         self.dateStart = dateStart
         self.dateEnd = dateEnd
 
-#Models a university course-class. Contains it's name, schedules and teacher's name.
+#Models a course-class. Contains it's name, schedules and teacher's name.
 class _Class:
     #Attributes set in 'constructor' method
     def __init__(self, name):
@@ -52,8 +53,42 @@ class _Class:
         #for schedule in schedules:
         #    print("  " + debugSchedule(schedule))
 
+#Models a classroom, contains its base schedule and a list of exceptions
+class Classroom:
+    #'constructor' method:
+    def __init__(self, _id):
+        self._id = _id
+        #Initialize an empty matrix[x][y], with x being weekdays [0-5] (Monday to Saturday) and y schedules
+        #This matrix models base (semestral) classroom behaviour
+        self.baseSchedules = [['' for x in range(0)] for x in range(6)]
+        #Attribute which models base schedule exceptions
+        self.exceptions = []
+
+    def post(self, schedule):
+        if schedule.dateEnd == SEMESTRAL_END:
+
+            #Parses weekdays string to weekday number (returns a list)
+            numDays = weekdaysToNumber(schedule.weekdays)
+
+            #Appends to corresponding matrix day
+            for day in numDays:
+                self.baseSchedules[day].append(schedule)
+        else:
+            self.exceptions.append(schedule)
+
+
+#Models an schedule exception: not-semestral classroom assignment
+class _Exception:
+    #'constructor' method:
+    def __init__(self, time, dateStart, dateEnd, weekday):
+        self.time = time
+        self.dateStart = dateStart
+        self.dateEnd = dateEnd
+        self.weekday = weekday
+        
 #Methods-----------------------
 
+#From local index file, extracts and scrapes links
 def scrape():
 
     mainPage = None
@@ -65,6 +100,7 @@ def scrape():
     for link in depSoup.find_all('a', href=True):
         scrapeDep(link)
 
+#Given an <a> tag with a department href, requests the url and scrapes Tables
 def scrapeDep(depTag):
 
     global firstTable
@@ -74,6 +110,7 @@ def scrapeDep(depTag):
     #Stores the url from the tag, slicing used to remove URL first part
     depHTML = depTag['href'][37:-1]
 
+    #Logging events
     print("Entering: " + depHTML)
     processString += "\n" + LOG_DEPT_SEPARATOR + "\n" + depTag['href'][83:-1] + "\n" + LOG_DEPT_SEPARATOR
 
@@ -102,6 +139,7 @@ def extractTables(tableTag):
     global isTitleTable
     global errorCounter
     global processString
+    global classList
 
     #Determine how many descendants the actual <table> tag has
     descendants = len(list(tableTag.descendants))
@@ -111,6 +149,7 @@ def extractTables(tableTag):
     schedules = 0
     isTitleTable = tableTag['width'] == '575'
 
+    #If so, check how many schedules the class has
     if not isTitleTable:
         schedules = matchSchedule(descendants)
 
@@ -119,7 +158,7 @@ def extractTables(tableTag):
         firstTable = False
     elif schedules or not isTitleTable:
         
-        #Adds schedules and teacher's name to currentClass pointer
+        #Adds schedules and teacher's name to a new _Class object (global classPointer)
         iterateSchedules(tableTag, schedules)
         #print (tableTag.find('font', class_ ='texto4').string.strip() + ' desc = ' + str(descendants))
 
@@ -221,6 +260,19 @@ def generalSchExtraction(tag):
 
     return Schedule(weekdays, classTime, classroom, dateStart, dateEnd)
 
+#TODO finish serializing methods
+#Using the given info from scraping, re-organizes it to simplify DB posting. Also generates per-classroom files
+def serializeClasses(classList):
+    classrooms = []
+    for clss in classList:
+        for schedule in clss.schedules:
+            if not classroomInList(classrooms, schedule):
+                addClassroom(classrooms, schedule)
+            postClassroomInfo(classrooms, schedule)
+    
+    logClassrooms(classrooms)
+    return classrooms
+
 #Auxiliary methods-------------
 
 def isRelative(url):
@@ -276,6 +328,62 @@ def log(strng):
     with open('Log.log', 'a') as file:
         file.write(strng)
 
+#Checks wether a classrooms is within the given list
+def classroomInList(classrooms, classroom):
+    for classroom in classrooms:
+        if classroom._id == classroom:
+            return True
+    return False
+
+#Creates a Classroom object using schedule parámeter and appends it to the classes list
+def addClassroom(classrooms, schedule):
+    classroom = Classroom(schedule.classroom)
+    classrooms.append(classroom)
+
+#completes _Class object in classes list from schedeule parameter
+#The class exists in the classList
+def postClassroomInfo(classrooms, schedule):
+    pointer = None
+    for classroom in classrooms:
+        if classroom._id == schedule.classroom:
+            pointer = classroom
+            break
+    
+    pointer.post(schedule)
+
+def weekdaysToNumber(weekdays):
+    numbers = []
+
+    if "L" in weekdays:
+        numbers.append(0)
+    if "M" in weekdays:
+        numbers.append(1)
+    if "I" in weekdays:
+        numbers.append(2)
+    if "J" in weekdays:
+        numbers.append(3)
+    if "V" in weekdays:
+        numbers.append(4)
+    if "S" in weekdays:
+        numbers.append(5)
+
+    if len(numbers) < 1:
+        print("Warning! invalid weekdays: " + weekdays)
+
+    return numbers   
+
+#For each classroom creates a file with its information. Also creates a final JSON with all the info
+def logClassrooms(classrooms):
+    for classroom in classrooms:
+        with open('classroomsBase/' + classroom._id + ".classroom", 'w') as file:
+            #Write info
+            dayCounter = 0
+            for day in classroom.baseSchedules:
+                file.write("\n" + LOG_CLASS_SEPARATOR + "Day: " + dayCounter + " // Sch's: " + len(day) + " " + LOG_CLASS_SEPARATOR)
+                for schedule in day:
+                    file.write("\n" + debugSchedule(schedule))
+
+
 #Tag recognition Methods(bs4)--
 
 #Accepts tags that aren't marked
@@ -292,3 +400,5 @@ def findValidTables(tag):
 
 #Excecution
 scrape()
+info = serializeClasses(classList)
+postDB(info)
