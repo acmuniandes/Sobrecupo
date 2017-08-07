@@ -65,6 +65,7 @@ class Classroom:
         self.exceptions = []
 
     def post(self, schedule):
+        print("posting: " + self._id + " " + str(schedule) + " // " + debugSchedule(schedule))
         if schedule.dateEnd == SEMESTRAL_END:
 
             #Parses weekdays string to weekday number (returns a list)
@@ -75,6 +76,13 @@ class Classroom:
                 self.baseSchedules[day].append(schedule)
         else:
             self.exceptions.append(schedule)
+        
+        print("---endPosting---")
+        counter = 0
+        for day in self.baseSchedules:
+            print("   d[" + str(counter) + "]: " + str(len(day)))
+            counter += 1
+
 
 
 #Models an schedule exception: not-semestral classroom assignment
@@ -266,11 +274,15 @@ def serializeClasses(classList):
     classrooms = []
     for clss in classList:
         for schedule in clss.schedules:
-            if not classroomInList(classrooms, schedule):
+            if not classroomInList(classrooms, schedule.classroom):
                 addClassroom(classrooms, schedule)
             postClassroomInfo(classrooms, schedule)
     
     logClassrooms(classrooms)
+
+    print("After log: ----")
+    for classroom in classrooms:
+        print("  " + classroom._id)
     return classrooms
 
 #Auxiliary methods-------------
@@ -330,8 +342,8 @@ def log(strng):
 
 #Checks wether a classrooms is within the given list
 def classroomInList(classrooms, classroom):
-    for classroom in classrooms:
-        if classroom._id == classroom:
+    for sClassroom in classrooms:
+        if classroom == sClassroom._id:
             return True
     return False
 
@@ -353,7 +365,7 @@ def postClassroomInfo(classrooms, schedule):
 
 def weekdaysToNumber(weekdays):
     numbers = []
-
+    print("wkd param: " + str(weekdays))
     if "L" in weekdays:
         numbers.append(0)
     if "M" in weekdays:
@@ -379,10 +391,10 @@ def logClassrooms(classrooms):
             #Write info
             dayCounter = 0
             for day in classroom.baseSchedules:
-                file.write("\n" + LOG_CLASS_SEPARATOR + "Day: " + dayCounter + " // Sch's: " + len(day) + " " + LOG_CLASS_SEPARATOR)
+                file.write("\n" + LOG_CLASS_SEPARATOR + "Day: " + str(dayCounter) + " // Sch's: " + str(len(day)) + " " + LOG_CLASS_SEPARATOR)
                 for schedule in day:
                     file.write("\n" + debugSchedule(schedule))
-
+                dayCounter += 1
 
 #Tag recognition Methods(bs4)--
 
