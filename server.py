@@ -73,6 +73,14 @@ def recallGetTimes():
     else:
         return FAIL_MESSAGE
 
+#Posts classroom information
+@app.route('devMode/post/classroomInfo', methods = ['POST'])
+def postClassroomInfo():
+    pss = request.get_json() or request.form
+    if checkPassword(pss['password'], pss['info'])
+
+#Non-server functions-----------------
+
 #Checks for password and logs failed attempts 
 def checkPassword(password, info):
     date = str(datetime.datetime.utcnow())

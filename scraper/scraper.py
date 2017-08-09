@@ -14,6 +14,7 @@ LOG_CLASS_SEPARATOR = '---------------------------------------------'
 LOG_DEPT_SEPARATOR = '============================================================='
 LOG_FREQUENCY = 2400
 SEMESTRAL_END = "25/11/17"
+DB_POSTING = "https://tu-salon-redis.herokuapp.com/devMode/post/classroomInfo"
 
 #Global variables--------------
 
@@ -35,6 +36,9 @@ class Schedule:
         self.classroom = classroom
         self.dateStart = dateStart
         self.dateEnd = dateEnd
+
+    def toString(self):
+        return self.classroom + "<<" + self.classTime + "<<" + self.weekdays + "<<" + self.dateStart + "<<" + self.dateEnd
 
 #Models a course-class. Contains it's name, schedules and teacher's name.
 class _Class:
@@ -83,6 +87,19 @@ class Classroom:
             print("   d[" + str(counter) + "]: " + str(len(day)))
             counter += 1
 
+    def toDictionary(self):
+        dictionary = {}
+        dictionary['_id'] = self._id
+
+        dayCounter = 0
+        for day in self.baseSchedules:
+            schList = []
+            for schedule in day:
+                schList.append(schedule.toString)
+            dictionary[str(dayCounter)]= str(schList)
+            dayCounter += 1
+
+        return dictionary
 
 
 #Models an schedule exception: not-semestral classroom assignment
@@ -285,6 +302,17 @@ def serializeClasses(classList):
         print("  " + classroom._id)
     return classrooms
 
+def postDB(base, exceptions):
+    
+    #Post base schedules & exceptions
+
+    for classroom in base:
+        #Generate JSON for DB posting, includes base schedules and exceptions
+        info = classroom.toDictionary()
+        info['password'] = os.environ.get('REDIS_URL')
+        requests.post(DB_POSTING, info)
+
+
 #Auxiliary methods-------------
 
 def isRelative(url):
@@ -395,6 +423,12 @@ def logClassrooms(classrooms):
                 for schedule in day:
                     file.write("\n" + debugSchedule(schedule))
                 dayCounter += 1
+
+
+def generateExceptionsDictionary(exceptions):
+
+    for exception in exceptions:
+
 
 #Tag recognition Methods(bs4)--
 
