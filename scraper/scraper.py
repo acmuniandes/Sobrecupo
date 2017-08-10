@@ -91,6 +91,7 @@ class Classroom:
         dictionary = {}
         dictionary['_id'] = self._id
 
+        #Appending base to dictionary
         dayCounter = 0
         for day in self.baseSchedules:
             schList = []
@@ -98,6 +99,16 @@ class Classroom:
                 schList.append(schedule.toString)
             dictionary[str(dayCounter)]= str(schList)
             dayCounter += 1
+
+        #Appending exceptions to dictionary
+        for exception in self.exceptions:
+            #Declare date reference variables
+            start = exception.dateStart.split("/")
+            end = exception.dateEnd.split("/")
+            #Format DD/MM/AA 
+
+            #Comenzando desde la fecha, usar la funcion de calendar para iterar sobre los meses i+1 hasta f-1
+            #usando los weekdays para agregar las fechas de esa semana que corresponden a la excepcion
 
         return dictionary
 
