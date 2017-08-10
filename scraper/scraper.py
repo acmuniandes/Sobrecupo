@@ -378,11 +378,12 @@ def serializeClasses(classList):
         print("  " + classroom._id)
     return classrooms
 
-def postDB(base, exceptions):
+def postDB(classrooms, exceptions):
     
-    #Post base schedules & exceptions
+    #Post classrooms schedules & exceptions
 
-    for classroom in base:
+    for classroom in classrooms:
+        print("Posting: " + classroom._id)
         #Generate JSON for DB posting, includes base schedules and exceptions
         info = classroom.toDictionary()
         info['password'] = os.environ.get('REDIS_URL')

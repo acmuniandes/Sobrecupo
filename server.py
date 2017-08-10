@@ -77,7 +77,19 @@ def recallGetTimes():
 @app.route('devMode/post/classroomInfo', methods = ['POST'])
 def postClassroomInfo():
     pss = request.get_json() or request.form
-    if checkPassword(pss['password'], pss['info'])
+    if checkPassword(pss['password'], pss['info']):
+        r.append("classrooms", "<<" + str(pss))
+        return "yay!"
+    else:
+        return "Wrong password"
+
+@app.route('devMode/get/classroomInfo', methods = ['GET'])
+def getClassroomInfo():
+    pss = request.get_json() or request.form
+    if checkPassword(pss['password'], pss['info']):
+        return r.get("classrooms")
+    else:
+        return "Wrong password"
 
 #Non-server functions-----------------
 
