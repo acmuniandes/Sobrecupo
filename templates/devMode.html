@@ -38,6 +38,10 @@
                     Recall DB's Get's
                 </button>
 
+                <button  v-on:click="recallClassrooms()">
+                    Recall classrooms
+                </button>
+
                 <template v-if='typeof(dbInfo) === "string"'>
                     <p>
                         %{dbInfo}%
@@ -136,6 +140,23 @@
                 {
                     var localThis = this
                     axios.post('/devMode/recall/getTimes', 
+                    {
+                        password: String(localThis.input),
+                        info: String(navigator.language) + " // " + navigator.userAgent
+                    }
+                    ).then(function (response) 
+                    {
+                        localThis.dbInfo = response.data
+                    }).catch (function (error) 
+                    {
+                        console.log(error)
+                    })
+                },
+
+                recallClassrooms: function()
+                {
+                    var localThis = this
+                    axios.post('/devMode/post/classroomInfo', 
                     {
                         password: String(localThis.input),
                         info: String(navigator.language) + " // " + navigator.userAgent
