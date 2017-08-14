@@ -94,6 +94,7 @@ class Classroom:
     def toDictionary(self):
         dictionary = {}
         dictionary['_id'] = self._id
+        dictionary['exceptions'] = {}
 
         #Appending base to dictionary
         dayCounter = 0
@@ -121,16 +122,16 @@ class Classroom:
 
             for month in range(int(start[1]) + 1, int(end[1]) +1):
                 
-                iterator = calendarObj.itermonthdays2(start[2], month)
+                iterator = calendarObj.itermonthdays2(int(start[2]), month)
 
                 #Initial month
                 if month == int(start[1]):
 
                     for day in iterator:                        
                         #Check if the current day is the same or later than the starting day
-                        if day[0] >= start[0]:
+                        if day[0] >= int(start[0]):
                             #Also, checking if the weekday corresponds to a class' weekday
-                            if day[1] in numDays:
+                            if int(day[1]) in numDays:
                                 #Generate date string
                                 currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
                                 try:
@@ -142,7 +143,6 @@ class Classroom:
                                     dictionary['exceptions'][currentDate] += exception.time
                 #Months in between
                 elif month != int(end[1]):
-                    iterator = calendarObj.itermonthdays2(start[2], month)
 
                     for day in iterator:
                         if day[1] in numDays:
@@ -378,7 +378,7 @@ def serializeClasses(classList):
         print("  " + classroom._id)
     return classrooms
 
-def postDB(classrooms, exceptions):
+def postDB(classrooms):
     
     #Post classrooms schedules & exceptions
 
@@ -500,11 +500,6 @@ def logClassrooms(classrooms):
                 for schedule in day:
                     file.write("\n" + debugSchedule(schedule))
                 dayCounter += 1
-
-
-def generateExceptionsDictionary(exceptions):
-
-    for exception in exceptions:
 
 
 #Tag recognition Methods(bs4)--
