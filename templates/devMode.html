@@ -156,7 +156,7 @@
                 recallClassrooms: function()
                 {
                     var localThis = this
-                    axios.get('/devMode/get/classroomInfo', 
+                    axios.post('/devMode/get/classroomInfo', 
                     {
                         password: String(localThis.input),
                         info: String(navigator.language) + " // " + navigator.userAgent
