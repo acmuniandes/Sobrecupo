@@ -386,7 +386,11 @@ def postDB(classrooms):
         #Generate JSON for DB posting, includes base schedules and exceptions
         info = classroom.toDictionary()
         info['password'] = os.environ.get('REDIS_URL')
-        requests.post(DB_POSTING, json.dumps(info))
+        jsonStr = json.dumps(info)
+        requests.post(DB_POSTING, '', jsonStr)
+        with open('JSON/' + classroom._id + '.json', 'w') as file:
+            file.write(jsonStr)
+
 
 
 #Auxiliary methods-------------
