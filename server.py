@@ -36,7 +36,6 @@ def recallDB():
 #Returns devMode.html [GET] #Checks login credentials [POST]
 @app.route('/devMode', methods = ['POST', 'GET'])
 def devMode():
-
     if request.method == 'GET':
         r.incr('devModeGet')
         return render_template('devMode.html')
