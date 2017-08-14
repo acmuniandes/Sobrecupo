@@ -82,7 +82,7 @@ def postClassroomInfo():
     else:
         return "Wrong password"
 
-@app.route('devMode/get/classroomInfo', methods = ['GET'])
+@app.route('/devMode/get/classroomInfo', methods = ['GET'])
 def getClassroomInfo():
     pss = request.get_json() or request.form
     if checkPassword(pss['password'], pss['info']):

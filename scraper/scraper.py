@@ -136,11 +136,11 @@ class Classroom:
                                 currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
                                 try:
                                     #Add to the current date, to the classroom exception, the extra-schedule
-                                    dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.time
+                                    dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
                                 except KeyError as nonExistantKey:
                                     #As prior operation needs key to exist, we assign it first to an empty value an then write the first time (no separator needed)
                                     dictionary['exceptions'][currentDate] = ""
-                                    dictionary['exceptions'][currentDate] += exception.time
+                                    dictionary['exceptions'][currentDate] += exception.classTime
                 #Months in between
                 elif month != int(end[1]):
 
@@ -149,30 +149,29 @@ class Classroom:
                             currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
                             try:
                                 #Add to the current date, to the classroom exception, the extra-schedule
-                                dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.time
+                                dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
                             except KeyError as nonExistantKey:
                                 #As prior operation needs key to exist, we assign it first to an empty value an then write the first time (no separator needed)
                                 dictionary['exceptions'][currentDate] = ""
-                                dictionary['exceptions'][currentDate] += exception.time
+                                dictionary['exceptions'][currentDate] += exception.classTime
 
                 #Final month
                 else:
-                    iterator = calendarObj.itermonthdays2(start[2], month)
 
                     for day in iterator:                        
                         #Check if the current day is the same or later than the starting day
-                        if day[0] <= start[0]:
+                        if day[0] <= int(start[0]):
                             #Also, checking if the weekday corresponds to a class' weekday
                             if day[1] in numDays:
                                 #Generate date string
                                 currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
                                 try:
                                     #Add to the current date, to the classroom exception, the extra-schedule
-                                    dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.time
+                                    dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
                                 except KeyError as nonExistantKey:
                                     #As prior operation needs key to exist, we assign it first to an empty value an then write the first time (no separator needed)
                                     dictionary['exceptions'][currentDate] = ""
-                                    dictionary['exceptions'][currentDate] += exception.time
+                                    dictionary['exceptions'][currentDate] += exception.classTime
 
 
         return dictionary
@@ -387,7 +386,7 @@ def postDB(classrooms):
         #Generate JSON for DB posting, includes base schedules and exceptions
         info = classroom.toDictionary()
         info['password'] = os.environ.get('REDIS_URL')
-        requests.post(DB_POSTING, json.dump(info))
+        requests.post(DB_POSTING, json.dumps(info))
 
 
 #Auxiliary methods-------------
