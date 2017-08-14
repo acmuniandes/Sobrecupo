@@ -101,7 +101,7 @@ class Classroom:
         for day in self.baseSchedules:
             schList = []
             for schedule in day:
-                schList.append(schedule.toString)
+                schList.append(schedule.toString())
             dictionary[str(dayCounter)]= str(schList)
             dayCounter += 1
 
@@ -387,7 +387,7 @@ def postDB(classrooms):
         info = classroom.toDictionary()
         info['password'] = os.environ.get('REDIS_URL')
         jsonStr = json.dumps(info)
-        requests.post(DB_POSTING, '', jsonStr)
+        requests.post(DB_POSTING, info, jsonStr)
         with open('JSON/' + classroom._id + '.json', 'w') as file:
             file.write(jsonStr)
 
