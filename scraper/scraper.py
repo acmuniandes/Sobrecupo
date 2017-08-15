@@ -41,6 +41,7 @@ class Schedule:
         self.dateStart = dateStart
         self.dateEnd = dateEnd
 
+    
     def toString(self):
         return self.classroom + "<<" + self.classTime + "<<" + self.weekdays + "<<" + self.dateStart + "<<" + self.dateEnd
 
@@ -101,7 +102,7 @@ class Classroom:
         for day in self.baseSchedules:
             schList = []
             for schedule in day:
-                schList.append(schedule.toString())
+                schList.append(schedule.classTime)
             dictionary[str(dayCounter)]= str(schList)
             dayCounter += 1
 
@@ -120,7 +121,7 @@ class Classroom:
 
             #Month-by-month exception adding: 3 cases, initial month, final month and months in between
 
-            for month in range(int(start[1]) + 1, int(end[1]) +1):
+            for month in range(int(start[1]), int(end[1]) +1):
                 
                 iterator = calendarObj.itermonthdays2(int(start[2]), month)
 
@@ -128,42 +129,28 @@ class Classroom:
                 if month == int(start[1]):
 
                     for day in iterator:                        
-                        #Check if the current day is the same or later than the starting day
-                        if day[0] >= int(start[0]):
-                            #Also, checking if the weekday corresponds to a class' weekday
-                            if int(day[1]) in numDays:
-                                #Generate date string
-                                currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
-                                try:
-                                    #Add to the current date, to the classroom exception, the extra-schedule
-                                    dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
-                                except KeyError as nonExistantKey:
-                                    #As prior operation needs key to exist, we assign it first to an empty value an then write the first time (no separator needed)
-                                    dictionary['exceptions'][currentDate] = ""
-                                    dictionary['exceptions'][currentDate] += exception.classTime
+                        #Check if the day is in the current month
+                        if day[0] != 0:
+                            #Check if the current day is the same or later than the starting day
+                            if day[0] >= int(start[0]):
+                                #Also, checking if the weekday corresponds to a class' weekday
+                                if int(day[1]) in numDays:
+                                    #Generate date string
+                                    currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
+                                    try:
+                                        #Add to the current date, to the classroom exception, the extra-schedule
+                                        dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
+                                    except KeyError as nonExistantKey:
+                                        #As prior operation needs key to exist, we assign it first to an empty value an then write the first time (no separator needed)
+                                        dictionary['exceptions'][currentDate] = ""
+                                        dictionary['exceptions'][currentDate] += exception.classTime
                 #Months in between
                 elif month != int(end[1]):
 
                     for day in iterator:
-                        if day[1] in numDays:
-                            currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
-                            try:
-                                #Add to the current date, to the classroom exception, the extra-schedule
-                                dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
-                            except KeyError as nonExistantKey:
-                                #As prior operation needs key to exist, we assign it first to an empty value an then write the first time (no separator needed)
-                                dictionary['exceptions'][currentDate] = ""
-                                dictionary['exceptions'][currentDate] += exception.classTime
-
-                #Final month
-                else:
-
-                    for day in iterator:                        
-                        #Check if the current day is the same or later than the starting day
-                        if day[0] <= int(start[0]):
-                            #Also, checking if the weekday corresponds to a class' weekday
+                        #Check if the day is in the current month
+                        if day[0] != 0:
                             if day[1] in numDays:
-                                #Generate date string
                                 currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
                                 try:
                                     #Add to the current date, to the classroom exception, the extra-schedule
@@ -172,6 +159,26 @@ class Classroom:
                                     #As prior operation needs key to exist, we assign it first to an empty value an then write the first time (no separator needed)
                                     dictionary['exceptions'][currentDate] = ""
                                     dictionary['exceptions'][currentDate] += exception.classTime
+
+                #Final month
+                else:
+
+                    for day in iterator:    
+                        #Check if the day is in the current month
+                        if day[0] != 0:                    
+                            #Check if the current day is the same or later than the starting day
+                            if day[0] <= int(start[0]):
+                                #Also, checking if the weekday corresponds to a class' weekday
+                                if day[1] in numDays:
+                                    #Generate date string
+                                    currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
+                                    try:
+                                        #Add to the current date, to the classroom exception, the extra-schedule
+                                        dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
+                                    except KeyError as nonExistantKey:
+                                        #As prior operation needs key to exist, we assign it first to an empty value an then write the first time (no separator needed)
+                                        dictionary['exceptions'][currentDate] = ""
+                                        dictionary['exceptions'][currentDate] += exception.classTime
 
 
         return dictionary
@@ -381,15 +388,20 @@ def postDB(classrooms):
     
     #Post classrooms schedules & exceptions
 
+    completeJSON = {}
+
     for classroom in classrooms:
+        completeJSON[classroom._id] = {}
         print("Posting: " + classroom._id)
         #Generate JSON for DB posting, includes base schedules and exceptions
         info = classroom.toDictionary()
-        info['password'] = os.environ.get('REDIS_URL')
+        completeJSON[classroom._id] = info
         jsonStr = json.dumps(info)
-        requests.post(DB_POSTING, info, jsonStr)
         with open('JSON/' + classroom._id + '.json', 'w') as file:
             file.write(jsonStr)
+    
+    with open('clasrooms.json', 'w') as file:
+        file.write(json.dumps(completeJSON))
 
 
 
