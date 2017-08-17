@@ -16,7 +16,7 @@ FAIL_MESSAGE = 'la pulenta oe'
 data = None
 with open('classrooms.json') as json_data:
     data = json.dumps(json.load(json_data))
-   
+
 
 #"Landing page"
 @app.route('/')
