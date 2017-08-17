@@ -400,7 +400,7 @@ def postDB(classrooms):
         with open('JSON/' + classroom._id + '.json', 'w') as file:
             file.write(jsonStr)
     
-    with open('clasrooms.json', 'w') as file:
+    with open('classrooms.json', 'w') as file:
         file.write(json.dumps(completeJSON))
 
 
