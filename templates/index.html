@@ -75,7 +75,8 @@
                             for(continuityTuple in localClassrooms[classroom])
                             {
                                 continuity_tuple = localClassrooms[classroom][continuityTuple].split(/ - /g)
-                                console.log(continuity_tuple)
+                                console.log("Non split: " + localClassrooms[classroom][continuityTuple])
+                                console.log("Splitted: " + continuity_tuple)
                                 //Checks if given hour is within continuityTuple
                                 if(this.isInCountinuityTuple(hour, continuity_tuple))
                                 {
