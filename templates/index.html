@@ -57,14 +57,15 @@
                             base = JSON.parse(classrooms[classroom][(date.getDay()-1).toString()].replace(/\'/g, '\"'))
 
                             for(sch in base)
-                                schedule.push(sch)
+                                schedule.push(base[sch])
                             
                             localClassrooms[classroom] = schedule
                         }
 
                         //Second part, finds free classrooms from previous data structure formed
 
-                        console.log("Local classrooms: " + localClassrooms)
+                        console.log("Local classrooms: ")
+                        console.log(localClassrooms)
 
                         hour = date.getHours()*100 + date.getMinutes()
 
