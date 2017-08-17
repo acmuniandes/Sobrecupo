@@ -21,7 +21,7 @@
             var jsInfo = {{jsonInfo|tojson|safe}};
 
             var app = new Vue
-            (
+            ({
                 el: "#app",
                 delimiters: ['%{', '}%'],
                 data: {
@@ -31,15 +31,12 @@
                     date: new Date()
                 },
 
-                methods:{
+                methods: {
                     classroomNow: function(json, day, date)
                     {
                         return 'w'
                     }
-                }
-
-            )
-            
+            })            
     
         </script>
     </body>
