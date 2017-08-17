@@ -25,7 +25,7 @@
                 el: "#app",
                 delimiters: ['%{', '}%'],
                 data: {
-                    info: jsInfo,
+                    info: JSON.parse(jsInfo),
                     freeClassrooms: [],
                     freeClassroom: "",
                     date: new Date()
