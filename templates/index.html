@@ -63,6 +63,9 @@
                         }
 
                         //Second part, finds free classrooms from previous data structure formed
+
+                        console.log("Local classrooms: " + localClassrooms)
+
                         hour = date.getHours()*100 + date.getMinutes()
 
                         for(classroom in localClassrooms)
@@ -72,6 +75,7 @@
                             for(continuityTuple in localClassrooms[classroom])
                             {
                                 continuity_tuple = localClassrooms[classroom][continuityTuple].split(/ - /g)
+                                console.log(continuity_tuple)
                                 //Checks if given hour is within continuityTuple
                                 if(this.isInCountinuityTuple(hour, continuity_tuple))
                                 {
