@@ -18,12 +18,13 @@
         </div>
         <script>
 
-            var jsInfo = {{jsonInfo}}
+            var jsInfo = {{jsonInfo|toJson|safe}};
 
             var app = new Vue
             (
+                el: "#app",
                 delimiters: ['%{', '}%'],
-                data:{
+                data: {
                     info: jsInfo,
                     freeClassrooms: [],
                     freeClassroom: "",
