@@ -104,7 +104,13 @@
 
                     generateDate: function(date)
                     {
-                        return date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear()
+                        day = date.getDate()
+                        if(day < 10)
+                            day = "0" + day
+                        month = date.getMonth()+1
+                        if(month < 10)
+                            month = "0" + month
+                        return day + "/" + month + "/17"
                     },
 
                     isInCountinuityTuple: function(hour, tuple)
