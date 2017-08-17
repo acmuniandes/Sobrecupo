@@ -1,79 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
         <!-- Vue.js -->
         <script src="https://unpkg.com/vue/dist/vue.js"></script>
         <!-- Axios for requests -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>        
-
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
-
     <body>
-
-        <div id="app">
-            
-            <h1>
-                Requests
-            </h1>
-
-            <input v-model = 'input'>
-
-            <br>
-
-            <button v-on:click="getTest('/db/' + input)">
-                Submit to de DB
-            </button>
-
-            <button v-on:click="recallDB()">
-                Recall Info
-            </button>
-
-            <p>
-                %{dbInfo}%
-            </p>
-
-
+        <div id='app'>
+            <div id='banner'>
+            </div>
+            <div id='classroom'>
+            </div>
+            <div id ='other'>
+                %{info}%
+            </div>
         </div>
-
         <script>
-        
-        var app = new Vue
-        ({
-            el: '#app',
-            delimiters: ['%{', '}%'],
-            data:
-            {
-                input: '',
-                dbInfo: ''
-            },
-            methods:
-            {
-                getTest: function (url) 
-                {
-                    console.log("submitting: " + url)
-                    axios.get(url).then(function (response) {
-                        console.log(response);
-                    }).catch(function (error) {
-                        console.log(error.message);
-                    });
+
+            var jsInfo = {{jsonInfo}}
+
+            var app = new Vue
+            (
+                delimiters: ['%{', '}%'],
+                data:{
+                    info: jsInfo,
+                    freeClassrooms: [],
+                    freeClassroom: "",
+                    date: new Date()
                 },
 
-                recallDB: function()
-                {
-                    var localThis = this
-                    axios.get('/db/recall/test').then(function (response) 
+                methods:{
+                    classroomNow: function(json, day, date)
                     {
-                        localThis.dbInfo = response.data
-                    }).catch (function (error) 
-                    {
-                        console.log(error)
-                    })
+                        return 'w'
+                    }
                 }
-            }
-        })
 
+            )
+            
+    
         </script>
-
     </body>
 </html>

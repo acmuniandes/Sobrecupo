@@ -2,6 +2,7 @@ import os
 import redis
 import logging
 import datetime
+import json
 
 from flask import Flask , send_from_directory, render_template, url_for, request
 
@@ -12,10 +13,16 @@ app = Flask(__name__)
 
 FAIL_MESSAGE = 'la pulenta oe'
 
+data = None
+with open('classrooms.json') as json_data:
+    data = json.dumps(json.load(json_data))
+   
+
 #"Landing page"
 @app.route('/')
 def webprint():
-    return render_template('index.html')
+    global data
+    return render_template('index.html', jsonInfo=data)
 
 #Saves the string <strng> in the DB
 @app.route('/db/<strng>')
