@@ -50,11 +50,11 @@
                             if(exceptions != undefined)
                             {
                                 //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
-                                schedule.concat(excpString.split("$$"))
+                                schedule.concat(exceptions.split("$$"))
                             }
                             //This line converts to a JS object but the string is not optimally formed, so it has to replace
                             // ' ocurrences with " to be a valid json to parse
-                            base = JSON.parse(classrooms[classroom][date.getDay()-1].replace(/\'/g, '\"'))
+                            base = JSON.parse(classrooms[classroom][(date.getDay()-1).toString()].replace(/\'/g, '\"'))
 
                             for(sch in base)
                                 schedule.push(sch)
