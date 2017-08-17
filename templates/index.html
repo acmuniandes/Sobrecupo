@@ -51,6 +51,7 @@
                             {
                                 //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
                                 console.log("Exceptions " + classroom + ":")
+                                //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
                                 console.log(exceptions)
                                 console.log(exceptions.split("$$"))
                                 schedule.concat(exceptions.split("$$"))
