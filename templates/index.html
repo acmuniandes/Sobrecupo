@@ -50,6 +50,9 @@
                             if(exceptions != undefined)
                             {
                                 //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
+                                console.log("Exceptions " + classroom + ":")
+                                console.log(exceptions)
+                                console.log(exceptions.split("$$"))
                                 schedule.concat(exceptions.split("$$"))
                             }
                             //This line converts to a JS object but the string is not optimally formed, so it has to replace
