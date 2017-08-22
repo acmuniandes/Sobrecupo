@@ -148,12 +148,12 @@
                         temp = new Date()
                         time = temp.getTime()
 
-                        localThis.classroomNow(this.date)
+                        localThis.classroomNow(localThis.date)
 
                         temp = new Date()
                         time = temp.getTime() - time
                         console.log("Performance: " + time + "ms")
-                        console.log(this.freeClassrooms)
+                        console.log(localThis.freeClassrooms)
 
                     }).catch (function (error) 
                     {
