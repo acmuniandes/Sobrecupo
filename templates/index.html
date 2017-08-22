@@ -141,7 +141,7 @@
                     axios.get('/salones').then(function (response) 
                     {
                         console.log(response.data)
-                        localThis.info = JSON.parse(response.data)
+                        localThis.info = response.data
                     }).catch (function (error) 
                     {
                         console.log(error)
