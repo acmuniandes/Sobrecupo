@@ -142,21 +142,22 @@
                     {
                         console.log(response.data)
                         localThis.info = response.data
+
+                        //Performance testing
+                        temp = new Date()
+                        time = temp.getTime()
+
+                        this.classroomNow(this.date)
+
+                        temp = new Date()
+                        time = temp.getTime() - time
+                        console.log("Performance: " + time + "ms")
+                        console.log(this.freeClassrooms)
+
                     }).catch (function (error) 
                     {
                         console.log(error)
                     })
-
-                    //Performance testing
-                    temp = new Date()
-                    time = temp.getTime()
-
-                    this.classroomNow(this.date)
-
-                    temp = new Date()
-                    time = temp.getTime() - time
-                    console.log("Performance: " + time + "ms")
-                    console.log(this.freeClassrooms)
                 }
             
             })            
