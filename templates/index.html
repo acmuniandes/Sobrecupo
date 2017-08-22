@@ -140,7 +140,8 @@
                     var localThis = this
                     axios.get('/salones').then(function (response) 
                     {
-                        localThis.info = response.data
+                        console.log(response.data)
+                        localThis.info = JSON.parse(response.data)
                     }).catch (function (error) 
                     {
                         console.log(error)
