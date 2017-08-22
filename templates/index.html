@@ -51,8 +51,6 @@
                             {
                                 //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
                                 //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
-                                console.log(exceptions)
-                                console.log(exceptions.split("$$"))
                                 schedule.concat(exceptions.split("$$"))
                             }
                             //This line converts to a JS object but the string is not optimally formed, so it has to replace
@@ -82,7 +80,7 @@
 
                                 //console.log("Non split: " + localClassrooms[classroom][continuityTuple])
                                 //console.log("Splitted: " + continuity_tuple)
-                                
+
                                 //Checks if given hour is within continuityTuple
                                 if(this.isInCountinuityTuple(hour, continuity_tuple))
                                 {
