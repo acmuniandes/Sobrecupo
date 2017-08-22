@@ -33,7 +33,7 @@
                 },
 
                 methods: {
-                    classroomNow: function(json, date)
+                    classroomNow: function(date)
                     {
                         //First part of the method generates day schedule from base json
                         classrooms = this.info
@@ -150,7 +150,7 @@
                     temp = new Date()
                     time = temp.getTime()
 
-                    this.classroomNow(this.info, this.date)
+                    this.classroomNow(this.date)
 
                     temp = new Date()
                     time = temp.getTime() - time
