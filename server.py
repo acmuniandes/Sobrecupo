@@ -27,6 +27,7 @@ def webprint():
 #Returning JSON
 @app.route('/salones')
 def salones():
+    global data
     return jsonify(data)
 
 #Saves the string <strng> in the DB
