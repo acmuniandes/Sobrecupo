@@ -46,10 +46,11 @@
                         {
                             schedule = []
                             exceptions = classrooms[classroom]["exceptions"][today]
+                            console.log("Exceptions " + classroom + " // " + today + ":")
+                            console.log(exceptions)
                             if(exceptions != undefined)
                             {
                                 //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
-                                console.log("Exceptions " + classroom + ":")
                                 //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
                                 console.log(exceptions)
                                 console.log(exceptions.split("$$"))
@@ -137,6 +138,16 @@
                 //Method called just after the instance is created
                 created: function()
                 {
+                    //Using a pointer to this due to the context change on axios function
+                    var localThis = this
+                    axios.get('/salones').then(function (response) 
+                    {
+                        localThis.info = response.data
+                    }).catch (function (error) 
+                    {
+                        console.log(error)
+                    })
+
                     //Performance testing
                     temp = new Date()
                     time = temp.getTime()

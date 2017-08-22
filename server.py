@@ -4,7 +4,7 @@ import logging
 import datetime
 import json
 
-from flask import Flask , send_from_directory, render_template, url_for, request
+from flask import Flask , send_from_directory, render_template, url_for, request, jsonify
 
 #Redis instance from heroku
 r = redis.from_url(os.environ.get("REDIS_URL"), db =None, decode_responses = True)
@@ -22,7 +22,12 @@ with open('classrooms.json') as json_data:
 @app.route('/')
 def webprint():
     global data
-    return render_template('index.html', jsonInfo=data)
+    return render_template('index.html')
+
+#Returning JSON
+@app.route('/salones')
+def salones():
+    return jsonify(data)
 
 #Saves the string <strng> in the DB
 @app.route('/db/<strng>')
