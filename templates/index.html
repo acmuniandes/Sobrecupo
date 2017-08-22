@@ -32,7 +32,8 @@
                     date: new Date()
                 },
 
-                methods: {
+                methods: 
+                {
                     classroomNow: function(date)
                     {
                         //First part of the method generates day schedule from base json
@@ -134,7 +135,7 @@
                 },
 
                 //Method called just after the instance is created
-                created: function()
+                mounted: function()
                 {
                     //Using a pointer to this due to the context change on axios function
                     var localThis = this
