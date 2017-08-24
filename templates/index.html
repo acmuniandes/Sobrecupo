@@ -74,6 +74,10 @@
                         {
                             //Warden variable, modeling that the hour belongs to the tuple
                             warden = true
+
+                            //Variable that saves the shortest (but positive) difference betweeen
+                            //the first element of all cointinuity tuples
+                            timeUntilOccupation = -9000
                             for(continuityTuple in localClassrooms[classroom])
                             {
                                 continuity_tuple = localClassrooms[classroom][continuityTuple].split(/ - /g)
@@ -89,15 +93,25 @@
                                     warden = false
                                     break
                                 }
+
+                                //Compares actual continuity tuple difference with the actual best aproximation
+                                difference = hour - continuity_tuple[0]
+
+                                if(difference > 0 && difference<timeUntilOccupation)
+                                    timeUntilOccupation = difference
                             }
 
                             //If the warden remains true, the hour is not in any tuple of the classrooms
                             //schedules, meaning it's free! (eureka!)
-                            //TODO add time left for classroom to be occupied (very important)
                             if (warden)
                             {
-                                this.freeClassrooms.push(classroom)
+                                //Creates an object with classroom id as a key and time until occupation as value
+                                classroomObject = {classroom : timeUntilOccupation}
+                                this.freeClassrooms.push(classroomObject)
                             }
+
+                            //Note that if the class is not free, timeUntilOcupation's value is irrelevant
+                            //(for now)
                         }
                     },
 
@@ -112,6 +126,8 @@
                         return day + "/" + month + "/17"
                     },
 
+                    //@TODO Correct empty interval-emptiness 
+                    //(technically all classrooms are free between classes)
                     isInCountinuityTuple: function(hour, tuple)
                     {
                         //A continuity tuple is defined as a continous time interval in which the classroom is occupied.

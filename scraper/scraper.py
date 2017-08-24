@@ -74,7 +74,7 @@ class Classroom:
         self.exceptions = []
 
     def post(self, schedule):
-        print("posting: " + self._id + " " + str(schedule) + " // " + debugSchedule(schedule))
+        #print("posting: " + self._id + " " + str(schedule) + " // " + debugSchedule(schedule))
         if schedule.dateEnd == SEMESTRAL_END:
 
             #Parses weekdays string to weekday number (returns a list)
@@ -123,7 +123,7 @@ class Classroom:
 
             for month in range(int(start[1]), int(end[1]) +1):
                 
-                iterator = calendarObj.itermonthdays2(int(start[2]), month)
+                iterator = calendarObj.itermonthdays2(2017, month)
 
                 #Initial month
                 if month == int(start[1]):
@@ -485,7 +485,7 @@ def postClassroomInfo(classrooms, schedule):
 
 def weekdaysToNumber(weekdays):
     numbers = []
-    print("wkd param: " + str(weekdays))
+    #print("wkd param: " + str(weekdays))
     if "L" in weekdays:
         numbers.append(0)
     if "M" in weekdays:
