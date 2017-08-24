@@ -170,6 +170,7 @@ class Classroom:
                             if day[0] <= int(start[0]):
                                 #Also, checking if the weekday corresponds to a class' weekday
                                 if day[1] in numDays:
+                                    #TODO print when entering if (check if weekdays are indeed correct or not)
                                     #Generate date string
                                     currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
                                     try:
