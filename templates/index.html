@@ -95,7 +95,7 @@
                                 }
 
                                 //Compares actual continuity tuple difference with the actual best aproximation
-                                difference = continuity_tuple[0] - hour
+                                difference = parseInt(continuity_tuple[0]) - hour
 
                                 if(difference > 0 && difference<timeUntilOccupation)
                                     timeUntilOccupation = difference
@@ -106,7 +106,7 @@
                             if (warden)
                             {
                                 //Creates an object with classroom id as a key and time until occupation as value
-                                if(timeUntilOccupation == -9000)
+                                if(timeUntilOccupation == 9000)
                                     timeUntilOccupation = "Hasta el final del día"
                                 classroomObject = {}
                                 classroomObject[classroom] = timeUntilOccupation
