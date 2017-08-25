@@ -142,7 +142,7 @@
                         //tuple[1] is the uppper boundary
 
                         //If the hour is bigger than the lower boundary
-                        if(hour > parseInt(tuple[0]))
+                        if(hour >= parseInt(tuple[0]) /*plus/minus the dead time interval*/ - 10)
                         {
                             //and is lower than the upper boundary
                             if(hour < parseInt(tuple[1]))
@@ -157,7 +157,7 @@
                     formatFreeClassroom: function(classroom)
                     {
                         for(id in classroom)
-                            return id + " Libre hasta " + classroom[id]
+                            return id + ": Libre durante " + classroom[id] + " minutos más"
                     }
                 },
 
