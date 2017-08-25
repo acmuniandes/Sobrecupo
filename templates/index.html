@@ -17,6 +17,9 @@
             </div>
             <div id ='other'>
                 %{freeClassrooms}%
+                <li v-for:'clazzroom in freeClassrooms'>
+                    %{formatFreeClassroom(clazzroom)}%
+                </li>
             </div>
         </div>
         <script>
@@ -150,6 +153,12 @@
                             }
                         }
                         return false
+                    },
+
+                    formatFreeClassroom: function(classroom)
+                    {
+                        for(id in classroom)
+                            return id + " Libre hasta " + classroom[id]
                     }
                 },
 
