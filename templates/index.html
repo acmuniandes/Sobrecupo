@@ -108,6 +108,7 @@
                                 //Creates an object with classroom id as a key and time until occupation as value
                                 if(timeUntilOccupation == -9000)
                                     timeUntilOccupation = "Hasta el final del día"
+                                classroomObject = {}
                                 classroomObject[classroom] = timeUntilOccupation
                                 this.freeClassrooms.push(classroomObject)
                             }
