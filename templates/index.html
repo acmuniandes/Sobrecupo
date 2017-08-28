@@ -159,13 +159,12 @@
 
                     formatFreeClassroom: function(classroom)
                     {
-                        for(id in classroom)
-                            if(typeof(classroom[id]) != "string")
-                                return id + ": Libre durante " + classroom[id] + " minutos más"
-                            else
-                                return id + ": " + classroom[id]
+                        if(typeof(freeClassrooms[classroom]) != "string")
+                            return classroom + ": Libre durante " + freeClassrooms[classroom] + " minutos más"
+                        else
+                            return classroom + ": " + freeClassrooms[classroom]
                     }
-                },
+                
 
                 //Method called just after the instance is created
                 mounted: function()
