@@ -29,7 +29,7 @@
                 delimiters: ['%{', '}%'],
                 data: {
                     info: null,
-                    freeClassrooms: [],
+                    freeClassrooms: {},
                     freeClassroom: "",
                     date: new Date()
                 },
@@ -110,9 +110,12 @@
                                 //Creates an object with classroom id as a key and time until occupation as value
                                 if(timeUntilOccupation == 9000)
                                     timeUntilOccupation = "Hasta el final del día"
+                                //--
                                 classroomObject = {}
                                 classroomObject[classroom] = timeUntilOccupation
-                                this.freeClassrooms.push(classroomObject)
+                                //--
+
+                                this.freeClassrooms[classroom] = timeUntilOccupation
                             }
 
                             //Note that if the class is not free, timeUntilOcupation's value is irrelevant
@@ -157,7 +160,10 @@
                     formatFreeClassroom: function(classroom)
                     {
                         for(id in classroom)
-                            return id + ": Libre durante " + classroom[id] + " minutos más"
+                            if(typeof(classroom[id]) != "string")
+                                return id + ": Libre durante " + classroom[id] + " minutos más"
+                            else
+                                return id + ": " + classroom[id]
                     }
                 },
 

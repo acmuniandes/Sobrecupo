@@ -136,7 +136,7 @@ class Classroom:
                                 #Also, checking if the weekday corresponds to a class' weekday
                                 if int(day[1]) in numDays:
                                     #Generate date string
-                                    currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
+                                    currentDate = str(day[0]) + "/" + start[1] + "/" + start[2]
                                     try:
                                         #Add to the current date, to the classroom exception, the extra-schedule
                                         dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
@@ -151,7 +151,7 @@ class Classroom:
                         #Check if the day is in the current month
                         if day[0] != 0:
                             if day[1] in numDays:
-                                currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
+                                currentDate = str(day[0]) + "/" + str(month) + "/" + start[2]
                                 try:
                                     #Add to the current date, to the classroom exception, the extra-schedule
                                     dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
@@ -167,12 +167,12 @@ class Classroom:
                         #Check if the day is in the current month
                         if day[0] != 0:                    
                             #Check if the current day is the same or later than the starting day
-                            if day[0] <= int(start[0]):
+                            if day[0] <= int(end[0]):
                                 #Also, checking if the weekday corresponds to a class' weekday
                                 if day[1] in numDays:
                                     #TODO print when entering if (check if weekdays are indeed correct or not)
                                     #Generate date string
-                                    currentDate = str(day[0]) + "/" + str(start[1] + "/" + str(start[2]))
+                                    currentDate = str(day[0]) + "/" + end[1] + "/" + end[2]
                                     try:
                                         #Add to the current date, to the classroom exception, the extra-schedule
                                         dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
@@ -468,7 +468,7 @@ def classroomInList(classrooms, classroom):
             return True
     return False
 
-#Creates a Classroom object using schedule parámeter and appends it to the classes list
+#Creates a Classroom object using schedule parameter and appends it to the classes list
 def addClassroom(classrooms, schedule):
     classroom = Classroom(schedule.classroom)
     classrooms.append(classroom)
