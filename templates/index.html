@@ -160,9 +160,11 @@
 
                     formatFreeClassroom: function(classroom)
                     {
+                        console.log(typeof(classroom))
                         msg = ""
                         for(id in classroom)
                         {
+                            console.log("Entre al atributo")
                             msg += id
 
                             if(typeof(classroom[id]) == "string")
