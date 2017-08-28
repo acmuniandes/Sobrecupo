@@ -14,7 +14,8 @@
 
             </div>
             <div id='classroom'>
-
+                <h1>%{freeClassroom}%</h1>
+                <button v-on:click="randomClassroom()">Otro salón!</button>
             </div>
             <div id ='other'>
                 <li v-for='clazzroom in freeClassrooms'>
@@ -31,7 +32,7 @@
                 data: {
                     info: null,
                     freeClassrooms: [],
-                    freeClassroom: "",
+                    freeClassroom: "Cargando...",
                     date: new Date()
                 },
 
@@ -162,7 +163,7 @@
                     {
                         console.log(typeof(classroom))
                         msg = ""
-                        
+
                         for(id in classroom)
                         {
                             console.log("Entre al atributo")
@@ -179,6 +180,20 @@
                         }
 
                         return msg
+                    },
+
+                    randomClassroom: function()
+                    {
+                        if(this.freeClassrooms.length == 0)
+                            return "Paila"
+                        else
+                        {
+                            numero = Math.random()*(this.freeClassrooms.length-1)
+                            numero = Math.round(numero)
+                            escogido = this.freeClassrooms[numero]
+
+                            this.freeClassroom = this.formatFreeClassroom(escogido)
+                        }
                     }
                 },                
 
@@ -202,6 +217,8 @@
                         time = temp.getTime() - time
                         console.log("Performance: " + time + "ms")
                         console.log(localThis.freeClassrooms)
+
+                        localThis.randomClassroom()
 
                     }).catch (function (error) 
                     {
