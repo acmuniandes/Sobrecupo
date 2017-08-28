@@ -265,7 +265,7 @@
                             newFilter = []
                             for(classroom in this.filterClassrooms)
                             {
-                                for(id in classroom)
+                                for(id in this.filterClassrooms[classroom])
                                 {
                                     if(id.includes(this.buildingFilter))
                                     {
@@ -273,7 +273,8 @@
                                     }
                                 }
                             }                            
-                            return newFilter
+                            this.filterClassrooms = newFilter
+                            return this.filterClassrooms
                         }
                         else
                         {
