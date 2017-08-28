@@ -8,9 +8,9 @@
     </head>
     <body>
         <div id='app'>
-            <div id='banner'>
+            <div id='banner' >
 
-                <h1> Tu salon v0.0 </h1>
+                <h1 background-color = "darkturquoise"> Tu salon v0.0 </h1>
 
             </div>
             <div id='classroom'>
@@ -160,9 +160,9 @@
                     formatFreeClassroom: function(classroom)
                     {
                         if(typeof(this.freeClassrooms[classroom]) != "string")
-                            return classroom + ": Libre durante " + freeClassrooms[classroom] + " minutos más"
+                            return classroom + ": Libre durante " + this.freeClassrooms[classroom] + " minutos más"
                         else
-                            return classroom + ": " + freeClassrooms[classroom]
+                            return classroom + ": " + this.freeClassrooms[classroom]
                     }
                 },                
 
