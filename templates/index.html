@@ -162,6 +162,7 @@
                     {
                         console.log(typeof(classroom))
                         msg = ""
+                        
                         for(id in classroom)
                         {
                             console.log("Entre al atributo")
@@ -176,6 +177,8 @@
                                 msg += ": Está libre durante " + classroom[id] + " minutos"
                             }
                         }
+
+                        return msg
                     }
                 },                
 
