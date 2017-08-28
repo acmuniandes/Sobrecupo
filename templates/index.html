@@ -14,10 +14,11 @@
 
             </div>
             <div id='classroom'>
+
             </div>
             <div id ='other'>
                 <li v-for='clazzroom in freeClassrooms'>
-                    %{clazzroom}%
+                    %{formatFreeClassroom(clazzroom)}%
                 </li>
             </div>
         </div>
@@ -159,11 +160,20 @@
 
                     formatFreeClassroom: function(classroom)
                     {
+                        msg = ""
                         for(id in classroom)
-                            if(typeof(classroom[id]) != "string")
-                                return id + ": Libre durante " + classroom[id] + " minutos más"
+                        {
+                            msg += id
+
+                            if(typeof(classroom[id]) == "string")
+                            {
+                                msg += ": Está libre hasta el final del dia"
+                            }
                             else
-                                return id + ": " + classroom[id]
+                            {
+                                msg += ": Está libre durante " + classroom[id] + " minutos"
+                            }
+                        }
                     }
                 },                
 
