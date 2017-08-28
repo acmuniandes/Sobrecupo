@@ -159,7 +159,7 @@
 
                     formatFreeClassroom: function(classroom)
                     {
-                        if(typeof(freeClassrooms[classroom]) != "string")
+                        if(typeof(this.freeClassrooms[classroom]) != "string")
                             return classroom + ": Libre durante " + freeClassrooms[classroom] + " minutos más"
                         else
                             return classroom + ": " + freeClassrooms[classroom]
