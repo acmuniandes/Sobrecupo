@@ -16,9 +16,17 @@
             <div id='classroom'>
                 <h1>%{freeClassroom}%</h1>
                 <button v-on:click="randomClassroom()">Otro salón!</button>
+                <input type="checkbox" v-model="onlyTotallyFree"> Solo salones libres hasta el final del día </input>
+                <select v-model="buildingFilter">
+                    <option value=""> Todos los edificios </option>
+                    <option value="ML"> ML </option>
+                    <option value="W"> W </option>
+                    <option value="LL"> LL </option>
+                </select>
+                <li>
             </div>
             <div id ='other'>
-                <li v-for='clazzroom in freeClassrooms'>
+                <li v-for='clazzroom in finalClassrooms'>
                     %{formatFreeClassroom(clazzroom)}%
                 </li>
             </div>
@@ -33,6 +41,9 @@
                     info: null,
                     freeClassrooms: [],
                     freeClassroom: "Cargando...",
+                    filterClassrooms:[],
+                    onlyTotallyFree: false,
+                    buildingFilter: "",
                     date: new Date()
                 },
 
@@ -161,12 +172,10 @@
 
                     formatFreeClassroom: function(classroom)
                     {
-                        console.log(typeof(classroom))
                         msg = ""
 
                         for(id in classroom)
                         {
-                            console.log("Entre al atributo")
                             msg += id
 
                             if(typeof(classroom[id]) == "string")
@@ -178,21 +187,24 @@
                                 msg += ": Está libre durante " + classroom[id] + " minutos"
                             }
                         }
-
                         return msg
                     },
 
                     randomClassroom: function()
                     {
                         if(this.freeClassrooms.length == 0)
-                            return "Paila"
+                        {
+                            this.freeClassroom = "Paila"
+                            return this.freeClassroom
+                        }
                         else
                         {
-                            numero = Math.random()*(this.freeClassrooms.length-1)
-                            numero = Math.round(numero)
-                            escogido = this.freeClassrooms[numero]
+                            number = Math.random()*(this.freeClassrooms.length-1)
+                            number = Math.round(number)
+                            chosen = this.freeClassrooms[number]
 
-                            this.freeClassroom = this.formatFreeClassroom(escogido)
+                            this.freeClassroom = this.formatFreeClassroom(chosen)
+                            return this.freeClassroom;
                         }
                     }
                 },                
@@ -224,6 +236,51 @@
                     {
                         console.log(error)
                     })
+                },
+
+                computed:
+                {
+                    //Retorna el arreglo de salones
+                    finalClassrooms: function()
+                    {
+                        if(this.onlyTotallyFree)
+                        {
+                            newFilter = []
+                            for(classroom in this.freeClassrooms)
+                            {
+                                for(id in classroom)
+                                {
+                                    if(typeof(classroom[id]) == "string")
+                                    {
+                                        newFilter.push(classroom)
+                                    }
+                                }
+                            }
+
+                            return newFilter
+                        }
+
+                        else if (this.buildingFilter != "")
+                        {
+                            newFilter = []
+                            for(classroom in this.filterClassrooms)
+                            {
+                                for(id in classroom)
+                                {
+                                    if(id.includes(this.buildingFilter))
+                                    {
+                                        newFilter.push(classroom)
+                                    }
+                                }
+                            }                            
+                            return newFilter
+                        }
+                        else
+                        {
+                            this.filterClassrooms = freeClassrooms
+                            return this.filterClassrooms
+                        }
+                    }
                 }
             
             })            
