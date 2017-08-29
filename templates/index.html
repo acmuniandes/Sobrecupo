@@ -123,9 +123,11 @@
                                 //Creates an object with classroom id as a key and time until occupation as value
                                 if(timeUntilOccupation == 9000)
                                     timeUntilOccupation = "Hasta el final del día"
+
                                 //--
                                 classroomObject = {}
-                                classroomObject[classroom] = timeUntilOccupation
+                                classroomObject["id"] = classroom
+                                classroomObject["TUO"] = timeUntilOccupation
                                 //--
 
                                 this.freeClassrooms.push(classroomObject)
@@ -173,20 +175,13 @@
                     formatFreeClassroom: function(classroom)
                     {
                         msg = ""
+                        msg += classroom.id
 
-                        for(id in classroom)
-                        {
-                            msg += id
-
-                            if(typeof(classroom[id]) == "string")
-                            {
-                                msg += ": Está libre hasta el final del dia"
-                            }
-                            else
-                            {
-                                msg += ": Está libre durante " + classroom[id] + " minutos"
-                            }
-                        }
+                        if(typeof(classroom.tuo) == "string")
+                            msg += ": Está libre hasta el final del dia"
+                        else
+                            msg += ": Está libre durante " + classroom.TUO + " minutos"
+                        
                         return msg
                     },
 
@@ -243,44 +238,37 @@
                     //Retorna el arreglo de salones
                     finalClassrooms: function()
                     {
-                        if(this.onlyTotallyFree)
+                        filter = []
+
+                        if(onlyTotallyFree)
                         {
-                            newFilter = []
                             for(classroom in this.freeClassrooms)
                             {
-                                for(id in classroom)
+                                if((typeof(classroom.tuo) == "string"))
                                 {
-                                    if(typeof(classroom[id]) == "string")
-                                    {
-                                        newFilter.push(classroom)
-                                    }
-                                }
+                                    filter.push(classroom)
+                                }                          
                             }
-
-                            return newFilter
-                        }
-
-                        else if (this.buildingFilter != "")
-                        {
-                            newFilter = []
-                            for(classroom in this.filterClassrooms)
-                            {
-                                for(id in this.filterClassrooms[classroom])
-                                {
-                                    if(id.includes(this.buildingFilter))
-                                    {
-                                        newFilter.push(classroom)
-                                    }
-                                }
-                            }                            
-                            this.filterClassrooms = newFilter
-                            return this.filterClassrooms
                         }
                         else
                         {
-                            this.filterClassrooms = this.freeClassrooms
-                            return this.filterClassrooms
+                            filter = this.freeClassrooms
                         }
+                        
+
+                        if (this.buildingFilter != "")
+                        {
+                            newFilter = []
+
+                            for(classroom in filter)
+                                if(classroom.id.includes(this.buildingFilter))
+                                    newFilter.push(classroom)
+
+                            //Overwrite previous filter. newFilter is contained into filter ( nF C_ F)
+                            filter = newFilter                            
+                        }
+
+                        return filter
                     }
                 }
             
