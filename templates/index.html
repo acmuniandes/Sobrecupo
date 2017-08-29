@@ -19,7 +19,7 @@
                 <input type="checkbox" v-model="onlyTotallyFree"> Solo salones libres hasta el final del día </input>
                 <select v-model="buildingFilter">
                     <option disabled value = "">Todos los edificios</option>
-                    <option v-for="classroom in allClassrooms" v-bind:value="classroom"> %{classroom}% </option>
+                    <option v-for="classroom in allBuildings" v-bind:value="classroom"> %{classroom}% </option>
                 </select>
                 <li>
             </div>
@@ -40,7 +40,7 @@
                     freeClassrooms: [],
                     freeClassroom: "Cargando...",
                     filterClassrooms: [],
-                    allClassrooms: [],
+                    allBuildings: [],
                     onlyTotallyFree: false,
                     buildingFilter: "",
                     date: new Date()
@@ -136,10 +136,9 @@
                             //(for now)
 
 
-                            //----------Creating unique classroom list---------
-
-                            this.allClassrooms.push(classroom)
-
+                            //----------Creating unique building list---------
+                            if(!this.arrContains(allBuildings, this.extractBuilding(classroom)))
+                                this.allBuildings.push(classroom)
                             //-------------------
                         }
                     },
@@ -207,6 +206,21 @@
                             this.freeClassroom = this.formatFreeClassroom(chosen)
                             return this.freeClassroom;
                         }
+                    },
+
+                    arrContains: function(array, element)
+                    {
+                        for (i in array)
+                            if (array[i] == element)
+                                return true
+
+                        return false
+                    },
+
+                    extractBuilding: function(classroom)
+                    {
+                        str = classroom.split("_")
+                        return classroom.slice(1)
                     }
                 },                
 
