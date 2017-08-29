@@ -18,7 +18,8 @@
                 <button v-on:click="randomClassroom()">Otro salón!</button>
                 <input type="checkbox" v-model="onlyTotallyFree"> Solo salones libres hasta el final del día </input>
                 <select v-model="buildingFilter">
-                    <option v-for="classroom in allClassrooms" value="%{classroom}%"> %{classroom}% </option>
+                    <option disabled value = "">Todos los edificios</option>
+                    <option v-for="classroom in allClassrooms" v-bind:value="classroom"> %{classroom}% </option>
                 </select>
                 <li>
             </div>
