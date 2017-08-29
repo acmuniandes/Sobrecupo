@@ -17,11 +17,8 @@
                 <h1>%{freeClassroom}%</h1>
                 <button v-on:click="randomClassroom()">Otro salón!</button>
                 <input type="checkbox" v-model="onlyTotallyFree"> Solo salones libres hasta el final del día </input>
-                <select v-model="buildingFilter">
-                    <option value=""> Todos los edificios </option>
-                    <option value="ML"> ML </option>
-                    <option value="W"> W </option>
-                    <option value="LL"> LL </option>
+                <select v-model="buildingFilter" v-for="classroom in allClassrooms">
+                    <option value="classroom"> %{classroom}% </option>
                 </select>
                 <li>
             </div>
@@ -42,6 +39,7 @@
                     freeClassrooms: [],
                     freeClassroom: "Cargando...",
                     filterClassrooms: [],
+                    allClassrooms: [],
                     onlyTotallyFree: false,
                     buildingFilter: "",
                     date: new Date()
@@ -135,6 +133,13 @@
 
                             //Note that if the class is not free, timeUntilOcupation's value is irrelevant
                             //(for now)
+
+
+                            //----------Creating unique classroom list---------
+
+                            this.allClassrooms.push(classroom)
+
+                            //-------------------
                         }
                     },
 
@@ -177,7 +182,7 @@
                         msg = ""
                         msg += classroom.id
 
-                        if(typeof(classroom.tuo) == "string")
+                        if(typeof(classroom.TUO) == "string")
                             msg += ": Está libre hasta el final del dia"
                         else
                             msg += ": Está libre durante " + classroom.TUO + " minutos"
