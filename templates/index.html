@@ -244,10 +244,9 @@
                         {
                             for(classroom in this.freeClassrooms)
                             {
-                                console.log(classroom)
-                                if((typeof(classroom.tuo) == "string"))
+                                if((typeof(this.freeClassrooms[classroom].tuo) == "string"))
                                 {
-                                    filter.push(classroom)
+                                    filter.push(this.freeClassrooms[classroom])
                                 }                          
                             }
                         }
@@ -262,7 +261,7 @@
                             newFilter = []
 
                             for(classroom in filter)
-                                if(classroom.id.includes(this.buildingFilter))
+                                if(filter[classroom].id.includes(this.buildingFilter))
                                     newFilter.push(classroom)
 
                             //Overwrite previous filter. newFilter is contained into filter ( nF C_ F)
