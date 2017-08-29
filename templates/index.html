@@ -41,7 +41,7 @@
                     info: null,
                     freeClassrooms: [],
                     freeClassroom: "Cargando...",
-                    filterClassrooms:[],
+                    filterClassrooms: [],
                     onlyTotallyFree: false,
                     buildingFilter: "",
                     date: new Date()
@@ -244,6 +244,7 @@
                         {
                             for(classroom in this.freeClassrooms)
                             {
+                                console.log(classroom)
                                 if((typeof(classroom.tuo) == "string"))
                                 {
                                     filter.push(classroom)
