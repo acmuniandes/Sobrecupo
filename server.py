@@ -30,6 +30,22 @@ def salones():
     global data
     return json.dumps(data, ensure_ascii=False)
 
+@app.route('/salones/invalidos')
+def salonesInvalidos( methods = ['POST', 'GET']):
+    if request.method == 'GET':
+        return r.smembers("invalidos")
+
+    elif request.method == 'POST':
+        info = request.get_json() or request.form #Matching Axios request type
+        print("Adding invalid classroom: " + info['classroom'])
+        r.sadd("invalidos", info['classroom'])
+        return "¡Se registró exitosamente el salón!"
+    else:
+        #By default, before entering the function, if the method does not match, an unsupported
+        #Server method error will be returned
+        return FAIL_MESSAGE
+
+
 #Saves the string <strng> in the DB
 @app.route('/db/<strng>')
 def saveInDB(strng):

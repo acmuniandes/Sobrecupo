@@ -5,20 +5,22 @@
         <script src="https://unpkg.com/vue@2.4.2"></script>
         <!-- Axios for requests -->
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id='app'>
             <div id='banner' >
 
-                <h1 style = "background-color: darkturquoise"> Tu salon v0.0 </h1>
+                <h1> Tu salon v0.1 </h1>
 
             </div>
             <div id='classroom'>
                 <h1>%{freeClassroom}%</h1>
                 <button v-on:click="randomClassroom()">Otro salón!</button>
-                <input type="checkbox" v-model="onlyTotallyFree"> Solo salones libres hasta el final del día </input>
+                <input type="checkbox" v-model="onlyTotallyFree"> Solo mostrar salones libres hasta el final del día </input>
                 <select v-model="buildingFilter">
-                    <option disabled value = "">Todos los edificios</option>
+                    <option value = "">Todos los edificios</option>
                     <option v-for="classroom in allBuildings" v-bind:value="classroom"> %{classroom}% </option>
                 </select>
                 <li>
