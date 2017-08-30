@@ -313,6 +313,7 @@
 
                             for(classroom in filter)
                                 classroomBuilding = this.extractBuilding(filter[classroom].id)
+                                console.log("CB: " + classroomBuilding + "//filter: " + this.buildingFilter)
                                 if(classroomBuilding == this.buildingFilter)
                                     newFilter.push(filter[classroom])
 
