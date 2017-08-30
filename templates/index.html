@@ -134,6 +134,12 @@
                             //schedules, meaning it's free! (eureka!)
                             if (warden)
                             {
+                                //Printing state
+                                console.log("----Start----")
+                                console.log("hI: " + hourI)
+                                console.log("hF: " + hourF)
+                                
+
                                 //Creates an object with classroom id as a key and time until occupation as value
                                 if(timeUntilOccupation == 9000)
                                     timeUntilOccupation = "Hasta el final del día"
@@ -142,9 +148,11 @@
                                 //when a classroom is free for longer than 60 minutes
 
                                 //Formula obtained by experimental trial and error
-                                if(hourF-hourI > 0)
+                                else if(hourF-hourI > 0)
                                 {
+                                    console.log("TUO before: " + timeUntilOccupation)
                                     timeUntilOccupation = difference - 40*(hourF - hourI)
+                                    console.log("TUO after: " + timeUntilOccupation)
                                 }
 
                                 //--
