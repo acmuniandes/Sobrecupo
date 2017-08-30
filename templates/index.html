@@ -312,7 +312,8 @@
                             newFilter = []
 
                             for(classroom in filter)
-                                if(filter[classroom].id.includes(this.buildingFilter))
+                                classroomBuilding = this.extractBuilding(filter[classroom].id)
+                                if(classroomBuilding == this.buildingFilter)
                                     newFilter.push(filter[classroom])
 
                             //Overwrite previous filter. newFilter is contained into filter ( nF C_ F)
