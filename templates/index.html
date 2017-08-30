@@ -92,6 +92,11 @@
                             //Variable that saves the shortest (but positive) difference betweeen
                             //the first element of all cointinuity tuples
                             timeUntilOccupation = 9000
+
+                            //Variables that store information to fix base 10 aritmethic offset (later explained)
+                            hourI = 0
+                            hourF = 0
+
                             for(continuityTuple in localClassrooms[classroom])
                             {
                                 continuity_tuple = localClassrooms[classroom][continuityTuple].split(/ - /g)
@@ -109,10 +114,20 @@
                                 }
 
                                 //Compares actual continuity tuple difference with the actual best aproximation
-                                difference = parseInt(continuity_tuple[0]) - hour
+                                tupleHour = parseInt(continuity_tuple[0])
+                                difference = tupleHour - hour
 
                                 if(difference > 0 && difference<timeUntilOccupation)
+                                {
+                                    //Due to implementation, base 10 aritmethic will result in unconsistent behaviour
+                                    //when time comparisons are made between different hours (ie. 09:45 vs 10:10)
+
+                                    //This will be fixed later using hourI/F
                                     timeUntilOccupation = difference
+
+                                    hourI = Math.floor(hour/100)
+                                    hourF = Math.floor(tupleHour/100)
+                                }
                             }
 
                             //If the warden remains true, the hour is not in any tuple of the classrooms
@@ -122,6 +137,15 @@
                                 //Creates an object with classroom id as a key and time until occupation as value
                                 if(timeUntilOccupation == 9000)
                                     timeUntilOccupation = "Hasta el final del día"
+                                
+                                //Due to implementation, base 10 aritmethic will result in unconsistent behaviour
+                                //when a classroom is free for longer than 60 minutes
+
+                                //Formula obtained by experimental trial and error
+                                if(hourF-hourI > 0)
+                                {
+                                    timeUntilOccupation = difference - 40*(hourF - hourI)
+                                }
 
                                 //--
                                 classroomObject = {}
@@ -133,7 +157,7 @@
                             }
 
                             //Note that if the class is not free, timeUntilOcupation's value is irrelevant
-                            //(for now)
+                            //(for now) [as well with hourI/hourF]
 
 
                             //----------Creating unique building list---------
