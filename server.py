@@ -12,6 +12,7 @@ r = redis.from_url(os.environ.get("REDIS_URL"), db =None, decode_responses = Tru
 app = Flask(__name__)
 
 FAIL_MESSAGE = 'la pulenta oe'
+INVALID_SEPARATOR = "$$"
 
 data = None
 with open('classrooms.json') as json_data:
@@ -34,7 +35,12 @@ def salones():
 @app.route('/salones/invalidos')
 def salonesInvalidos( methods = ['POST', 'GET']):
     if request.method == 'GET':
-        return r.smembers("invalidos")
+        resp = []
+        #Turning set into list to return JSON
+        for classroom in r.smembers("invalidos"):
+            resp.append(classroom)
+        
+        return jsonify(resp)
 
     elif request.method == 'POST':
         info = request.get_json() or request.form #Matching Axios request type
