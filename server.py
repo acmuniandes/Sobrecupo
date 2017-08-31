@@ -30,6 +30,11 @@ def salones():
     global data
     return json.dumps(data, ensure_ascii=False)
 
+@app.route('/logo')
+def logo():
+    return send_from_directory("static", "sobrecupo.png")
+
+#Returning invalid-posted classrooms
 @app.route('/salones/invalidos')
 def salonesInvalidos( methods = ['POST', 'GET']):
     if request.method == 'GET':
