@@ -51,6 +51,7 @@
                     allBuildings: [],
                     onlyTotallyFree: false,
                     buildingFilter: "",
+                    invalidClassrooms: [],
                     date: new Date()
                 },
 
@@ -65,24 +66,28 @@
                         today = this.generateDate(date)
                         for(classroom in classrooms)
                         {
-                            schedule = []
-                            exceptions = classrooms[classroom]["exceptions"][today]
-                            console.log("Exceptions " + classroom + " // " + today + ":")
-                            console.log(exceptions)
-                            if(exceptions != undefined)
+                            //If the classroom does not belong to the known invalid classrooms list, compute it
+                            if(this.invalidClassrooms.indexOf(classroom) > -1)
                             {
-                                //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
-                                //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
-                                schedule.concat(exceptions.split("$$"))
-                            }
-                            //This line converts to a JS object but the string is not optimally formed, so it has to replace
-                            // ' ocurrences with " to be a valid json to parse
-                            base = JSON.parse(classrooms[classroom][(date.getDay()-1).toString()].replace(/\'/g, '\"'))
+                                schedule = []
+                                exceptions = classrooms[classroom]["exceptions"][today]
+                                console.log("Exceptions " + classroom + " // " + today + ":")
+                                console.log(exceptions)
+                                if(exceptions != undefined)
+                                {
+                                    //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
+                                    //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
+                                    schedule.concat(exceptions.split("$$"))
+                                }
+                                //This line converts to a JS object but the string is not optimally formed, so it has to replace
+                                // ' ocurrences with " to be a valid json to parse
+                                base = JSON.parse(classrooms[classroom][(date.getDay()-1).toString()].replace(/\'/g, '\"'))
 
-                            for(sch in base)
-                                schedule.push(base[sch])
-                            
-                            localClassrooms[classroom] = schedule
+                                for(sch in base)
+                                    schedule.push(base[sch])
+                                
+                                localClassrooms[classroom] = schedule
+                            }
                         }
 
                         //Second part, finds free classrooms from previous data structure formed
@@ -142,10 +147,12 @@
                             //schedules, meaning it's free! (eureka!)
                             if (warden)
                             {
-                                //Printing state
+                                //Printing state for testing 
+                                /*
                                 console.log("----Start----")
                                 console.log("hI: " + hourI)
                                 console.log("hF: " + hourF)
+                                */
                                 
 
                                 //Creates an object with classroom id as a key and time until occupation as value
@@ -266,6 +273,17 @@
                 //Method called just after the instance is created
                 mounted: function()
                 {
+                    //Getting info from invalid classrooms to exlude them before shcedule computation
+                    axios.get('/salones/invalidos').then(function (response) 
+                    {
+                        
+                        localThis.invalidClassrooms = response.data
+
+                    }).catch (function (error) 
+                    {
+                        console.log(error)
+                    })
+
                     //Using a pointer to this due to the context change on axios function
                     var localThis = this
                     axios.get('/salones').then(function (response) 
