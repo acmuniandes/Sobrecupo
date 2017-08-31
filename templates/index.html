@@ -67,7 +67,7 @@
                         for(classroom in classrooms)
                         {
                             //If the classroom does not belong to the known invalid classrooms list, compute it
-                            if(this.invalidClassrooms.indexOf(classroom) < -1 || true)
+                            if(this.invalidClassrooms.indexOf(classroom) == -1)
                             {
                                 schedule = []
                                 exceptions = classrooms[classroom]["exceptions"][today]
