@@ -7,20 +7,22 @@ li{
     color:white;
     margin: 7px; 
     padding: 1px;
-    width: 340px;
     border-bottom: solid  gold;
     border-left: solid gold;
     font-size: 20px
 }
 
+#filter{
+    font-size: 23px
+}
+
 #banner{
-    font-size: 23px;
-    width: 260px;
+    font-size: 30px;
 }
 
 #classroom{
     color: white;
-    font-size: 17px
+    font-size: 25px
 }
 
 body {
