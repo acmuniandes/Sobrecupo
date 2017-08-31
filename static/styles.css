@@ -1,10 +1,28 @@
 h1{
-    background-color: darkturquoise;
-    font-size: 2;
+    background-color: gold;
+    color: black;
 }
 
 li{
-    background-color: lightgray;
-    margin: 2px;
-    padding: 2px;
+    color:white;
+    margin: 7px; 
+    padding: 1px;
+    width: 340px;
+    border-bottom: solid  gold;
+    border-left: solid gold;
+    font-size: 20px
+}
+
+#banner{
+    font-size: 23px;
+    width: 260px;
+}
+
+#classroom{
+    color: white;
+    font-size: 17px
+}
+
+body {
+  background-color: #1e1e1e;
 }
