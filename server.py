@@ -32,8 +32,8 @@ def salones():
     return json.dumps(data, ensure_ascii=False)
 
 #Returning invalid-posted classrooms
-@app.route('/salones/invalidos')
-def salonesInvalidos( methods = ['POST', 'GET']):
+@app.route('/salones/invalidos', methods = ['POST', 'GET'])
+def salonesInvalidos():
     if request.method == 'GET':
         resp = []
         #Turning set into list to return JSON
