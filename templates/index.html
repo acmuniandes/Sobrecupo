@@ -84,6 +84,8 @@
                                     //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
                                     //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
                                     schedule.concat(exceptions.split("$$"))
+
+                                    console.log("after exp: " + schedule)
                                 }
                                 //This line converts to a JS object but the string is not optimally formed, so it has to replace
                                 // ' ocurrences with " to be a valid json to parse
@@ -201,8 +203,11 @@
                     {
                         day = date.getDate()
                         month = date.getMonth()+1
+
+                        //Month format for json: if month beofre october: 0X, others XX
                         if(month < 10)
                             month = "0" + month
+                        
                         return day + "/" + month + "/17"
                     },
 
