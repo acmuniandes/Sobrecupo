@@ -8,6 +8,8 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <!-- CSS -->
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+        <!--favicon.ico-->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     </head>
     <body>
         <div id='app'>
@@ -37,7 +39,7 @@
         </div>
         <script>
 
-            alert("Hola! Actualmente hay muchos salones inválidos (como laboratorios y demás) por lo que te pedimos que si encuentras uno, porfa escríbenos por la página de facebook.\nPerdón por las molestias que esto pueda causar.\nGracias!")
+            alert("Hola! Actualmente hay muchos salones no-válidos (como laboratorios y demás) por lo que que si encuentras uno, porfa escríbenos por la página de facebook.\nPerdón por las molestias que esto pueda causar.\nGracias!")
 
             var app = new Vue
             ({
@@ -72,8 +74,11 @@
                                 schedule = []
                                 exceptions = classrooms[classroom]["exceptions"][today]
 
+                                /*
                                 console.log("Exceptions " + classroom + " // " + today + ":")
                                 console.log(exceptions)
+                                */
+
                                 if(exceptions != undefined)
                                 {
                                     //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
@@ -166,9 +171,9 @@
                                 //Formula obtained by experimental trial and error
                                 else if(hourF-hourI > 0)
                                 {
-                                    console.log("TUO before: " + timeUntilOccupation)
+                                    //console.log("TUO before: " + timeUntilOccupation)
                                     timeUntilOccupation = timeUntilOccupation - (40*(hourF - hourI))
-                                    console.log("TUO after: " + timeUntilOccupation)
+                                    //console.log("TUO after: " + timeUntilOccupation)
                                 }
 
                                 //--
@@ -177,7 +182,8 @@
                                 classroomObject["TUO"] = timeUntilOccupation
                                 //--
 
-                                this.freeClassrooms.push(classroomObject)
+                                if (timeUntilOccupation >10)
+                                    this.freeClassrooms.push(classroomObject)
                             }
 
                             //Note that if the class is not free, timeUntilOcupation's value is irrelevant
@@ -226,12 +232,14 @@
                     formatFreeClassroom: function(classroom)
                     {
                         msg = ""
-                        msg += classroom.id
+                        msg += classroom.id.slice(1)
 
                         if(typeof(classroom.TUO) == "string")
                             msg += ": Está libre hasta el final del dia"
+                        else if (classroom.TUO > 60)
+                            msg += ": Está libre durante " + Math.floor(classroom.TUO/60) + "h " + classroom.TUO%60 + "m  [" + classroom.TUO + "m]" 
                         else
-                            msg += ": Está libre durante " + classroom.TUO + " minutos"
+                            msg += ": Está libre durante " + classroom.TUO + " minutos" 
                         
                         return msg
                     },
