@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sobre Cupo | Encuentra un salón disponible</title>
+        <title>Sobrecupo | Encuentra un salón disponible</title>
         <!-- Vue.js -->
         <script src="https://unpkg.com/vue@2.4.2"></script>
         <!-- Axios for requests -->
@@ -71,6 +71,7 @@
                             {
                                 schedule = []
                                 exceptions = classrooms[classroom]["exceptions"][today]
+
                                 console.log("Exceptions " + classroom + " // " + today + ":")
                                 console.log(exceptions)
                                 if(exceptions != undefined)
@@ -193,8 +194,6 @@
                     generateDate: function(date)
                     {
                         day = date.getDate()
-                        if(day < 10)
-                            day = "0" + day
                         month = date.getMonth()+1
                         if(month < 10)
                             month = "0" + month
