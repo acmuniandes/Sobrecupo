@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class='animated fadeIn'>
     <hello></hello>
   </div>
 </template>
@@ -12,6 +11,16 @@ export default {
   name: 'app',
   components: {
     Hello
+  },
+  data () {
+    return {
+
+    }
+  },
+  computed: {
+    count () {
+      return this.$store.state.count
+    }
   }
 }
 </script>
