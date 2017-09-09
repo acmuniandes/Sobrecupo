@@ -17,12 +17,16 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <salon></salon>
   </div>
 </template>
 
 <script>
+import Salon from './Salon'
+
 export default {
   name: 'hello',
+  components: { Salon },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
