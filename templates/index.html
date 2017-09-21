@@ -185,7 +185,14 @@
                                     timeUntilOccupation = timeUntilOccupation - (40*(hourF - hourI))
                                     //console.log("TUO after: " + timeUntilOccupation)
                                     if (timeUntilOccupation >10)
+                                    {
+                                        //--
+                                        classroomObject = {}
+                                        classroomObject["id"] = classroom
+                                        classroomObject["TUO"] = timeUntilOccupation
+                                        //--
                                         this.freeClassrooms.push(classroomObject)
+                                    }
                                 }   
                             }
 
