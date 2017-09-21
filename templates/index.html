@@ -83,9 +83,9 @@
                                 {
                                     //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
                                     //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
-                                    schedule.concat(exceptions.split("$$"))
+                                    schedule = schedule.concat(exceptions.split("$$"))
 
-                                    console.log("after exp: " + schedule)
+                                    //console.log("after exp: " + schedule)
                                 }
                                 //This line converts to a JS object but the string is not optimally formed, so it has to replace
                                 // ' ocurrences with " to be a valid json to parse
@@ -165,27 +165,28 @@
 
                                 //Creates an object with classroom id as a key and time until occupation as value
                                 if(timeUntilOccupation == 9000)
+                                {
                                     timeUntilOccupation = "Hasta el final del día"
+                                    //--
+                                    classroomObject = {}
+                                    classroomObject["id"] = classroom
+                                    classroomObject["TUO"] = timeUntilOccupation
+                                    //--
+                                    this.freeClassrooms.push(classroomObject)
+                                }
                                 
                                 //Due to implementation, base 10 aritmethic will result in unconsistent behaviour
                                 //when a classroom is free for longer than 60 minutes
 
                                 //Formula obtained by experimental trial and error
-                                else if(hourF-hourI > 0)
+                                else if(hourF-hourI >= 0)
                                 {
                                     //console.log("TUO before: " + timeUntilOccupation)
                                     timeUntilOccupation = timeUntilOccupation - (40*(hourF - hourI))
                                     //console.log("TUO after: " + timeUntilOccupation)
-                                }
-
-                                //--
-                                classroomObject = {}
-                                classroomObject["id"] = classroom
-                                classroomObject["TUO"] = timeUntilOccupation
-                                //--
-
-                                if (timeUntilOccupation >10)
-                                    this.freeClassrooms.push(classroomObject)
+                                    if (timeUntilOccupation >10)
+                                        this.freeClassrooms.push(classroomObject)
+                                }   
                             }
 
                             //Note that if the class is not free, timeUntilOcupation's value is irrelevant
