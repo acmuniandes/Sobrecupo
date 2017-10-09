@@ -23,7 +23,7 @@
             </div>
 
             <div id = 'filter'>
-                <button v-on:click="randomClassroom()">Otro salón!</button>
+                <button v-on:click="randomClassroom()">Otro salón</button>
                 <input type="checkbox" v-model="onlyTotallyFree"> Solo mostrar salones libres hasta el final del día </input>
                 <select v-model="buildingFilter">
                     <option value = "">Todos los edificios</option>
@@ -38,8 +38,6 @@
             </div>
         </div>
         <script>
-
-            alert("Hola! Actualmente hay muchos salones no-válidos (como laboratorios y demás) por lo que que si encuentras uno, porfa escríbenos por la página de facebook.\nPerdón por las molestias que esto pueda causar.\nGracias!")
 
             var app = new Vue
             ({
