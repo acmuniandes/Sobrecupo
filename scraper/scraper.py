@@ -16,7 +16,7 @@ MARKED = 'True'
 LOG_CLASS_SEPARATOR = '---------------------------------------------'
 LOG_DEPT_SEPARATOR = '============================================================='
 LOG_FREQUENCY = 2400
-SEMESTRAL_END = "25/11/17"
+SEMESTRAL_END = "12/05/18"
 DB_POSTING = "https://tu-salon-redis.herokuapp.com/devMode/post/classroomInfo"
 EXTERNAL_EXCEPTION_SEPARATOR = "$$"
 INTERNAL_EXCEPTION_SEPARATOR = "<<"
@@ -124,7 +124,7 @@ class Classroom:
 
             for month in range(int(start[1]), int(end[1]) +1):
                 
-                iterator = calendarObj.itermonthdays2(2017, month)
+                iterator = calendarObj.itermonthdays2(2018, month)
 
                 #Initial month
                 if month == int(start[1]):
