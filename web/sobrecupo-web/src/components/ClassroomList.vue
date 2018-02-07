@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div v-for="classroom in info">
+    <!-- <div v-for="classroom in info">
       <classroom-timer/>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -16,7 +16,9 @@ export default {
     return {
       info: null,
       error: "",
-      freeClassrooms: []
+      freeClassrooms: [],
+      invalidClassrooms: [],
+      allBuildings: []
     };
   },
   mounted() {
@@ -26,14 +28,13 @@ export default {
       .get("/salones")
       .then(response => {
         _this.info = response.data;
+        _this.classroomNow(new Date());
+        console.log(this.info);
       })
       .catch(error => {
         console.log(error);
         _this.error = error.data;
       });
-
-    this.classroomNow(new Date());
-    console.log(this.info);
   },
   methods: {
     generateDate: function(date) {
@@ -108,7 +109,7 @@ export default {
     },
 
     extractBuilding: function(classroom) {
-      str = classroom.split("_")[0];
+      let str = classroom.split("_")[0];
       return str.slice(1);
     },
 
@@ -117,20 +118,20 @@ export default {
       const classrooms = this.info;
       let exceptions = [];
       let localClassrooms = {};
-      let today = this.generateDate(date);
-      for (classroom in classrooms) {
+      var todayyy = this.generateDate(date);
+      for(classroom in classrooms){
         //If the classroom does not belong to the known invalid classrooms list, compute it
         if (this.invalidClassrooms.indexOf(classroom) == -1) {
           let schedule = [];
-          exceptions = classrooms[classroom]["exceptions"][today];
+          exceptions = classrooms[classroom]["exceptions"][todayyy];
 
           /*
-          console.log("Exceptions " + classroom + " // " + today + ":")
+          console.log("Exceptions " + classroom + " // " + todayyy + ":")
           console.log(exceptions)
           */
 
           if (exceptions != undefined) {
-            //The 'today' field contains a string with the format "SCH$$SCH$$ (...)"
+            //The 'todayyy' field contains a string with the format "SCH$$SCH$$ (...)"
             //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
             schedule = schedule.concat(exceptions.split("$$"));
 
@@ -138,7 +139,7 @@ export default {
           }
           //This line converts to a JS object but the string is not optimally formed, so it has to replace
           // ' ocurrences with " to be a valid json to parse
-          let base = JSON.parse(
+          const base = JSON.parse(
             classrooms[classroom][(date.getDay() - 1).toString()].replace(
               /\'/g,
               '"'
@@ -160,20 +161,18 @@ export default {
 
       for (classroom in localClassrooms) {
         //Warden variable, modeling that the hour belongs to the tuple
-        warden = true;
+        let warden = true;
 
         //Variable that saves the shortest (but positive) difference betweeen
         //the first element of all cointinuity tuples
-        timeUntilOccupation = 9000;
+        let timeUntilOccupation = 9000;
 
         //Variables that store information to fix base 10 aritmethic offset (later explained)
-        hourI = 0;
-        hourF = 0;
+        let hourI = 0;
+        let hourF = 0;
 
         for (continuityTuple in localClassrooms[classroom]) {
-          continuity_tuple = localClassrooms[classroom][continuityTuple].split(
-            / - /g
-          );
+          const continuity_tuple = localClassrooms[classroom][continuityTuple].split(/ - /g);
 
           //console.log("Non split: " + localClassrooms[classroom][continuityTuple])
           //console.log("Splitted: " + continuity_tuple)
@@ -187,8 +186,8 @@ export default {
           }
 
           //Compares actual continuity tuple difference with the actual best aproximation
-          tupleHour = parseInt(continuity_tuple[0]);
-          difference = tupleHour - hour;
+          const tupleHour = parseInt(continuity_tuple[0]);
+          const difference = tupleHour - hour;
 
           if (difference > 0 && difference < timeUntilOccupation) {
             //Due to implementation, base 10 aritmethic will result in unconsistent behaviour
@@ -216,7 +215,7 @@ export default {
           if (timeUntilOccupation == 9000) {
             timeUntilOccupation = "Hasta el final del día";
             //--
-            classroomObject = {};
+            let classroomObject = {};
             classroomObject["id"] = classroom;
             classroomObject["TUO"] = timeUntilOccupation;
             //--
@@ -231,7 +230,7 @@ export default {
             //console.log("TUO after: " + timeUntilOccupation)
             if (timeUntilOccupation > 10) {
               //--
-              classroomObject = {};
+              let classroomObject = {};
               classroomObject["id"] = classroom;
               classroomObject["TUO"] = timeUntilOccupation;
               //--
