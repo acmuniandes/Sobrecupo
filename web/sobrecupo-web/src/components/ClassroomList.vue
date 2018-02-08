@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <div v-for="classroom in info">
+    <!-- <div v-for="classroom of info">
       <classroom-timer/>
     </div> -->
   </div>
@@ -104,26 +104,31 @@ export default {
     },
 
     arrContains: function(array, element) {
-      for (i in array) if (array[i] == element) return true;
+      for (i of array) if (array[i] == element) return true;
       return false;
     },
 
-    extractBuilding: function(classroom) {
-      let str = classroom.split("_")[0];
+    extractBuilding: function(classroomm) {
+      let str = classroomm.split("_")[0];
       return str.slice(1);
     },
 
+    generateIterator: function(classrooms) {
+      return Object.keys(classrooms);
+    },
     classroomNow: function(date) {
       //First part of the method generates day schedule from base json
-      const classrooms = this.info;
+      const classroomsRaw = this.info;
       let exceptions = [];
       let localClassrooms = {};
-      var todayyy = this.generateDate(date);
-      for(classroom in classrooms){
+      let todayyy = this.generateDate(date);
+      //due to ES6 for in loops do not work with objects - FUCK
+      const classrooms = this.generateIterator(classroomsRaw);
+      for(var classroomi in classrooms){
         //If the classroom does not belong to the known invalid classrooms list, compute it
-        if (this.invalidClassrooms.indexOf(classroom) == -1) {
+        if (this.invalidClassrooms.indexOf(classrooms[classroomi]) == -1) {
           let schedule = [];
-          exceptions = classrooms[classroom]["exceptions"][todayyy];
+          exceptions = classroomsRaw[classrooms[classroomi]]["exceptions"][todayyy];
 
           /*
           console.log("Exceptions " + classroom + " // " + todayyy + ":")
@@ -140,15 +145,16 @@ export default {
           //This line converts to a JS object but the string is not optimally formed, so it has to replace
           // ' ocurrences with " to be a valid json to parse
           const base = JSON.parse(
-            classrooms[classroom][(date.getDay() - 1).toString()].replace(
+            classroomsRaw[classrooms[classroomi]][(date.getDay() - 1).toString()].replace(
               /\'/g,
               '"'
             )
           );
-
-          for (sch in base) schedule.push(base[sch]);
-
-          localClassrooms[classroom] = schedule;
+          for (var sch in base) schedule.push(base[sch]);
+          console.log(schedule);
+          console.log("local classrooms: " , localClassrooms);
+          console.log("bullshit:" + classrooms + "[" + classroomi + "]")
+          localClassrooms[classrooms[classroomi]] = schedule;
         }
       }
 
@@ -158,8 +164,10 @@ export default {
       console.log(localClassrooms);
 
       let hour = date.getHours() * 100 + date.getMinutes();
+      
+      const _localClassrooms = this.generateIterator(localClassrooms);
 
-      for (classroom in localClassrooms) {
+      for (var classroom1 in _localClassrooms) {
         //Warden variable, modeling that the hour belongs to the tuple
         let warden = true;
 
@@ -171,8 +179,8 @@ export default {
         let hourI = 0;
         let hourF = 0;
 
-        for (continuityTuple in localClassrooms[classroom]) {
-          const continuity_tuple = localClassrooms[classroom][continuityTuple].split(/ - /g);
+        for (continuityTuple of localClassrooms[_localClassrooms[classroom1]]) {
+          const continuity_tuple = localClassrooms[_localClassrooms[classroom1]][continuityTuple].split(/ - /g);
 
           //console.log("Non split: " + localClassrooms[classroom][continuityTuple])
           //console.log("Splitted: " + continuity_tuple)
@@ -216,7 +224,7 @@ export default {
             timeUntilOccupation = "Hasta el final del día";
             //--
             let classroomObject = {};
-            classroomObject["id"] = classroom;
+            classroomObject["id"] = classroom1;
             classroomObject["TUO"] = timeUntilOccupation;
             //--
             this.freeClassrooms.push(classroomObject);
@@ -231,7 +239,7 @@ export default {
             if (timeUntilOccupation > 10) {
               //--
               let classroomObject = {};
-              classroomObject["id"] = classroom;
+              classroomObject["id"] = classroom1;
               classroomObject["TUO"] = timeUntilOccupation;
               //--
               this.freeClassrooms.push(classroomObject);
@@ -243,10 +251,8 @@ export default {
         //(for now) [as well with hourI/hourF]
 
         //----------Creating unique building list---------
-        if (
-          !this.arrContains(this.allBuildings, this.extractBuilding(classroom))
-        )
-          this.allBuildings.push(this.extractBuilding(classroom));
+        if (!this.arrContains(this.allBuildings, this.extractBuilding(classroom1)))
+          this.allBuildings.push(this.extractBuilding(classroom1));
         //-------------------
       }
     }
