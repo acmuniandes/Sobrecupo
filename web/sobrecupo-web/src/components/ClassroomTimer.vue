@@ -17,18 +17,20 @@ export default {
         height: "110px",
         backgroundColor: "black",
         borderRadius: "50%",
-        display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        margin: "0 auto"
       },
       outerCircleDefault: {
         width: "120px",
         height: "120px",
         borderRadius: "50%",
-        display: "inline-block",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "whitesmoke"
+        backgroundColor: "whitesmoke",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
       },
       time: -100
     };

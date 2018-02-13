@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style='gridStyle' >
     <div v-for='(classroom, index) of freeClassrooms' :key='index'>
       <classroom-timer classroom='classroom'/>
     </div>
@@ -18,7 +18,12 @@ export default {
       error: "",
       freeClassrooms: [],
       invalidClassrooms: [],
-      allBuildings: []
+      allBuildings: [],
+      gridStyle: {
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          gridGap: "20px"
+      }
     };
   },
   components:{
