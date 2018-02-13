@@ -25,7 +25,7 @@ export default {
         width: "120px",
         height: "120px",
         borderRadius: "50%",
-        display: "flex",
+        display: "inline-block",
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "whitesmoke"

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!-- <div v-for="classroom of info">
-      <classroom-timer/>
-    </div> -->
+    <div v-for='(classroom, index) of freeClassrooms' :key='index'>
+      <classroom-timer classroom='classroom'/>
+    </div>
   </div>
 </template>
 
@@ -21,6 +21,9 @@ export default {
       allBuildings: []
     };
   },
+  components:{
+    ClassroomTimer
+  },
   mounted() {
     //Using a pointer to this due to the context change on axios function
     const _this = this;
@@ -28,7 +31,7 @@ export default {
       .get("/salones")
       .then(response => {
         _this.info = response.data;
-        _this.classroomNow(new Date());
+        _this.classroomNow(new Date("February 13, 2018 11:13:00"));
         console.log(this.info);
       })
       .catch(error => {
@@ -104,7 +107,7 @@ export default {
     },
 
     arrContains: function(array, element) {
-      for (i of array) if (array[i] == element) return true;
+      for (var i of array) if (array[i] == element) return true;
       return false;
     },
 
@@ -130,12 +133,11 @@ export default {
           let schedule = [];
           exceptions = classroomsRaw[classrooms[classroomi]]["exceptions"][todayyy];
 
-          /*
-          console.log("Exceptions " + classroom + " // " + todayyy + ":")
-          console.log(exceptions)
-          */
+          /* console.log("Exceptions " + classrooms[classroomi] + " // " + todayyy + ":");
+          console.log(exceptions); */
+          
 
-          if (exceptions != undefined) {
+          if (exceptions){
             //The 'todayyy' field contains a string with the format "SCH$$SCH$$ (...)"
             //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
             schedule = schedule.concat(exceptions.split("$$"));
@@ -151,9 +153,10 @@ export default {
             )
           );
           for (var sch in base) schedule.push(base[sch]);
-          console.log(schedule);
-          console.log("local classrooms: " , localClassrooms);
-          console.log("bullshit:" + classrooms + "[" + classroomi + "]")
+
+          /* console.log(schedule);
+          console.log("local classrooms: " , localClassrooms); */
+
           localClassrooms[classrooms[classroomi]] = schedule;
         }
       }
@@ -179,8 +182,11 @@ export default {
         let hourI = 0;
         let hourF = 0;
 
-        for (continuityTuple of localClassrooms[_localClassrooms[classroom1]]) {
-          const continuity_tuple = localClassrooms[_localClassrooms[classroom1]][continuityTuple].split(/ - /g);
+        for (var continuityTuple of localClassrooms[_localClassrooms[classroom1]]) {
+          //console.log(_localClassrooms[classroom1] + " // " + continuityTuple);
+          //const continuity_tuple = localClassrooms[_localClassrooms[classroom1]][continuityTuple].split(/ - /g);
+
+          const continuity_tuple = continuityTuple.split(/ - /g);
 
           //console.log("Non split: " + localClassrooms[classroom][continuityTuple])
           //console.log("Splitted: " + continuity_tuple)
@@ -224,7 +230,7 @@ export default {
             timeUntilOccupation = "Hasta el final del día";
             //--
             let classroomObject = {};
-            classroomObject["id"] = classroom1;
+            classroomObject["id"] = _localClassrooms[classroom1];
             classroomObject["TUO"] = timeUntilOccupation;
             //--
             this.freeClassrooms.push(classroomObject);
@@ -239,7 +245,7 @@ export default {
             if (timeUntilOccupation > 10) {
               //--
               let classroomObject = {};
-              classroomObject["id"] = classroom1;
+              classroomObject["id"] = _localClassrooms[classroom1];
               classroomObject["TUO"] = timeUntilOccupation;
               //--
               this.freeClassrooms.push(classroomObject);
