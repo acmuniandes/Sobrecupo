@@ -1,7 +1,7 @@
 <template>
     <div v-bind:style='[outerCircleDefault, outerCircleStyle(time)]'>
         <div v-bind:style='innerCircleStyle'>
-            {{classroom}}
+            <p>{{data.id}}</p>
         </div>
     </div>
 </template>
@@ -11,7 +11,6 @@ export default {
   name: "ClassroomTimer",
   data() {
     return {
-      classroom: "ML 603",
       innerCircleStyle: {
         width: "110px",
         height: "110px",
@@ -19,7 +18,8 @@ export default {
         borderRadius: "50%",
         justifyContent: "center",
         alignItems: "center",
-        margin: "0 auto"
+        margin: "0 auto",
+        color: "whitesmoke"
       },
       outerCircleDefault: {
         width: "120px",
@@ -32,23 +32,23 @@ export default {
         justifyContent: "center",
         alignItems: "center"
       },
-      time: -100
+      time: -1,
+      maxTime: 500*60
     };
   },
   mounted () {
-      this.time = this.releasedIn;
+      this.time = this.data.TUO*60;
       setInterval(this.updateDatetime, 1000);
   },
   props: [
-      'released-in',
-      'max-time'
+      'data'
   ],
   methods: {
     outerCircleStyle: function(a) {
       let angle = -(this.time / this.maxTime) * 360;
       if (this.time >= this.maxTime / 2) {
         angle -= 90;
-        console.log(angle);
+        //console.log(angle);
         return {
           backgroundImage:
             "linear-gradient(" +

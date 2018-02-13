@@ -1,7 +1,7 @@
 <template>
   <div :style='gridStyle' >
     <div v-for='(classroom, index) of freeClassrooms' :key='index'>
-      <classroom-timer classroom='classroom'/>
+      <classroom-timer :data='classroom' />
     </div>
   </div>
 </template>
@@ -36,8 +36,9 @@ export default {
       .get("/salones")
       .then(response => {
         _this.info = response.data;
-        _this.classroomNow(new Date("February 13, 2018 11:13:00"));
-        console.log(this.info);
+        _this.classroomNow(new Date());
+        //console.log(this.freeClassrooms);
+
       })
       .catch(error => {
         console.log(error);
