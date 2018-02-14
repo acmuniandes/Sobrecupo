@@ -36,7 +36,7 @@ export default {
       .get("/salones")
       .then(response => {
         _this.info = response.data;
-        _this.classroomNow(new Date());
+        _this.classroomNow(new Date("March 13, 2018 12:13:00"));
         //console.log(this.freeClassrooms);
 
       })

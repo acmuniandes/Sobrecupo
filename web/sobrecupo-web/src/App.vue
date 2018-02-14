@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" style='background-color: #222222'>
     <!-- Lugar donde se muestra el view actual -->
     <router-view/>
   </div>
