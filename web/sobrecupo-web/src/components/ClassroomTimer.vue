@@ -1,7 +1,8 @@
 <template>
     <div v-bind:style='[outerCircleDefault, outerCircleStyle(time)]'>
         <div v-bind:style='innerCircleStyle'>
-            <p>{{data.id}}</p>
+            <p>{{data.id}}</p><br>
+            <p>{{data.TUO}}m</p>
         </div>
     </div>
 </template>
@@ -14,7 +15,7 @@ export default {
       innerCircleStyle: {
         width: "110px",
         height: "110px",
-        backgroundColor: "black",
+        backgroundColor: "#111111",
         borderRadius: "50%",
         justifyContent: "center",
         alignItems: "center",
@@ -99,7 +100,7 @@ export default {
       }
     },
     updateDatetime: function(){
-        this.time -= 150
+        this.time -= 1
     }
   }
 };

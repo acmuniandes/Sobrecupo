@@ -1,13 +1,18 @@
 <template>
-  <div id="app" style='background-color: #222222'>
+  <div id="app">
+    <banner/>
     <!-- Lugar donde se muestra el view actual -->
     <router-view/>
   </div>
 </template>
 
 <script>
+import Banner from '@/components/Banner';
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+      Banner
+  }
 }
 </script>
 

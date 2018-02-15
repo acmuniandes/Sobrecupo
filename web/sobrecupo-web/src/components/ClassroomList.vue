@@ -1,6 +1,6 @@
 <template>
   <div :style='gridStyle' >
-    <div v-for='(classroom, index) of freeClassrooms' :key='index'>
+    <div :style='containerStyle' v-for='(classroom, index) of freeClassrooms' :key='index'>
       <classroom-timer :data='classroom' />
     </div>
   </div>
@@ -23,6 +23,13 @@ export default {
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
           gridGap: "20px"
+
+      },
+      containerStyle: {
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
       }
     };
   },
@@ -36,7 +43,7 @@ export default {
       .get("/salones")
       .then(response => {
         _this.info = response.data;
-        _this.classroomNow(new Date("March 13, 2018 12:13:00"));
+        _this.classroomNow(new Date()); //"March 13, 2018 12:13:00"
         //console.log(this.freeClassrooms);
 
       })
