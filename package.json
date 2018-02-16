@@ -1,0 +1,24 @@
+{
+  "name": "sobrecupo",
+  "version": "0.2.0",
+  "description": "Web app to find empty classrooms in Uniandes campus",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acmuniandes/Sobrecupo.git"
+  },
+  "author": "Julián Manrique",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acmuniandes/Sobrecupo/issues"
+  },
+  "homepage": "https://github.com/acmuniandes/Sobrecupo#readme"
+}

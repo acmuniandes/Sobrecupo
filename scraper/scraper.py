@@ -6,7 +6,8 @@ from bs4 import BeautifulSoup
 
 #Constants---------------------
 
-BASE_URL = "https://registroapps.uniandes.edu.co"
+BASE_URL = "https://registroapps.uniandes.edu.co/scripts"
+MAIN = "https://registroapps.uniandes.edu.co/scripts/semestre/adm_con_horario_joomla.php"
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1003.1 Safari/535.19 Awesomium/1.7.4.2'
 ACCEPT_LANGUAGE = "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3"
 EXTRA_SCHEDULE = 26
@@ -15,7 +16,7 @@ MARKED = 'True'
 LOG_CLASS_SEPARATOR = '---------------------------------------------'
 LOG_DEPT_SEPARATOR = '============================================================='
 LOG_FREQUENCY = 2400
-SEMESTRAL_END = "25/11/17"
+SEMESTRAL_END = "12/05/18"
 DB_POSTING = "https://tu-salon-redis.herokuapp.com/devMode/post/classroomInfo"
 EXTERNAL_EXCEPTION_SEPARATOR = "$$"
 INTERNAL_EXCEPTION_SEPARATOR = "<<"
@@ -123,7 +124,7 @@ class Classroom:
 
             for month in range(int(start[1]), int(end[1]) +1):
                 
-                iterator = calendarObj.itermonthdays2(2017, month)
+                iterator = calendarObj.itermonthdays2(2018, month)
 
                 #Initial month
                 if month == int(start[1]):
@@ -199,9 +200,11 @@ class _Exception:
 #From local index file, extracts and scrapes links
 def scrape():
 
-    mainPage = None
+    ''' mainPage = None
     with open('indexReg.html', 'r') as file:
-        mainPage = file.read()
+        mainPage = file.read() '''
+
+    mainPage = request(MAIN)
 
     depSoup = BeautifulSoup(mainPage, 'html5lib')
 
@@ -216,14 +219,16 @@ def scrapeDep(depTag):
     global processString
 
     #Stores the url from the tag, slicing used to remove URL first part
-    depHTML = depTag['href'][37:-1]
+    ''' depHTML = depTag['href'][37:-1] '''
+
+    depHTML = depTag['href']
 
     #Logging events
     print("Entering: " + depHTML)
     processString += "\n" + LOG_DEPT_SEPARATOR + "\n" + depTag['href'][83:-1] + "\n" + LOG_DEPT_SEPARATOR
 
     if isRelative(depHTML):
-        depHTML = BASE_URL + depHTML
+        depHTML = BASE_URL + depHTML[2:]
 
     depPage = request(depHTML)
     
@@ -409,7 +414,7 @@ def postDB(classrooms):
 #Auxiliary methods-------------
 
 def isRelative(url):
-    return url.startswith('/')
+    return url.startswith('..')
 
 def request(url):
 
@@ -458,7 +463,7 @@ def logProcess(clss):
 #Writes in log.log file the desired string
 #In order to write a new line add the line skip to the beginning of the string
 def log(strng):
-    with open('Log.log', 'a') as file:
+    with open('Log.log', 'a', encoding="utf-8") as file:
         file.write(strng)
 
 #Checks wether a classrooms is within the given list
