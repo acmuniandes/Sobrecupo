@@ -110,12 +110,13 @@ export default {
     updateDatetime: function(){
 
         if (this.time <= 0)
-          this.data.TUO = "Hasta el final del día";
+          this.data.TUO = "¡Se ocupó!";
 
         if(typeof(this.data.TUO) !== "string")
         {
           this.time -= 1;
-          this.data.TUO -= 1;
+          if(this.time % 60 == 0)
+            this.data.TUO -= 1;
         }
         
     }
