@@ -1,8 +1,7 @@
 <template>
-  <div :style='BannerStyle'>
-      <img src="@/assets/logo.png"/>
-      texto
-  </div>
+  <nav :style='BannerStyle'>
+      <img :style='ImageStyle' src="@/assets/SobrecupoTransparente.png"/>
+  </nav>
 </template>
 
 <script>
@@ -16,8 +15,11 @@ export default {
           bottom: 0,
           left: 0,
           right: 0,
-          height: "200px",
-          backgroundColor: "#222222"
+          height: "10%",
+          backgroundColor: "rgba(34, 34, 34, 0.4)"
+      },
+      ImageStyle: {
+        height: "100%"
       }
     }
   }

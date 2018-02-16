@@ -1,8 +1,8 @@
 <template>
     <div v-bind:style='[outerCircleDefault, outerCircleStyle(time)]'>
         <div v-bind:style='innerCircleStyle'>
-            <p>{{data.id}}</p><br>
-            <p>{{data.TUO}}m</p>
+            <p>{{classroomName}}</p>
+            <p>{{data.TUO}}</p>
         </div>
     </div>
 </template>
@@ -17,10 +17,11 @@ export default {
         height: "110px",
         backgroundColor: "#111111",
         borderRadius: "50%",
+        display: 'flex',
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin: "0 auto",
-        color: "#afafaf"
+        color: "#ffc600"
       },
       outerCircleDefault: {
         width: "120px",
@@ -44,6 +45,14 @@ export default {
   props: [
       'data'
   ],
+  computed: {
+    classroomName: function () {
+      if(typeof(this.data.id) === "string")
+        return this.data.id.slice(1).replace('_', ' ');
+      else
+        console.log("??: " + this.data.id);
+    }
+  },
   methods: {
     outerCircleStyle: function(a) {
       
@@ -79,7 +88,6 @@ export default {
       else if (this.time <= 60*60 && this.time > 30*60) {
         let angle = -(this.time/60 / 60) * 360;
         angle -= 90;
-        //console.log(angle);
         return {
           backgroundImage:
             "linear-gradient(" +
@@ -100,7 +108,16 @@ export default {
       }
     },
     updateDatetime: function(){
-        this.time -= 1
+
+        if (this.time <= 0)
+          this.data.TUO = "Hasta el final del día";
+
+        if(typeof(this.data.TUO) !== "string")
+        {
+          this.time -= 1;
+          this.data.TUO -= 1;
+        }
+        
     }
   }
 };

@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div style="margin-top: 10%" id="app">
     <banner/>
-    <!-- Lugar donde se muestra el view actual -->
+    <!-- Current view display -->
     <router-view/>
   </div>
 </template>
