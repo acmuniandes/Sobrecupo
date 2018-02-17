@@ -15,7 +15,7 @@ export default {
           bottom: 0,
           left: 0,
           right: 0,
-          height: "10%",
+          height: "5em",
           backgroundColor: "rgba(34, 34, 34, 0.4)"
       },
       ImageStyle: {

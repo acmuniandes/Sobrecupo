@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-top: 10%" id="app">
+  <div style="margin-top: 5.55em" id="app">
     <banner/>
     <!-- Current view display -->
     <router-view/>

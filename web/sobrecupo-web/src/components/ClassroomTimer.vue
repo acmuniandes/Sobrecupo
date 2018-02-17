@@ -2,7 +2,7 @@
     <div v-bind:style='[outerCircleDefault, outerCircleStyle(time)]'>
         <div v-bind:style='innerCircleStyle'>
             <p>{{classroomName}}</p>
-            <p>{{data.TUO}}</p>
+            <p>{{typeof(data.TUO) === 'string' ? data.TUO : data.TUO + "m"}}</p>
         </div>
     </div>
 </template>
