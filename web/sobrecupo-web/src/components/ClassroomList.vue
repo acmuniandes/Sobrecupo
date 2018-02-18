@@ -1,13 +1,18 @@
 <template>
-  <div :style='gridStyle' >
-    <div :style='containerStyle' v-for='(classroom, index) of freeClassrooms' :key='index'>
-      <classroom-timer :data='classroom' />
+  <div>
+    <filters />
+    <div :style='[gridStyle, {gridTemplateColumns: fractions}]'>
+      <div :style='containerStyle' v-for='(classroom, index) of freeClassrooms' :key='index'>
+        <classroom-timer :data='classroom' />
+      </div>
     </div>
+    <h2 v-if="error">{{error}}</h2>
   </div>
 </template>
 
 <script>
 import ClassroomTimer from "./ClassroomTimer";
+import Filters from "./Filters";
 import axios from "axios";
 
 export default {
@@ -19,11 +24,11 @@ export default {
       freeClassrooms: [],
       invalidClassrooms: [],
       allBuildings: [],
+      fractions: "1fr",
       gridStyle: {
           display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          gridGap: "20px"
-
+          gridGap: "20px",
+          marginTop: "20px"
       },
       containerStyle: {
           width: '100%',
@@ -34,18 +39,34 @@ export default {
     };
   },
   components:{
-    ClassroomTimer
+    ClassroomTimer,
+    Filters
   },
-  mounted() {
+  beforeDestroy: function() {
+    window.removeEventListener("resize", this.updateFractions);
+  },
+  mounted: function () {
+    window.addEventListener("resize", this.updateFractions);
+    this.updateFractions();
     //Using a pointer to this due to the context change on axios function
     const _this = this;
     axios
       .get("/salones")
       .then(response => {
-        _this.info = response.data;
-        _this.classroomNow(new Date()); //"March 13, 2018 12:13:00"
-        //console.log(this.freeClassrooms);
-
+        try{
+          _this.info = response.data;
+          _this.classroomNow(new Date("March 13, 2018 12:13:00")); //"March 13, 2018 12:13:00"
+          //console.log(this.freeClassrooms);          
+        }
+        catch(error){
+          if((new Date()).getDay() == 0)
+          {
+            this.error = "Uniandes no abre los domingos 👀"
+          }
+          else{
+            this.error = error
+          }
+        }
       })
       .catch(error => {
         console.log(error);
@@ -53,6 +74,15 @@ export default {
       });
   },
   methods: {
+    updateFractions: function(event) {
+      const fractions = Math.floor(window.innerWidth / 150);
+      let frStr = "";
+      for(let i = 0; i < fractions; i++)
+      {
+        frStr += "1fr "
+      }
+      this.fractions = frStr;
+    },
     generateDate: function(date) {
       const day = date.getDate();
       let month = date.getMonth() + 1;

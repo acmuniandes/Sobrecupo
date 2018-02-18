@@ -1,0 +1,17 @@
+.move-down-enter-active{
+  transition: all 0.5s ease-in
+}
+
+.move-down-leave-active{
+  transition: all 0.4s ease-in
+}
+
+.mode-down-enter-to, .move-down-leave {
+  transform: translateY(-30px);
+  opacity: 1;
+}
+
+.move-down-enter, .move-down-leave-to{
+  transform: translateY(-30px);
+  opacity: 0;
+}

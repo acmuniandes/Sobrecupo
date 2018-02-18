@@ -4,7 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+Vue.config.devtools = true;
 Vue.config.productionTip = false;
+
+require('./assets/animations.css');
 
 /* eslint-disable no-new */
 new Vue({
