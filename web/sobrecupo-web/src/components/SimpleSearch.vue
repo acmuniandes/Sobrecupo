@@ -19,7 +19,7 @@ export default {
           border: "4px solid #ffc600",
           borderRadius: "4px",
           display: "flex",
-          width: "170px",
+          width: "130px",
           alignItems: "center",
           justifyContent: "center",
           marginLeft: "25px",
@@ -28,7 +28,7 @@ export default {
         input: {
           backgroundColor: "whitesmoke",
           padding: "8px",
-          width: "110px",
+          width: "80px",
           borderRadius: "15px",
           border: "none"
         }

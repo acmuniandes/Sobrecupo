@@ -1,8 +1,8 @@
 <template>
   <div>
-    <filters />
+    <filters v-on:timeRange="timeRangeUpdate" v-on:search="searchUpdate" :search="search" :timeRange="timeRange"/>
     <div :style='[gridStyle, {gridTemplateColumns: fractions}]'>
-      <div :style='containerStyle' v-for='(classroom, index) of freeClassrooms' :key='index'>
+      <div :style='containerStyle' v-for='(classroom, index) of filteredClassrooms' :key='index'>
         <classroom-timer :data='classroom' />
       </div>
     </div>
@@ -24,6 +24,8 @@ export default {
       freeClassrooms: [],
       invalidClassrooms: [],
       allBuildings: [],
+      timeRange: [0, 120],
+      search: "",
       fractions: "1fr",
       gridStyle: {
           display: "grid",
@@ -73,7 +75,40 @@ export default {
         _this.error = error.data;
       });
   },
+  computed: {
+    filteredClassrooms: function() {
+      if(this.search === "" && this.timeRange[0] === 0 && this.timeRange[1] === 120)
+        return this.freeClassrooms; //Return no filter
+      
+      let filteredClassrooms = [];
+
+      //Creating temporal time range to model
+      let tempTimeRange = this.timeRange;
+      if(this.timeRange[1] === 120)
+        tempTimeRange[1] = 600;
+
+      for(var classroom of this.freeClassrooms)
+      {
+        if(tempTimeRange[1] === 600 && typeof(classroom.TUO) === "string" && classroom.id.toLowerCase().includes(this.search.toLowerCase()))
+        {
+          filteredClassrooms.push(classroom);
+        }
+        else if(classroom.TUO >= tempTimeRange[0] && classroom.TUO <= tempTimeRange[1] && classroom.id.toLowerCase().includes(this.search.toLowerCase()))
+        {
+          filteredClassrooms.push(classroom);
+        }
+      }
+
+      return filteredClassrooms;
+    }
+  },
   methods: {
+    timeRangeUpdate: function(timeRange) {
+      this.timeRange = timeRange;
+    },
+    searchUpdate: function(search) {
+      this.search = search;
+    },
     updateFractions: function(event) {
       const fractions = Math.floor(window.innerWidth / 150);
       let frStr = "";
@@ -182,7 +217,6 @@ export default {
 
           if (exceptions){
             //The 'todayyy' field contains a string with the format "SCH$$SCH$$ (...)"
-            //TODO error may be on month/day format (AGO = 08 and not 8, etc.)
             schedule = schedule.concat(exceptions.split("$$"));
 
             //console.log("after exp: " + schedule)

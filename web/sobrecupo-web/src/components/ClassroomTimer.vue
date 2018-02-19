@@ -1,10 +1,12 @@
 <template>
+  <div class="classroom">
     <div v-bind:style='[outerCircleDefault, outerCircleStyle(time)]'>
-        <div v-bind:style='innerCircleStyle'>
+        <div v-bind:style='innerCircleStyle' class="machete">
             <p>{{classroomName}}</p>
             <p>{{typeof(data.TUO) === 'string' ? data.TUO : data.TUO + "m"}}</p>
         </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -15,7 +17,7 @@ export default {
       innerCircleStyle: {
         width: "110px",
         height: "110px",
-        backgroundColor: "#111111",
+        backgroundColor: "#222222",
         borderRadius: "50%",
         display: 'flex',
         flexDirection: "column",
@@ -56,10 +58,10 @@ export default {
   methods: {
     outerCircleStyle: function(a) {
       
-      if(this.time > 120*60){
+      if(this.time > 120*60 || typeof this.data.TUO === "string"){
         return {
           backgroundImage:
-            "linear-gradient(0 deg, #ff6c00 50%, #ff6c00 50%), " +
+            "linear-gradient(0deg, #ff6c00 50%, #ff6c00 50%), " +
             "linear-gradient(90deg, #ff6c00 50%, #ff6c00 50%)"
         };
       }
