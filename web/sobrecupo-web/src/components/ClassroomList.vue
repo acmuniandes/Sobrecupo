@@ -57,7 +57,7 @@ export default {
       .then(response => {
         try{
           _this.info = response.data;
-          _this.classroomNow(new Date("March 13, 2018 12:13:00")); //"March 13, 2018 12:13:00"
+          _this.classroomNow(new Date()); //"March 13, 2018 12:13:00"
           //console.log(this.freeClassrooms);          
         }
         catch(error){
@@ -240,8 +240,8 @@ export default {
 
       //Second part, finds free classrooms from previous data structure formed
 
-      console.log("Local classrooms: ");
-      console.log(localClassrooms);
+      //console.log("Local classrooms: ");
+      //console.log(localClassrooms);
 
       let hour = date.getHours() * 100 + date.getMinutes();
       
