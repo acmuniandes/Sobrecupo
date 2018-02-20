@@ -137,7 +137,7 @@ class Classroom:
                                 #Also, checking if the weekday corresponds to a class' weekday
                                 if int(day[1]) in numDays:
                                     #Generate date string
-                                    currentDate = str(day[0]) + "/" + start[1] + "/" + start[2]
+                                    currentDate = formatDateNumber(day[0]) + "/" + start[1] + "/" + start[2]
                                     try:
                                         #Add to the current date, to the classroom exception, the extra-schedule
                                         dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
@@ -152,7 +152,7 @@ class Classroom:
                         #Check if the day is in the current month
                         if day[0] != 0:
                             if day[1] in numDays:
-                                currentDate = str(day[0]) + "/" + str(month) + "/" + start[2]
+                                currentDate = formatDateNumber(day[0]) + "/" + formatDateNumber(month) + "/" + start[2]
                                 try:
                                     #Add to the current date, to the classroom exception, the extra-schedule
                                     dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
@@ -173,7 +173,7 @@ class Classroom:
                                 if day[1] in numDays:
                                     #TODO print when entering if (check if weekdays are indeed correct or not)
                                     #Generate date string
-                                    currentDate = str(day[0]) + "/" + end[1] + "/" + end[2]
+                                    currentDate = formatDateNumber(day[0]) + "/" + end[1] + "/" + end[2]
                                     try:
                                         #Add to the current date, to the classroom exception, the extra-schedule
                                         dictionary['exceptions'][currentDate] += EXTERNAL_EXCEPTION_SEPARATOR + exception.classTime
@@ -254,15 +254,14 @@ def extractTables(tableTag):
     global processString
     global classList
 
-    #Determine how many descendants the actual <table> tag has
+    #Determine how many descendants the current <table> tag has
     descendants = len(list(tableTag.descendants))
     #print("desc: " + str(descendants))
 
-    #Check if it is a schedules section
-    schedules = 0
     isTitleTable = tableTag['width'] == '575'
+    schedules = 0
 
-    #If so, check how many schedules the class has
+    #If it is a schedules section check how many schedules the class has
     if not isTitleTable:
         schedules = matchSchedule(descendants)
 
@@ -445,9 +444,10 @@ def debugSchedule(sch):
 
 def validateClass(clss):
     valid = clss.name is not None and len(clss.name) > 3 and clss.schedules is not None and len(clss.schedules) >= 1
-    if valid:
+    #Epic logic fail down here
+    ''' if valid:
         valid = clss.schedules[0].classroom != "." or clss.schedules[0].classroom != ".NOREQ"
-        valid = valid and len(clss.schedules[0].weekdays) >0
+        valid = valid and len(clss.schedules[0].weekdays) >0 '''
     return valid
 
 def logProcess(clss):
@@ -522,6 +522,10 @@ def logClassrooms(classrooms):
                     file.write("\n" + debugSchedule(schedule))
                 dayCounter += 1
 
+def formatDateNumber(number):
+    if(number < 10):
+        return '0' + str(number)
+    return str(number)
 
 #Tag recognition Methods(bs4)--
 

@@ -7,6 +7,15 @@
       </div>
     </div>
     <h2 v-if="error">{{error}}</h2>
+    <div :style="helpContainerStyle" v-on:click="help = !help">
+        <div :style="helpStyle">
+            <img src="@/assets/icons/help.png"/>
+        </div>
+    </div>
+
+    <div :style="helpImageStyle" v-if="help">
+      <img :style="helpDimensions" src="@/assets/Guía.png"/>
+    </div>
   </div>
 </template>
 
@@ -27,16 +36,41 @@ export default {
       timeRange: [0, 120],
       search: "",
       fractions: "1fr",
+      help: false,
       gridStyle: {
-          display: "grid",
-          gridGap: "20px",
-          marginTop: "20px"
+        display: "grid",
+        gridGap: "20px",
+        marginTop: "20px"
       },
       containerStyle: {
-          width: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      },
+      helpContainerStyle: {
+        position: "fixed",
+        bottom: "12px",
+        right: "12px",
+        width: "48px",
+        height: "48px",
+        zIndex: "1"
+      },
+      helpStyle: {
+        position: "fixed",
+        borderRadius: "24px",
+        backgroundColor: "#ffc600",
+        width: "48px",
+        height: "48px",
+      },
+      helpImageStyle: {
+        position: "fixed",
+        top: "0px",
+        left: "0px",
+        height: "100%",
+        width: "100%",
+        backgroundColor: "rgba(34, 34, 34, 0.8)",
+        zIndex: "0"
       }
     };
   },
@@ -100,6 +134,20 @@ export default {
       }
 
       return filteredClassrooms;
+    },
+    helpDimensions: function() {
+      if(window.innerWidth > window.innerHeight){
+        return {
+          height: "100%",
+          width: "auto"
+        }
+      }
+      else{
+        return {
+          height: "auto",
+          width: "100%"
+        }
+      }
     }
   },
   methods: {
